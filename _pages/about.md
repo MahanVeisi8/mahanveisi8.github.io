@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-As a fourth-year Computer Engineering student at Shahid Beheshti University, Iran, I have cultivated a strong foundation in Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning. With a cumulative GPA of 17.97/20 (3.78/4) and graduation expected in January 2026, I am deeply committed to using advanced computational techniques to address real-world challenges, particularly in healthcare and bioinformatics.
+I am a fourth-year Computer Engineering student at Shahid Beheshti University, Iran, with a strong foundation in Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning. With a cumulative GPA of 17.97/20 (3.78/4) and an expected graduation in January 2026, I am deeply committed to applying advanced computational techniques to address real-world challenges, particularly in healthcare and bioinformatics.
 
 My academic journey has been fueled by a drive to bridge theory and practice, where each project presents an opportunity to innovate and solve complex problems. My passion for generative models, especially GANs and diffusion models, extends beyond the classroom; I am currently exploring their applications in 3D modeling and bioinformatics, with aspirations to contribute to advancements in medical imaging and personalized healthcare.
 
