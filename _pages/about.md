@@ -8,32 +8,32 @@ redirect_from:
   - /about.html
 ---
 
-I am a fourth-year B.S. student in Computer Engineering at Shahid Beheshti University, Iran, with a cumulative GPA of 17.97/20 (3.78/4) and an expected graduation in January 2026. My focus is on leveraging Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning to drive innovation in fields like healthcare and bioinformatics.
+<div class="header">Mahan Veisi</div>
 
-My academic journey is deeply rooted in hands-on research, where I've tackled complex challenges with applications that bridge theory and practice. Notable projects include developing transformer-based models for **MRI reconstruction** and exploring explainable AI for **Parkinson’s Disease detection** through advanced pruning and clustering techniques. My work has led to significant achievements, such as co-authoring a study on reinforcement learning for stock trading that was presented at IEEE ICCKE 2024.
+<div class="highlight">
+  <p><strong>Fourth-Year B.S. Student in Computer Engineering</strong><br>
+  Shahid Beheshti University, Iran | Cumulative GPA: 17.97/20 (3.78/4)<br>
+  <strong>Expected Graduation:</strong> January 2026</p>
+</div>
 
-## Research Experience
-As a research assistant under Dr. Armin Salimi-Badr, I have worked on high-impact projects at the intersection of healthcare and AI. My research includes developing reinforcement learning models for financial applications and designing explainable models for medical diagnostics, with a focus on enhancing accuracy and transparency. I am currently contributing to a project on MRI reconstruction using cascaded transformers, an area that aligns closely with my interest in advancing medical imaging.
+<div class="section">
+  <div class="subheader">Academic & Research Highlights</div>
+  <ul>
+    <li class="list-item"><strong>Transformers for MRI Reconstruction:</strong> Developing advanced models to enhance medical imaging.</li>
+    <li class="list-item"><strong>Explainable AI for Parkinson’s Disease Detection:</strong> Achieved 98.7% accuracy using innovative pruning and clustering methods.</li>
+    <li class="list-item"><strong>Reinforcement Learning in Finance:</strong> Co-authored a paper on reinforcement learning models for stock trading, presented at IEEE ICCKE 2024.</li>
+  </ul>
+</div>
 
-## Teaching Assistantship
-I have served as a teaching assistant for courses such as Artificial Intelligence and Signals and Systems. In these roles, I managed assignments and provided guidance on project work, including AI applications in image processing. This experience has honed my ability to communicate complex technical concepts effectively and support student learning.
+<div class="section">
+  <div class="subheader">Research Experience</div>
+  <p><strong>Research Assistant</strong> under Dr. Armin Salimi-Badr<br>
+  <strong>Focus Areas:</strong> Medical diagnostics, financial applications, transparency in AI.<br>
+  My work includes reinforcement learning for finance and explainable models for healthcare. Currently, I am engaged in MRI reconstruction using cascaded transformers—a project aligned with my passion for advancing medical imaging.</p>
+</div>
 
-## Research Interests
-
-- **Computer Vision**: Developing advanced imaging techniques, especially for medical applications.
-- **Generative Models**: Passionate about GANs and diffusion models, with a focus on 3D modeling and applications in bioinformatics.
-- **Medical AI**: Leveraging AI to improve diagnostics and healthcare accessibility.
-- **Reinforcement Learning**: Building robust, adaptable models for real-world applications, from finance to robotics.
-- **Graph Neural Networks**: Exploring the intersection of GNNs and generative models for applications like protein design.
-
-## Education
-
-- **B.Sc. in Computer Engineering**, Shahid Beheshti University, Tehran, Iran (Expected Jan 2026)
-  - Cumulative GPA: 17.97/20 (3.78/4)
-  - Relevant Courses: Reinforcement Learning, Machine Learning, Algorithms, Data Structures, Signals and Systems
-
-## Extracurricular Interests
-Outside of academics, I enjoy running and playing the guitar. Running helps me maintain focus and energy for my research, while playing guitar in my free time brings a refreshing balance to my routine, fueling my creativity.
-
-## Career Aspiration
-Driven by a commitment to societal impact, I aspire to be a researcher who contributes meaningfully to the fields of generative modeling and medical AI. I aim to push the boundaries of what AI can accomplish in improving lives, particularly through advancements in diagnostics and adaptive AI solutions.
+<div class="section">
+  <div class="subheader">Teaching Assistantship</div>
+  <p><strong>Courses:</strong> Artificial Intelligence, Signals and Systems<br>
+  In these roles, I managed assignments, guided students through projects in AI and image processing, and refined my skills in communicating complex concepts clearly and effectively.</p>
+</div>
