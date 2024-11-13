@@ -75,4 +75,47 @@
   .project-entry a:hover {
     text-decoration: underline;
   }
+
+  .publication-entry {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.publication-entry h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.publication-entry em {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.publication-entry p {
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.publication-entry a {
+    color: #0073e6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.publication-entry a:hover {
+    text-decoration: underline;
+}
+
+.publication-entry .float-right {
+    float: right;
+    margin-left: 15px;
+    font-size: 0.9em;
+    color: #888;
+}
+
   
