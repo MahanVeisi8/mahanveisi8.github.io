@@ -76,12 +76,19 @@
     text-decoration: underline;
   }
 
+
   .publication-entry {
     margin-bottom: 30px;
     padding: 20px;
     background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.publication-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .publication-entry h3 {
@@ -111,11 +118,14 @@
     text-decoration: underline;
 }
 
-.publication-entry .float-right {
+.float-right {
     float: right;
     margin-left: 15px;
     font-size: 0.9em;
     color: #888;
 }
 
-  
+.publication-link {
+    display: block;
+    margin-top: 10px;
+}
