@@ -47,7 +47,7 @@ analytics:
 # Site Author
 author:
   name: "Mahan Veisi"
-  avatar: "profile.png" # Add your profile image to /images folder
+  avatar: "profile.jpg" # Add your profile image to /images folder
   bio: "Computer Engineering B.S. Student at Shahid Beheshti University, passionate about AI, Medical Imaging, and Generative Models."
   location: "Tehran, Iran"
   googlescholar: "https://scholar.google.com/citations?user=QufpdNgAAAAJ&hl=en"
