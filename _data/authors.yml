@@ -1,18 +1,9 @@
-# Authors
-
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Mahan Veisi:
+  name        : "Mahan Veisi"
+  uri         : "https://mahanveisi8.github.io"
+  email       : "mahan8292@gmail.com"
+  bio         : "B.S. in Computer Engineering with research interests in Computer Vision, Generative Models, and Medical AI."
+  avatar      : "profile.jpg"  # Ensure this image is in your images directory
+  github      : "MahanVeisi8"
+  linkedin    : "mahan-veisi-427934226"
+  youtube     : "Mahan_Veisi"

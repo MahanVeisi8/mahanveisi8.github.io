@@ -5,13 +5,16 @@ permalink: /publications/
 author_profile: true
 ---
 
-## Conference/Journal Papers
+## Conference and Journal Papers
 
-- **M. Hashemi**, S. Gong, J. Ni, W. Fan, B. A Prakash, W. Jin **A Comprehensive Survey on Graph Reduction: Sparsification, Coarsening, and Condensation**. [[pdf]](https://arxiv.org/pdf/2402.03358.pdf) [[reading list]](https://github.com/Emory-Melody/awesome-graph-reduction) IJCAI 2024.
+- **M. Veisi**, M. Shahbazi Khojasteh, A. Salimi-Badr, "Deep Reinforcement Learning for Stock Trading," *ICCKE 2024*
+  - Integrated FinBERT for sentiment analysis, achieving a 134.39% cumulative return. [Link to paper]
 
-- S. Nabavi, **M. Hashemi**, ME. Moghaddam, AA. Abin, AF. Frangi
-  **Automated cardiac coverage assessment in cardiovascular magnetic resonance imaging using an explainable recurrent 3D dual‐domain convolutional network** [[pdf]](https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.17411) Medical Physics 2024
+- **M. Veisi**, A. Salimi-Badr, S. Berangi, "SincNet for Parkinson’s Disease Detection," Under Review for *Biomedical Signal Processing Journal*
+  - Achieved 98.7% accuracy in PD detection using SincNet layers with pruned filters.
 
-- A. Salimi-Badr, **M. Hashemi**, H. Saffari **A type-2 neuro-fuzzy system with a novel learning method for Parkinson’s disease diagnosis**. Appl Intell 53, 15656–15682 (2023).
+- **M. Veisi**, K. Anvari, S. Nabavi, "All-in-One MRI Reconstruction with Cascaded Transformers," In Progress
+  - Developed a cascaded model for MRI reconstruction using prompt-in-prompt learning.
 
-- A. Salimi-Badr, **M. Hashemi**, **"A Neural-Based Approach to Aid Early Parkinson's Disease Diagnosis,"** 2020 11th International Conference on Information and Knowledge Technology (IKT), Tehran, Iran, 2020, pp. 23-25, doi: 10.1109/IKT51791.2020.9345635.
+- **M. Veisi**, "Intelligent Agents for RoboCup Soccer Simulation," *RoboCup Proceedings*
+  - Contributed to the development of soccer agents for the RoboCup, securing second place at the IranOpen 2023.

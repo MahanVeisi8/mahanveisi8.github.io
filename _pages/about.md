@@ -1,25 +1,27 @@
 ---
 permalink: /
 title: "About Me"
-excerpt: "About me"
+excerpt: "About Mahan Veisi"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a second-year Ph.D. student in [Computer Science](https://cs.emory.edu/home/) at [Emory University](https://www.emory.edu/home/index.html), where I focus on developing privacy-preserving predictive models for multi-modal temoporal Electronic Health Record (EHR) data under supervision of Prof. [Li Xiong](https://www.cs.emory.edu/~lxiong/) (Co-advised by Dr. [Wei Jin](http://www.cs.emory.edu/~wjin30//)).
+I am a computer engineering student with a strong foundation in Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning, currently studying at Shahid Beheshti University. My academic journey has been enriched by hands-on experience in projects ranging from medical AI applications to reinforcement learning models for real-time applications.
 
-My research interests include Machine Learning in general, with applications in Data Privacy, Graph Learning, and Computer Vision. I am intended to better understand these methods in a principled manner by investigating their underlying mathematics and their practical implications in real life. My research goal is to channel such better theoretical and functional understanding of these new methods towards better practical solutions for real life problems.
+I am passionate about applying advanced computational techniques to solve complex problems, especially in fields related to healthcare and finance. My goal is to bridge theoretical understanding with practical solutions to create impactful changes in these domains.
 
 ## Research Interests
 
-- Machine Learning
-- Data Privacy
-- Graph Data Mining
-- AI in Healthcare
+- **Computer Vision**
+- **Generative Models**
+- **Medical AI**
+- **Reinforcement Learning**
+- **Graph Neural Networks**
 
 ## Education
 
-- Ph.D. in Computer Science, Emory University, (2023 - Present)
-- B.Sc. in Computer Engineering, Shahid Beheshti University, (2018 - 2023)
+- **B.Sc. in Computer Engineering**, Shahid Beheshti University, Tehran, Iran (Expected Jan 2026)
+  - Cumulative GPA: 17.97/20 (3.78/4)
+  - Relevant Courses: Reinforcement Learning, Machine Learning, Algorithms, Data Structures, Signals and Systems
