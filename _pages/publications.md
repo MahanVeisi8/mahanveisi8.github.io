@@ -7,14 +7,23 @@ author_profile: true
 
 ## Conference and Journal Papers
 
-- **M. Veisi**, M. Shahbazi Khojasteh, A. Salimi-Badr, "Deep Reinforcement Learning for Stock Trading," *ICCKE 2024*
-  - Integrated FinBERT for sentiment analysis, achieving a 134.39% cumulative return. [Link to paper]
+### Deep Reinforcement Learning for Stock Trading
+**M. Veisi**, Sadra Berangi, [Mahdi Shahbazi Khojasteh](https://scholar.google.com/citations?user=QufpdNgAAAAJ&hl=en), [Armin Salimi-Badr](https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en)  
+*Accepted for ICCKE 2024*  
+Integrated **FinBERT**, a financial sentiment analysis language model, within a Proximal Policy Optimization (PPO) framework to assess the sentiment of news articles and correlate them with stock price movements. The model achieved a **134.39% cumulative return** and a **1.46 Sharpe ratio**, significantly outperforming benchmark models such as DJIA and standard PPO. This work showcases how the combination of NLP and reinforcement learning can provide robust financial trading strategies that adapt well to volatile market conditions.  
+[Github](https://github.com/MahanVeisi8/LSTMppo-DRL-StockTrader)
 
-- **M. Veisi**, A. Salimi-Badr, S. Berangi, "SincNet for Parkinson’s Disease Detection," Under Review for *Biomedical Signal Processing Journal*
-  - Achieved 98.7% accuracy in PD detection using SincNet layers with pruned filters.
+### SincNet for Parkinson’s Disease Detection
+[Armin Salimi-Badr](https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en), **M. Veisi**, Sadra Berangi  
+*Under Review for Biomedical Signal Processing Journal*  
+Developed a model for Parkinson’s Disease detection using SincNet layers on gait data, achieving **98.7% accuracy**. The approach involved pruning filters after initial training based on K-means clustering and silhouette scores, which helped in identifying crucial frequency bands that are most indicative of Parkinson’s Disease. This work provides insights into explainable AI by elucidating the significant frequency components in disease detection.
 
-- **M. Veisi**, K. Anvari, S. Nabavi, "All-in-One MRI Reconstruction with Cascaded Transformers," In Progress
-  - Developed a cascaded model for MRI reconstruction using prompt-in-prompt learning.
+### All-in-One MRI Reconstruction with Cascaded Transformers
+**M. Veisi**, [Kian Anvari](https://scholar.google.com/citations?user=gHVVhW4AAAAJ&hl=en), [Shahabedin Nabavi](https://scholar.google.com/citations?user=D_mPA6sAAAAJ&hl=en), [Mohsen Ebrahimi Moghaddam](https://scholar.google.com/citations?user=trWxrgcAAAAJ&hl=en)  
+*In Progress*  
+This ongoing project involves creating a versatile MRI reconstruction model using a cascaded transformer structure with **prompt-in-prompt learning** and **multi-head transposed cross-attention transformers**. The model aims to handle multiple MRI contrasts and resolutions efficiently, paving the way for an all-encompassing approach to MRI data reconstruction.
 
-- **M. Veisi**, "Intelligent Agents for RoboCup Soccer Simulation," *RoboCup Proceedings*
-  - Contributed to the development of soccer agents for the RoboCup, securing second place at the IranOpen 2023.
+### Intelligent Agents for RoboCup Soccer Simulation
+Mohammad Hesam Nasiri, Seyed Hassan Majid Zonouzi, Arya Parvizi, Seyed Mostafa Atyabi, Seyedeh Rana Rokni, Sanaz Moosapour, **M. Veisi**, Kiarah Kowsari, Farbod Saghfi  
+*Published in RoboCup Proceedings*  
+Contributed to the development of intelligent soccer-playing agents for the **RoboCup 2D Soccer Simulation League**. These agents were optimized for strategic tasks such as goalkeeping, defense, and coordinated team play. The team secured **second place** at the 2023 RoboCup IranOpen. The project highlights effective application of AI in real-time strategic decision-making scenarios.
