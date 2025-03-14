@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a fourth-year Computer Engineering student at Shahid Beheshti University, Iran, with a strong foundation in Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning. With two remaining semesters, I hold a **cumulative GPA of 18.10/20 (3.81/4)** and a **final-year GPA of 19.08/20 (4/4)**. My research interests center on **Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning**, and I am currently seeking a **visiting summer research internship** or a **remote unpaid research collaboration** to expand my experience in cutting-edge AI.
+I am a fourth-year Computer Engineering student at Shahid Beheshti University, Iran, with a strong foundation in Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning. With two remaining semesters, I hold a **cumulative GPA of 18.10/20 (3.81/4)** and a **final-year GPA of 19.08/20 (4/4)**. My research interests center on **Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning**, and I am currently seeking a **summer research internship** to expand my experience in cutting-edge AI.
 
 My academic journey has been fueled by a drive to bridge theory and practice, where each project presents an opportunity to innovate and solve complex problems. My passion for generative models, especially GANs and diffusion models, extends beyond the classroom; I am currently exploring their applications in 3D modeling, with aspirations to contribute to advancements in medical imaging and personalized healthcare.
 
