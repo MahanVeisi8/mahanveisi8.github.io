@@ -10,11 +10,15 @@ author_profile: true
 <div class="publication-entry">
   <div class="publication-header">
     <h3>Deep Reinforcement Learning for Stock Trading</h3>
-    <span class="publication-status float-right"><em>Accepted for ICCKE 2024</em></span>
+    <span class="publication-status float-right"><em>Published in IEEE ICCKE 2024</em></span>
   </div>
   <p><strong>Mahan Veisi</strong>, Sadra Berangi, <a href="https://scholar.google.com/citations?user=QufpdNgAAAAJ&hl=en">Mahdi Shahbazi Khojasteh</a>, <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en">Armin Salimi-Badr</a></p>
-  <p>Integrated <strong>FinBERT</strong> for sentiment analysis within a Proximal Policy Optimization (PPO) model to evaluate news sentiment and correlate it with stock price movements. The model achieved a <strong>134.39% cumulative return</strong> with a <strong>1.46 Sharpe ratio</strong>, significantly outperforming benchmarks like DJIA. This work combines natural language processing with reinforcement learning to showcase robust financial trading strategies.</p>
-  <span class="publication-link float-right"><a href="https://github.com/MahanVeisi8/LSTMppo-DRL-StockTrader">GitHub Repository</a></span>
+  <p>Integrated <strong>FinBERT</strong> for sentiment analysis within a PPO-LSTM model to extract and correlate news sentiment with stock prices. The model achieved a <strong>134.39% cumulative return (2.34× initial budget)</strong> and a <strong>1.46 Sharpe ratio</strong>, significantly outperforming benchmarks and demonstrating robust adaptability in volatile markets.</p>
+  <span class="publication-link float-right">
+    <a href="https://ieeexplore.ieee.org/document/10874515">Paper</a> | 
+    <a href="https://github.com/MahanVeisi8/LSTMppo-DRL-StockTrader">GitHub</a> | 
+    <a href="https://youtu.be/Jfpc6_kGLYo?si=U9xVX03Jn_7jxY1d">YouTube</a>
+  </span>
 </div>
 
 ---
@@ -22,10 +26,14 @@ author_profile: true
 <div class="publication-entry">
   <div class="publication-header">
     <h3>SincNet for Parkinson’s Disease Detection</h3>
-    <span class="publication-status float-right"><em>Under Review for Biomedical Signal Processing Journal</em></span>
+    <span class="publication-status float-right"><em>Under Review for AIHC Journal</em></span>
   </div>
   <p><a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en">Armin Salimi-Badr</a>, <strong>Mahan Veisi</strong>, Sadra Berangi</p>
   <p>Applied <strong>SincNet layers</strong> to classify Parkinson’s Disease from gait data, achieving <strong>98.7% accuracy</strong>. After training, filters were pruned using K-means clustering and silhouette scores to highlight key frequency bands significant in disease detection. This study enhances explainable AI by identifying critical signal components in Parkinson’s diagnosis.</p>
+  <span class="publication-link float-right">
+    <a href="https://www.arxiv.org/abs/2502.17463">Paper</a> | 
+    <a href="https://github.com/MahanVeisi8/Explainable-PD-Diagnosis-using-SincNet-and-Gait-Analysis">GitHub</a>
+  </span>
 </div>
 
 ---
@@ -36,7 +44,7 @@ author_profile: true
     <span class="publication-status float-right"><em>In Progress</em></span>
   </div>
   <p><strong>Mahan Veisi</strong>, <a href="https://scholar.google.com/citations?user=gHVVhW4AAAAJ&hl=en">Kian Anvari</a>, <a href="https://scholar.google.com/citations?user=D_mPA6sAAAAJ&hl=en">Shahabedin Nabavi</a>, <a href="https://scholar.google.com/citations?user=trWxrgcAAAAJ&hl=en">Mohsen Ebrahimi Moghaddam</a></p>
-  <p>This ongoing project involves developing a cascaded MRI reconstruction model using <strong>prompt-in-prompt learning</strong> and <strong>multi-head transposed cross-attention transformers</strong>. The approach aims to handle various MRI contrasts and resolutions efficiently, leading to an advanced multi-resolution reconstruction pipeline in medical imaging.</p>
+  <p>Developed a cascaded MRI reconstruction model utilizing <strong>Frequency Mining</strong> with state-of-the-art transformer-based U-Net models for k-space data. This approach efficiently handles multi-contrast MRI and is targeted for the MICCAI 2025 reconstruction challenge.</p>
 </div>
 
 ---
