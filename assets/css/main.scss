@@ -40,13 +40,15 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-.project-entry {
-    margin-bottom: 20px;
-    padding: 15px;
+  
+  .publication-entry {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
     border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+
   }
   
   .project-entry:hover {
@@ -86,10 +88,12 @@
 }
 
 .publication-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
+
 
 .publication-entry h3 {
     font-size: 1.5em;
@@ -126,8 +130,8 @@
 }
 
 .publication-link {
-    display: block;
-    margin-top: 10px;
+  text-align: right;
+  margin-top: 10px;
 }
 
 
