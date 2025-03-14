@@ -7,19 +7,6 @@ author_profile: true
 
 ## Conference and Journal Papers
 
-<!-- <div class="publication-entry">
-  <div class="publication-header">
-    <h3>Deep Reinforcement Learning for Stock Trading</h3>
-    <span class="publication-status float-right"><em>Published in IEEE ICCKE 2024</em></span>
-  </div>
-  <p><strong>Mahan Veisi</strong>, Sadra Berangi, <a href="https://scholar.google.com/citations?user=QufpdNgAAAAJ&hl=en">Mahdi Shahbazi Khojasteh</a>, <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en">Armin Salimi-Badr</a></p>
-  <p>Integrated <strong>FinBERT</strong> for sentiment analysis within a PPO-LSTM model to extract and correlate news sentiment with stock prices. The model achieved a <strong>134.39% cumulative return (2.34× initial budget)</strong> and a <strong>1.46 Sharpe ratio</strong>, significantly outperforming benchmarks and demonstrating robust adaptability in volatile markets.</p>
-  <span class="publication-link float-right">
-    <a href="https://ieeexplore.ieee.org/document/10874515">Paper</a> | 
-    <a href="https://github.com/MahanVeisi8/LSTMppo-DRL-StockTrader">GitHub</a> | 
-    <a href="https://youtu.be/Jfpc6_kGLYo?si=U9xVX03Jn_7jxY1d">YouTube</a>
-  </span>
-</div> -->
 <div class="publication-entry">
   <div class="publication-header">
     <h3>Deep Reinforcement Learning for Stock Trading</h3>
