@@ -9,8 +9,8 @@ author_profile: true
 
 <div class="publication-entry">
     <!-- Image Section -->
-  <!-- <div class="publication-image">
     <!-- Update the src with the path to your image (e.g., stored in assets/img/publications/) -->
+  <!-- <div class="publication-image">
     <img src="{{ site.baseurl }}/assets/img/publications/deep_rl.jpg" alt="Deep Reinforcement Learning for Stock Trading" />
   </div> -->
   <!-- Content Section -->
