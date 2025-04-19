@@ -9,15 +9,6 @@ redirect_from:
 ---
 
 I am a fourth-year Computer Engineering student at Shahid Beheshti University, Iran, with a strong foundation in Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning. With two remaining semesters, I hold a **cumulative GPA of 18.10/20 (3.81/4)** and a **final-year GPA of 19.08/20 (4/4)**. My research interests center on **Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning**.
-<!-- 
- I am currently seeking a **summer research internship** to expand my experience in cutting-edge AI. -->
-
-<!-- My academic journey has been fueled by a drive to bridge theory and practice, where each project presents an opportunity to innovate and solve complex problems. My passion for generative models, especially GANs and diffusion models, extends beyond the classroom; I am currently exploring their applications in 3D modeling, with aspirations to contribute to advancements in medical imaging and personalized healthcare. -->
-
-<!-- ## Research Experience
-As a research assistant under [Dr. Armin Salimi-Badr](https://scholar.google.com/citations?view_op=list_works&hl=en&user=akmKmMQAAAAJ&sortby=pubdate), I have contributed to high-impact projects at the intersection of healthcare and AI, with a focus on transparency and adaptability. One key project involved developing an **explainable AI model** for Parkinson’s Disease detection, achieving 98.7% accuracy through advanced pruning and clustering techniques to enhance model transparency for clinical use. I also collaborated with Dr. Salimi-Badr to create **reinforcement learning models for financial applications**, integrating sentiment analysis to optimize trading strategies. This research was presented at IEEE ICCKE 2024, demonstrating our model’s robustness in financial forecasting.
-
-Currently, I am conducting research in the **Computer Vision Lab at Shahid Beheshti University** under [Prof. Mohsen Ebrahimi Moghaddam](https://scholar.google.com/citations?user=trWxrgcAAAAJ&hl=en) and co-advised by [Dr. Shahabedin Nabavi](https://scholar.google.com/citations?user=D_mPA6sAAAAJ&hl=en). My focus is on **MRI reconstruction using cascaded transformers**, developing transformer-based models to handle diverse MRI contrasts and resolutions efficiently. This project aligns with my dedication to advancing medical imaging through deep learning, aiming to produce high-quality diagnostic tools for healthcare. -->
 
 ## Research Experience
 For a detailed overview of my research projects, methodologies, and publications, please refer to the [Publications](https://mahanveisi8.github.io/publications/) page.
