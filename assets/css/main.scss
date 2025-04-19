@@ -42,13 +42,17 @@
 
   
   .publication-entry {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-
+    // margin-bottom: 30px;
+    // padding: 20px;
+    // background-color: #f8f9fa;
+    // border-radius: 8px;
+    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    // transition: all 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
   }
   
   .project-entry:hover {
