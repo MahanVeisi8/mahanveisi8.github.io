@@ -8,7 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a fourth-year Computer Engineering student at Shahid Beheshti University, Iran, with a strong foundation in Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning. With two remaining semesters, I hold a **cumulative GPA of 18.10/20 (3.81/4)** and a **final-year GPA of 19.08/20 (4/4)**. My research interests center on **Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning**.
+I am a fourth-year Computer Engineering student at Shahid Beheshti University, Iran, with a strong foundation in Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning. 
+<!-- With two remaining semesters, I hold a **cumulative GPA of 18.10/20 (3.81/4)** and a **final-year GPA of 19.08/20 (4/4)**.  -->
+My research interests center on **Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning**.
 
 ## Research Experience
 For a detailed overview of my research projects, methodologies, and publications, please refer to the [Publications](https://mahanveisi8.github.io/publications/) page.
@@ -31,9 +33,9 @@ I have served as a teaching assistant for courses including **Reinforcement Lear
 
 - **B.Sc. in Computer Engineering** (Expected Jan 2026)  
   Shahid Beheshti University, Tehran, Iran  
-  - Cumulative GPA: **18.10/20 (3.81/4)**  
-  - Final-year GPA: **19.08/20 (4/4)**  
-  - **Relevant Courses**: Reinforcement Learning, Machine Learning, Computer Vision, AI, Data Structures, Signals and Systems, Algorithms
+  <!-- - Cumulative GPA: **18.10/20 (3.81/4)**  
+  - Final-year GPA: **19.08/20 (4/4)**   -->
+  - **Relevant Courses (GPA:4/4)**: Reinforcement Learning, Machine Learning, Computer Vision, AI, Data Structures, Signals and Systems, Algorithms
 
 
 ## Language Proficiency
