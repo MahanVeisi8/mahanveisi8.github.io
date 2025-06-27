@@ -3,6 +3,7 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
+published: false
 ---
 
 Here are some of the key projects I've worked on:
