@@ -56,3 +56,4 @@ I aspire to be a researcher who bridges AI and societal challenges, contributing
 
 My long-term goal is to become a **researcher** who advances **AI and human-centered technologies**, from improving medical imaging and diagnostics to pushing the frontier of **memory-preserving generative models**. By bridging **GenerativeAI** with **cognitive science**, I aim to develop novel methods that empower both scientific progress and meaningful human experiences.
 -->
+
