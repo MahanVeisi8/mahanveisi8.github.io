@@ -8,19 +8,23 @@ published: true
 
 Here are some of the key projects I’ve worked on:
 
+
 <div class="project-entry">
-  <div class="project-image">
-    <!-- Replace src with your project screenshot (500×300) -->
+  <figure class="project-image">
+    <!-- replace with your real image; keep 500×300 -->
     <img src="/assets/img/projects/deep-rl-stock-trading.png"
-         alt="Deep RL for Stock Trading screenshot">
-  </div>
+         alt="Deep RL for Stock Trading"
+         width="500" height="300">
+  </figure>
   <div class="project-content">
     <h3>Deep Reinforcement Learning for Stock Trading</h3>
     <p>
-      Integrated <strong>FinBERT</strong> for sentiment analysis within a Proximal Policy
-      Optimization (PPO) model, achieving a 134.39% cumulative return with a 1.46 Sharpe ratio.
-      This project demonstrates the effectiveness of combining natural language processing with
-      reinforcement learning for financial applications.
+      Integrated <strong>FinBERT</strong> for sentiment analysis within a
+      Proximal Policy Optimization (PPO) model, achieving a
+      <strong>134.39% cumulative return</strong> with a <strong>1.46 Sharpe ratio</strong>.
+    </p>
+    <p>
+      Demonstrates combining NLP and RL for robust financial decision‑making.
     </p>
     <div class="project-link">
       <a href="https://ieeexplore.ieee.org/document/10874515">Paper</a> |
@@ -29,6 +33,8 @@ Here are some of the key projects I’ve worked on:
     </div>
   </div>
 </div>
+
+<hr />
 
 <hr />
 
