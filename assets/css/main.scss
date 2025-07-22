@@ -147,3 +147,91 @@
 }
 
 
+//–– project & publication box styles ––
+:root {
+  --blue-light: #e0f7ff;
+  --blue-base:  #0095dd;
+  --blue-dark:  #006f9a;
+}
+
+.project-entry,
+.publication-entry {
+  display: flex;
+  background: var(--blue-light);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 2rem;
+}
+
+.project-entry:hover,
+.publication-entry:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.project-image,
+.publication-image {
+  flex: 0 0 40%;
+  max-width: 300px;
+  background: var(--blue-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image img,
+.publication-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-content,
+.publication-content {
+  flex: 1;
+  padding: 1rem 1.5rem;
+}
+
+.project-content h3,
+.publication-content h3 {
+  margin-top: 0;
+  color: var(--blue-dark);
+  font-size: 1.4rem;
+}
+
+.project-content p,
+.publication-content p {
+  color: #333;
+  line-height: 1.5;
+}
+
+.project-link,
+.publication-link {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.project-link a,
+.publication-link a {
+  color: var(--blue-dark);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-link a:hover,
+.publication-link a:hover {
+  text-decoration: underline;
+}
+
+/* Publication header tweaks */
+.publication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.publication-header em {
+  font-style: normal;
+  color: #555;
+}
