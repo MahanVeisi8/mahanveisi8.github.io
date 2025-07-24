@@ -11,7 +11,7 @@ published: true
 <div class="publication-entry">
   <figure class="publication-image">
     <!-- your paper thumbnail, 500×300 -->
-    <img src="/assets/img/publications/deep-rl-stock-trading.jpg"
+    <img src="/assets/img/publications/deep-rl-stock-trading.png"
          alt="Deep RL for Stock Trading paper"
          width="500" height="300">
   </figure>
@@ -46,7 +46,7 @@ published: true
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="/assets/img/publications/SincNet.PNG"
+    <img src="/assets/img/publications/SincNet.png"
          alt="SincNet for Parkinson’s Disease Detection">
   </div>
   <div class="publication-content">
@@ -77,7 +77,7 @@ published: true
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="/assets/img/publications/CMRI_Recon.jpg"
+    <img src="/assets/img/publications/CMRI_Recon.png"
          alt="MRI Reconstruction with Cascaded Transformers">
   </div>
   <div class="publication-content">
@@ -103,7 +103,7 @@ published: true
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="/assets/img/publications/Soccer2d"
+    <img src="/assets/img/publications/Soccer2d.png"
          alt="RoboCup Soccer Simulation Agents">
   </div>
   <div class="publication-content">
