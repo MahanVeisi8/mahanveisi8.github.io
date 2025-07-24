@@ -170,6 +170,27 @@ published: true
 
 
 <hr /> -->
+<div class="project-entry">
+  <figure class="project-image">
+    <!-- 11. Face Recognition -->
+    <img src="/assets/img/projects/face-recognition.gif"
+         alt="Iranian Celebrity Face Recognition"
+         width="500" height="300">
+  </figure>
+  <div class="project-content">
+    <h3>Iranian Celebrity Face Recognition</h3>
+    <p>
+      Built a CNN‑based face recognition app (Flask + JS) to accurately identify
+      Iranian celebrities, showcasing deep learning’s potential in real‑time image apps.
+    </p>
+    <div class="project-link">
+      <a href="https://github.com/MahanVeisi8/Face_recognition">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<hr />
+
 
 <div class="project-entry">
   <figure class="project-image">
@@ -215,23 +236,3 @@ published: true
 
 <hr />
 
-<div class="project-entry">
-  <figure class="project-image">
-    <!-- 11. Face Recognition -->
-    <img src="/assets/img/projects/face-recognition.png"
-         alt="Iranian Celebrity Face Recognition"
-         width="500" height="300">
-  </figure>
-  <div class="project-content">
-    <h3>Iranian Celebrity Face Recognition</h3>
-    <p>
-      Built a CNN‑based face recognition app (Flask + JS) to accurately identify
-      Iranian celebrities, showcasing deep learning’s potential in real‑time image apps.
-    </p>
-    <div class="project-link">
-      <a href="https://github.com/MahanVeisi8/Face_recognition">GitHub</a>
-    </div>
-  </div>
-</div>
-
-<hr />
