@@ -37,7 +37,7 @@ published: true
 <div class="project-entry">
   <figure class="project-image">
     <!-- Rock–Paper–Scissors with YOLOv11 -->
-    <img src="/assets/img/projects/rock-paper-scissors-yolov11.png"
+    <img src="/assets/img/projects/rock-paper-scissors-yolov11.gif"
          alt="Rock–Paper–Scissors Game Automation with YOLOv11"
          width="500" height="300">
   </figure>
@@ -110,9 +110,9 @@ published: true
 <hr />
 <div class="project-entry">
   <figure class="project-image">
-    <video width="500" height="300" autoplay loop muted playsinline>
-      <source src="/assets/img/projects/rl-practices.gif" type="video/gif">
-    </video>
+    <img src="/assets/img/projects/rl-practices.gif"
+         alt="Reinforcement Learning Practices"
+         width="500" height="300">
   </figure>
   <div class="project-content">
     <h3>Reinforcement Learning Practices</h3>
