@@ -8,10 +8,9 @@ published: true
 
 Here are some of the key projects I’ve worked on:
 
-
+<!-- 
 <div class="project-entry">
   <figure class="project-image">
-    <!-- replace with your real image; keep 500×300 -->
     <img src="/assets/img/projects/deep-rl-stock-trading.png"
          alt="Deep RL for Stock Trading"
          width="500" height="300">
@@ -40,7 +39,6 @@ Here are some of the key projects I’ve worked on:
 
 <div class="project-entry">
   <div class="project-image">
-    <!-- Replace with a snapshot of your MRI recon model -->
     <img src="/assets/img/projects/mri-reconstruction.png"
          alt="MRI Reconstruction screenshot">
   </div>
@@ -53,6 +51,7 @@ Here are some of the key projects I’ve worked on:
 </div>
 
 <hr />
+ -->
 
 <div class="project-entry">
   <div class="project-image">

@@ -46,7 +46,7 @@ published: true
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="{{ site.baseurl }}/assets/img/publications/sincnet-parkinsons.jpg"
+    <img src="/assets/img/publications/SincNet.PNG"
          alt="SincNet for Parkinson’s Disease Detection">
   </div>
   <div class="publication-content">
@@ -77,7 +77,7 @@ published: true
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="{{ site.baseurl }}/assets/img/publications/mri-transformers.jpg"
+    <img src="/assets/img/publications/CMRI_Recon.jpg"
          alt="MRI Reconstruction with Cascaded Transformers">
   </div>
   <div class="publication-content">
@@ -103,7 +103,7 @@ published: true
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="{{ site.baseurl }}/assets/img/publications/robocup-agents.jpg"
+    <img src="/assets/img/publications/Soccer2d"
          alt="RoboCup Soccer Simulation Agents">
   </div>
   <div class="publication-content">
