@@ -9,6 +9,37 @@ published: true
 ## Conference and Journal Papers
 
 <div class="publication-entry">
+  <div class="publication-image">
+    <img src="/assets/img/publications/SincNet.png"
+         alt="SincNet for Parkinson’s Disease Detection">
+  </div>
+  <div class="publication-content">
+    <div class="publication-header">
+      <h3>SincNet for Parkinson’s Disease Detection</h3>
+      <em>Under Review for AIHC Journal</em>
+    </div>
+    <p>
+      <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en">Armin Salimi-Badr</a>,
+      <strong>Mahan Veisi</strong>,
+      Sadra Berangi
+    </p>
+    <p>
+      Applied <strong>SincNet layers</strong> to classify Parkinson’s Disease from gait data,
+      achieving <strong>98.7% accuracy</strong>. After training, filters were pruned using
+      K‑means clustering and silhouette scores to highlight key frequency bands significant in
+      disease detection. This study enhances explainable AI by identifying critical signal
+      components in Parkinson’s diagnosis.
+    </p>
+    <div class="publication-link">
+      <a href="https://www.arxiv.org/abs/2502.17463">Paper</a> |
+      <a href="https://github.com/MahanVeisi8/Explainable-PD-Diagnosis-using-SincNet-and-Gait-Analysis">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div class="publication-entry">
   <figure class="publication-image">
     <!-- your paper thumbnail, 500×300 -->
     <img src="/assets/img/publications/deep-rl-stock-trading.png"
@@ -38,37 +69,6 @@ published: true
       <a href="https://ieeexplore.ieee.org/document/10874515">Paper</a> |
       <a href="https://github.com/MahanVeisi8/LSTMppo-DRL-StockTrader">GitHub</a> |
       <a href="https://youtu.be/Jfpc6_kGLYo?si=U9xVX03Jn_7jxY1d">YouTube</a>
-    </div>
-  </div>
-</div>
-
-<hr />
-
-<div class="publication-entry">
-  <div class="publication-image">
-    <img src="/assets/img/publications/SincNet.png"
-         alt="SincNet for Parkinson’s Disease Detection">
-  </div>
-  <div class="publication-content">
-    <div class="publication-header">
-      <h3>SincNet for Parkinson’s Disease Detection</h3>
-      <em>Under Review for AIHC Journal</em>
-    </div>
-    <p>
-      <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en">Armin Salimi-Badr</a>,
-      <strong>Mahan Veisi</strong>,
-      Sadra Berangi
-    </p>
-    <p>
-      Applied <strong>SincNet layers</strong> to classify Parkinson’s Disease from gait data,
-      achieving <strong>98.7% accuracy</strong>. After training, filters were pruned using
-      K‑means clustering and silhouette scores to highlight key frequency bands significant in
-      disease detection. This study enhances explainable AI by identifying critical signal
-      components in Parkinson’s diagnosis.
-    </p>
-    <div class="publication-link">
-      <a href="https://www.arxiv.org/abs/2502.17463">Paper</a> |
-      <a href="https://github.com/MahanVeisi8/Explainable-PD-Diagnosis-using-SincNet-and-Gait-Analysis">GitHub</a>
     </div>
   </div>
 </div>
