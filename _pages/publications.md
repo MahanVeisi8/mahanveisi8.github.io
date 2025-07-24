@@ -128,7 +128,7 @@ published: true
       <strong>second place</strong> at the 2023 RoboCup IranOpen.
     </p>
     <div class="publication-link">
-      <a href="#">Link to Paper</a>
+      <a href="https://archive.robocup.info/Soccer/Simulation/2D/TDPs/RoboCup/2023/R3CESBU_SS2D_RC2023_TDP.pdf">Link to Paper</a>
     </div>
   </div>
 </div>

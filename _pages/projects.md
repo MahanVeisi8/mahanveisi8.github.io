@@ -36,6 +36,33 @@ published: true
 
 <div class="project-entry">
   <figure class="project-image">
+    <!-- Rock–Paper–Scissors with YOLOv11 -->
+    <img src="/assets/img/projects/rock-paper-scissors-yolov11.png"
+         alt="Rock–Paper–Scissors Game Automation with YOLOv11"
+         width="500" height="300">
+  </figure>
+  <div class="project-content">
+    <h3>Rock–Paper–Scissors Game Automation with YOLOv11</h3>
+    <p>
+      Real‑time hand gesture detection to power a fully automated Rock–Paper–Scissors game—
+      complete with cheating detection and dynamic winner celebration.
+    </p>
+    <ul>
+      <li>YOLOv11 object detection for Rock, Paper, Scissors gestures at ~98.2% mAP@0.5</li>
+      <li>Cheating detection: red mask overlay &amp; –1 point penalty for mid‑countdown changes</li>
+      <li>Winner recognition: golden crown overlay with animated highlight</li>
+    </ul>
+    <div class="project-link">
+      <a href="https://github.com/SBUformers/Rock-Paper-Scissors-Simulator">GitHub</a> |
+      <a href="https://github.com/SBUformers/Rock-Paper-Scissors-Simulator/blob/main/FinalProject-CV.pdf">Final Report</a>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div class="project-entry">
+  <figure class="project-image">
     <!-- 4. VAE MNIST -->
     <img src="/assets/img/projects/vae-mnist.png"
          alt="VAE Latent Spaces"
@@ -81,13 +108,11 @@ published: true
 </div>
 
 <hr />
-
 <div class="project-entry">
   <figure class="project-image">
-    <!-- 6. RL Practices -->
-    <img src="/assets/img/projects/rl-practices.gif"
-         alt="Reinforcement Learning Practices"
-         width="500" height="300">
+    <video width="500" height="300" autoplay loop muted playsinline>
+      <source src="/assets/img/projects/rl-practices.gif" type="video/gif">
+    </video>
   </figure>
   <div class="project-content">
     <h3>Reinforcement Learning Practices</h3>
