@@ -9,10 +9,10 @@ redirect_from:
 ---
 
 I am a fourth-year Computer Engineering student at Shahid Beheshti University, Iran, with a strong foundation in Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning.
-<!-- With two remaining semesters, I hold a **cumulative GPA of 18.10/20 (3.81/4)** and a **final-year GPA of 19.08/20 (4/4)**.  -->
+With two remaining semesters, I hold a **cumulative GPA of 18.10/20 (3.81/4)** and a **final-year GPA of 19.08/20 (4/4)**. 
 My research interests center on **Machine Learning, Computer Vision, Generative Models, and Reinforcement Learning**.
 
-<!--
+
 ## Research Experience
 For a detailed overview of my research projects, methodologies, and publications, please refer to the [Publications](https://mahanveisi8.github.io/publications/) page.
 
@@ -21,9 +21,8 @@ For a detailed overview of my research projects, methodologies, and publications
 ## Research Interests
 
 - **Computer Vision**: Advanced imaging techniques for medical and clinical applications.
-- **Generative Models**: Special interest in **diffusion models** and **GANs**, with ongoing work in 3D modeling and inverse design.
+- **Generative Models**: Special interest in **Diffusion Models**, with ongoing work in 3D modeling and inverse design.
 - **Medical AI**: Committed to leveraging deep learning for improved diagnostics and healthcare accessibility.
-- **Reinforcement Learning**: Applying RL in dynamic, real-world domains such as finance and robotics.
 - **Bioinformatics & GNNs**: Investigating how generative models intersect with graph-based methods for molecular and protein design.
 
 
@@ -34,10 +33,10 @@ I have served as a teaching assistant for courses including **Reinforcement Lear
 
 - **B.Sc. in Computer Engineering** (Expected Jan 2026)
   Shahid Beheshti University, Tehran, Iran
-  <!-- - Cumulative GPA: **18.10/20 (3.81/4)**
-  - Final-year GPA: **19.08/20 (4/4)**   -->
+  - Cumulative GPA: **18.10/20 (3.81/4)**
+  - Final-year GPA: **19.08/20 (4/4)**  
   - **Relevant Courses (GPA:4/4)**: Reinforcement Learning, Machine Learning, Computer Vision, AI, Data Structures, Signals and Systems, Algorithms
--->
+
 
 
 ## Language Proficiency
@@ -47,7 +46,7 @@ I have served as a teaching assistant for courses including **Reinforcement Lear
 - **Kurdish**: Native
 
 
-<!--
+
 ## Extracurricular Interests
 Outside of academics, I enjoy running and playing the guitar. Running helps me maintain focus and energy for research, while playing guitar brings a creative balance to my routine. These activities keep me grounded and offer refreshing perspectives that fuel my technical pursuits.
 
@@ -55,5 +54,5 @@ Outside of academics, I enjoy running and playing the guitar. Running helps me m
 I aspire to be a researcher who bridges AI and societal challenges, contributing to fields like generative modeling and medical AI. My vision is to push the boundaries of AI applications, from improving diagnostics to enabling memory-preserving generative models, aiming to make a meaningful impact on healthcare and human-centered AI solutions.
 
 My long-term goal is to become a **researcher** who advances **AI and human-centered technologies**, from improving medical imaging and diagnostics to pushing the frontier of **memory-preserving generative models**. By bridging **GenerativeAI** with **cognitive science**, I aim to develop novel methods that empower both scientific progress and meaningful human experiences.
--->
+
 

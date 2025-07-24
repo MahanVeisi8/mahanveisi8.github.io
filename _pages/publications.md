@@ -16,7 +16,7 @@ published: true
   <div class="publication-content">
     <div class="publication-header">
       <h3>All-in-One MRI Reconstruction with Cascaded Transformers</h3>
-      <em>In Progress</em>
+      <em>Manuscript In Progress</em>
     </div>
     <p>
       <strong>Mahan Veisi</strong>,
