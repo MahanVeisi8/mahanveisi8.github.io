@@ -10,30 +10,25 @@ published: true
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="/assets/img/publications/SincNet.png"
-         alt="SincNet for Parkinson’s Disease Detection">
+    <img src="/assets/img/publications/CMRI_Recon.png"
+         alt="MRI Reconstruction with Cascaded Transformers">
   </div>
   <div class="publication-content">
     <div class="publication-header">
-      <h3>SincNet for Parkinson’s Disease Detection</h3>
-      <em>Under Review for AIHC Journal</em>
+      <h3>All-in-One MRI Reconstruction with Cascaded Transformers</h3>
+      <em>In Progress</em>
     </div>
     <p>
-      <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en">Armin Salimi-Badr</a>,
       <strong>Mahan Veisi</strong>,
-      Sadra Berangi
+      <a href="https://scholar.google.com/citations?user=gHVVhW4AAAAJ&hl=en">Kian Anvari</a>,
+      <a href="https://scholar.google.com/citations?user=D_mPA6sAAAAJ&hl=en">Shahabedin Nabavi</a>,
+      <a href="https://scholar.google.com/citations?user=trWxrgcAAAAJ&hl=en">Mohsen Ebrahimi Moghaddam</a>
     </p>
     <p>
-      Applied <strong>SincNet layers</strong> to classify Parkinson’s Disease from gait data,
-      achieving <strong>98.7% accuracy</strong>. After training, filters were pruned using
-      K‑means clustering and silhouette scores to highlight key frequency bands significant in
-      disease detection. This study enhances explainable AI by identifying critical signal
-      components in Parkinson’s diagnosis.
+      Developed a cascaded MRI reconstruction model utilizing <strong>Frequency Mining</strong> with
+      state‑of‑the‑art transformer‑based U‑Net models for k‑space data. This approach efficiently
+      handles multi‑contrast MRI and is targeted for the MICCAI 2025 reconstruction challenge.
     </p>
-    <div class="publication-link">
-      <a href="https://www.arxiv.org/abs/2502.17463">Paper</a> |
-      <a href="https://github.com/MahanVeisi8/Explainable-PD-Diagnosis-using-SincNet-and-Gait-Analysis">GitHub</a>
-    </div>
   </div>
 </div>
 
@@ -77,25 +72,30 @@ published: true
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="/assets/img/publications/CMRI_Recon.png"
-         alt="MRI Reconstruction with Cascaded Transformers">
+    <img src="/assets/img/publications/SincNet.png"
+         alt="SincNet for Parkinson’s Disease Detection">
   </div>
   <div class="publication-content">
     <div class="publication-header">
-      <h3>All-in-One MRI Reconstruction with Cascaded Transformers</h3>
-      <em>In Progress</em>
+      <h3>SincNet for Parkinson’s Disease Detection</h3>
+      <em>Under Review for AIHC Journal</em>
     </div>
     <p>
+      <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en">Armin Salimi-Badr</a>,
       <strong>Mahan Veisi</strong>,
-      <a href="https://scholar.google.com/citations?user=gHVVhW4AAAAJ&hl=en">Kian Anvari</a>,
-      <a href="https://scholar.google.com/citations?user=D_mPA6sAAAAJ&hl=en">Shahabedin Nabavi</a>,
-      <a href="https://scholar.google.com/citations?user=trWxrgcAAAAJ&hl=en">Mohsen Ebrahimi Moghaddam</a>
+      Sadra Berangi
     </p>
     <p>
-      Developed a cascaded MRI reconstruction model utilizing <strong>Frequency Mining</strong> with
-      state‑of‑the‑art transformer‑based U‑Net models for k‑space data. This approach efficiently
-      handles multi‑contrast MRI and is targeted for the MICCAI 2025 reconstruction challenge.
+      Applied <strong>SincNet layers</strong> to classify Parkinson’s Disease from gait data,
+      achieving <strong>98.7% accuracy</strong>. After training, filters were pruned using
+      K‑means clustering and silhouette scores to highlight key frequency bands significant in
+      disease detection. This study enhances explainable AI by identifying critical signal
+      components in Parkinson’s diagnosis.
     </p>
+    <div class="publication-link">
+      <a href="https://www.arxiv.org/abs/2502.17463">Paper</a> |
+      <a href="https://github.com/MahanVeisi8/Explainable-PD-Diagnosis-using-SincNet-and-Gait-Analysis">GitHub</a>
+    </div>
   </div>
 </div>
 
