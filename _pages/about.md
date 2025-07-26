@@ -17,14 +17,14 @@ My research interests center on **Machine Learning, Computer Vision, Generative 
 For a detailed overview of my research projects, methodologies, and publications, please refer to the [Publications](https://mahanveisi8.github.io/publications/) page.
 
 
-
+<!-- 
 ## Research Interests
 
 - **Computer Vision**: Advanced imaging techniques for medical and clinical applications.
 - **Generative Models**: Special interest in **Diffusion Models**, with ongoing work in 3D modeling and inverse design.
 - **Medical AI**: Committed to leveraging deep learning for improved diagnostics and healthcare accessibility.
 - **Bioinformatics & GNNs**: Investigating how generative models intersect with graph-based methods for molecular and protein design.
-
+ -->
 
 ## Teaching Assistantship
 I have served as a teaching assistant for courses including **Reinforcement Learning (for MS/PHD students)**, **Machine Learning, Artificial Intelligence**, and **Signals and Systems**, where I supported students by managing assignments, teaching supplementary sessions, and guiding project work. These roles allowed me to strengthen my ability to communicate complex concepts effectively and to provide academic support across various aspects of AI and image processing.
@@ -41,7 +41,7 @@ I have served as a teaching assistant for courses including **Reinforcement Lear
 
 ## Language Proficiency
 
-- **English**: IELTS Academic 6.5 (S:7, L:6.5, R:6.5, W:6)  
+- **English**: IELTS Academic 6.5 (S:7, L:6.5, R:6.5, W:6) (Another exam to be taken soon to achieve higher band score)
 - **Persian**: Native  
 - **Kurdish**: Native
 
