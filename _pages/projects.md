@@ -54,7 +54,7 @@ published: true
     </ul>
     <div class="project-link">
       <a href="https://github.com/SBUformers/Rock-Paper-Scissors-Simulator">GitHub</a> |
-      <a href="https://github.com/SBUformers/Rock-Paper-Scissors-Simulator/blob/main/FinalProject-CV.pdf">Final Report</a>
+      <a href="https://github.com/SBUformers/Rock-Paper-Scissors-Simulator/blob/main/Final_report.pdf">Computer Vision Course Final Project Report</a>
     </div>
   </div>
 </div>
