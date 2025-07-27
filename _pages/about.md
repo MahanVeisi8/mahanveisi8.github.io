@@ -45,7 +45,7 @@ I have served as a teaching assistant for courses including **Reinforcement Lear
 
 
 ## Outside the Lab
-Outside of academics, I enjoy running and playing the guitar. Running helps me maintain focus and energy for research, while playing guitar brings a creative balance to my routine.
+Outside of academics, I enjoy running and playing the guitar. Running helps me maintain focus and energy for research, while playing guitar brings a creative balance to my routine. I’m still learning, but you can [check out a recent performance on Instagram](https://www.instagram.com/reel/C4d2jSgseuJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)—don’t judge the beginner’s flair; I’m improving every day!
 
 I also enjoy playing soccer (both on the field and in FC video games) and am always up for a friendly match. I’ll pick Manchester United—what team will you bring?
 
