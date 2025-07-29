@@ -42,31 +42,26 @@
 
 
 
-.about-hero-bg {
-  position: relative;
-  background: url("/assets/img/Mahan.png") center/cover no-repeat;
-  height: 60vh;                 // adjust height as you like
+.about-hero-circular {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 2rem;
 
-  &__overlay {
-    background: rgba(0, 0, 0, 0.5);  // semi‑transparent dark overlay
-    padding: 2rem;
-    border-radius: 0.5rem;
-    text-align: center;
-    color: #fff;
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.2rem;
-    }
+  &__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  &__text {
+    h1 { font-size: 2rem; margin: 0; }
+    p  { margin: 0.25rem 0 0; font-size: 1.1rem; }
   }
 }
+
 
   
 .publication-entry {

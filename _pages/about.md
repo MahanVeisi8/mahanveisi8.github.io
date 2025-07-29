@@ -10,8 +10,11 @@ redirect_from:
 
 
 
-<div class="about-hero-bg">
-  <div class="about-hero-bg__overlay">
+<div class="about-hero-circular">
+  <img src="{{ '/assets/img/Mahan.png' | relative_url }}"
+       alt="Mahan Portrait"
+       class="about-hero-circular__img">
+  <div class="about-hero-circular__text">
     <h1>Hi, I’m Mahan</h1>
     <p>My Persian name means “moon‑like.”</p>
   </div>
