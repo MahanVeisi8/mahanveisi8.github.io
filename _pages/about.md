@@ -1,3 +1,10 @@
+<div class="about-hero-bg">
+  <div class="about-hero-bg__overlay">
+    <h1>Hi, I’m Mahan</h1>
+    <p>My Persian name means “moon‑like.”</p>
+  </div>
+</div>
+
 ---
 permalink: /
 title: "About Me"
@@ -8,12 +15,6 @@ redirect_from:
   - /about.html
 ---
 
-<div class="about-hero-bg">
-  <div class="about-hero-bg__overlay">
-    <h1>Hi, I’m Mahan</h1>
-    <p>My Persian name means “moon‑like.”</p>
-  </div>
-</div>
 
 I’m a fourth‑year Computer Engineering undergrad (graduating January 2026) at Shahid Beheshti University, Iran, specializing in generative AI, medical imaging, and computational biology. I am actively seeking <span style="color:red">Master's or PhD</span> opportunities starting in 2026 in these areas.
 
