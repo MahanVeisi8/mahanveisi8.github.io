@@ -8,6 +8,8 @@ redirect_from:
   - /about.html
 ---
 
+
+
 <div class="about-hero-bg">
   <div class="about-hero-bg__overlay">
     <h1>Hi, I’m Mahan</h1>
