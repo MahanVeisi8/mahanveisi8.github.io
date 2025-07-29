@@ -40,32 +40,28 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-
-.about-hero {
+.about-hero-bg {
+  position: relative;
+  background: url("/assets/img/Mahan.jpg") center/cover no-repeat;
+  height: 60vh;                 // adjust height as you like
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
-  flex-wrap: wrap;
 
-  &__img {
-    width: 300px;
-    border-radius: 50%;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-    margin: 1rem;
-  }
-
-  &__text {
-    max-width: 600px;
-    text-align: left;
+  &__overlay {
+    background: rgba(0, 0, 0, 0.5);  // semi‑transparent dark overlay
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #fff;
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 0.5rem;
     }
     p {
-      font-size: 1.1rem;
-      line-height: 1.4;
+      font-size: 1.2rem;
     }
   }
 }

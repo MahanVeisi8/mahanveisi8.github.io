@@ -8,11 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-<div class="about-hero">
-  <img src="{{ '/assets/img/Mahan.png' | relative_url }}"
-       alt="Mahan holding a moon"
-       class="about-hero__img">
-  <div class="about-hero__text">
+<div class="about-hero-bg">
+  <div class="about-hero-bg__overlay">
     <h1>Hi, I’m Mahan</h1>
     <p>My Persian name means “moon‑like.”</p>
   </div>
