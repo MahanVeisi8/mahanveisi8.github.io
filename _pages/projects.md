@@ -10,7 +10,7 @@ published: true
 <div class="project-entry">
   <figure class="project-image">
     <!-- 3. Latent Diffusion MNIST -->
-    <img src="/assets/img/projects/latent-diffusion-mnist.png"
+    <img src="/assets/img/projects/grid_diffusion_gif.gif"
          alt="Latent Diffusion MNIST"
          width="500" height="300">
   </figure>
