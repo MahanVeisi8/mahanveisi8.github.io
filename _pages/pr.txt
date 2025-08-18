@@ -1,3 +1,5 @@
+C:\Users\mahan\Desktop\resume\GithubIO\mahanveisi8.github.io\_pages\publications.md:
+```md
 ---
 layout: archive
 title: "Publications"
@@ -8,17 +10,11 @@ published: true
 
 ## Conference and Journal Papers
 
-
 <div class="publication-entry">
-  <div class="publication-images-2">
-    <img src="/assets/img/publications/CMRI_Recon.jpg"
-         alt="MRI Reconstruction: input vs. recon (k-space)"
-         class="top">
-    <img src="/assets/img/publications/CMRI_Recon_2.png"
-         alt="MRI Reconstruction: qualitative comparison"
-         class="bottom">
+  <div class="publication-image">
+    <img src="/assets/img/publications/CMRI_Recon.png"
+         alt="MRI Reconstruction with Cascaded Transformers">
   </div>
-
   <div class="publication-content">
     <div class="publication-header">
       <h3>All-in-One MRI Reconstruction with Cascaded Transformers</h3>
@@ -32,35 +28,37 @@ published: true
     </p>
     <p>
       Developed a cascaded MRI reconstruction model utilizing <strong>Frequency Mining</strong> with
-      state-of-the-art transformer-based U-Net models for k-space data. This approach efficiently
-      handles multi-contrast MRI and is targeted for the MICCAI 2025 reconstruction challenge.
+      state‑of‑the‑art transformer‑based U‑Net models for k‑space data. This approach efficiently
+      handles multi‑contrast MRI and is targeted for the MICCAI 2025 reconstruction challenge.
     </p>
   </div>
 </div>
 
-
 <hr />
 
 <div class="publication-entry">
-  <div class="publication-images-2" style="--pub-left-col-max: 320px;">
+  <figure class="publication-image">
+    <!-- your paper thumbnail, 500×300 -->
     <img src="/assets/img/publications/deep-rl-stock-trading.png"
-         alt="Equity curves across strategies" class="top">
-    <img src="/assets/img/publications/deep-rl-stock-trading-arch.png"
-         alt="PPO-LSTM + FinBERT architecture" class="bottom">
-  </div>
-
+         alt="Deep RL for Stock Trading paper"
+         width="500" height="300">
+  </figure>
   <div class="publication-content">
     <div class="publication-header">
       <h3>Deep Reinforcement Learning for Stock Trading</h3>
-      <em>IEEE ICCKE 2024</em>
+      <em>IEEE ICCKE 2024</em>
     </div>
     <p>
       <strong>Mahan Veisi</strong>, Sadra Berangi,
-      <a href="https://scholar.google.com/citations?user=QufpdNgAAAAJ&hl=en">Mahdi Shahbazi Khojasteh</a>,
-      <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en">Armin Salimi-Badr</a>
+      <a href="https://scholar.google.com/citations?user=QufpdNgAAAAJ&hl=en">
+        Mahdi Shahbazi Khojasteh
+      </a>,
+      <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en">
+        Armin Salimi‑Badr
+      </a>
     </p>
     <p>
-      Integrated <strong>FinBERT</strong> within a PPO-LSTM model,
+      Integrated <strong>FinBERT</strong> within a PPO‑LSTM model,
       achieving <strong>134.39% cumulative return</strong> and a
       <strong>1.46 Sharpe ratio</strong>, outperforming standard benchmarks.
     </p>
@@ -72,17 +70,13 @@ published: true
   </div>
 </div>
 
-
 <hr />
 
 <div class="publication-entry">
-  <div class="publication-images-2">
+  <div class="publication-image">
     <img src="/assets/img/publications/SincNet.png"
-         alt="SincNet overview for gait classification" class="top">
-    <img src="/assets/img/publications/SincNet_2.png"
-         alt="Learned Sinc filters / salient frequency bands" class="bottom">
+         alt="SincNet for Parkinson’s Disease Detection">
   </div>
-
   <div class="publication-content">
     <div class="publication-header">
       <h3>SincNet for Parkinson’s Disease Detection</h3>
@@ -90,12 +84,13 @@ published: true
     </div>
     <p>
       <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en">Armin Salimi-Badr</a>,
-      <strong>Mahan Veisi</strong>, Sadra Berangi
+      <strong>Mahan Veisi</strong>,
+      Sadra Berangi
     </p>
     <p>
       Applied <strong>SincNet layers</strong> to classify Parkinson’s Disease from gait data,
       achieving <strong>98.7% accuracy</strong>. After training, filters were pruned using
-      K-means clustering and silhouette scores to highlight key frequency bands significant in
+      K‑means clustering and silhouette scores to highlight key frequency bands significant in
       disease detection. This study enhances explainable AI by identifying critical signal
       components in Parkinson’s diagnosis.
     </p>
@@ -139,3 +134,6 @@ published: true
     </div>
   </div>
 </div>
+
+```
+

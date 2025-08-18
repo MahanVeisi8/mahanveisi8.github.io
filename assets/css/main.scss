@@ -175,6 +175,51 @@
   --blue-light: #e0f7ff;
   --blue-base:  #0095dd;
   --blue-dark:  #006f9a;
+
+  --pub-left-col-basis: 40%;    /* width of the left column relative to the card */
+  --pub-left-col-max: 300px;    /* hard max width of the left column */
+  --pub-img-col-h: 340px;       /* total height of the image column (two images share this) */
+  --pub-img-gap: 8px;           /* vertical gap between the two images */
+}
+
+
+/* Use this class when you want TWO images stacked vertically */
+.publication-images-2 {
+  flex: 0 0 var(--pub-left-col-basis);
+  max-width: var(--pub-left-col-max);
+  height: var(--pub-img-col-h);
+  display: grid;
+  grid-template-rows: 1fr 1fr;   /* two equal rows */
+  gap: var(--pub-img-gap);
+  background: var(--blue-base);  /* matches your current look */
+  padding: 0.5rem;               /* small inner padding so images don’t touch the edges */
+  box-sizing: border-box;
+}
+
+.publication-images-2 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;             /* fills each half neatly; crops as needed */
+  object-position: center;       /* change per-image with a class if you need different crop */
+  border-radius: 4px;
+}
+
+/* Optional: quick helpers to control crop focus per image */
+.publication-images-2 img.top    { object-position: center top; }
+.publication-images-2 img.bottom { object-position: center bottom; }
+.publication-images-2 img.left   { object-position: left center; }
+.publication-images-2 img.right  { object-position: right center; }
+
+/* Mobile: stack card vertically and make images span full width */
+@media (max-width: 768px) {
+  .publication-entry { flex-direction: column; }
+  .publication-images-2 {
+    max-width: 100%;
+    width: 100%;
+    /* Keep two rows; adjust total height if you want taller thumbs on mobile */
+    --pub-img-col-h: 300px;
+  }
 }
 
 .project-entry,
