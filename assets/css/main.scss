@@ -218,6 +218,15 @@
 .publication-images-2 img.left   { object-position: left center; }
 .publication-images-2 img.right  { object-position: right center; }
 
+/* No-crop helpers */
+.publication-images-2 img.fit {        /* use on specific <img> */
+  object-fit: contain;                 /* show entire image inside the box */
+}
+
+.publication-images-2.contain img {    /* or add class to the container */
+  object-fit: contain;
+}
+
 /* Mobile: stack card vertically and make images span full width */
 @media (max-width: 768px) {
   .publication-entry { flex-direction: column; }

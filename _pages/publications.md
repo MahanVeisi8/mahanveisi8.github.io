@@ -16,7 +16,7 @@ published: true
          class="top">
     <img src="/assets/img/publications/CMRI_Recon_2.png"
          alt="MRI Reconstruction: qualitative comparison"
-         class="bottom">
+         class="bottom fit">
   </div>
 
   <div class="publication-content">
@@ -38,6 +38,31 @@ published: true
   </div>
 </div>
 
+<hr />
+
+<div class="publication-entry">
+  <div class="publication-image" style="max-width: 320px;">
+    <img src="/assets/img/publications/airfoil_diff_opt.jpg"
+         alt="Diffusion-driven airfoil generation with multi-objective Bayesian optimization">
+  </div>
+
+  <div class="publication-content">
+    <div class="publication-header">
+      <h3>Diffusion-Driven Airfoil Optimization</h3>
+      <!-- <em>Manuscript in Preparation</em> -->
+    </div>
+    <p>
+      <strong>Mahan Veisi</strong>,
+      <a href="https://scholar.google.de/citations?user=k2TvtoAAAAAJ">Navid Ansari</a>,
+      <a href="https://scholar.google.de/citations?user=Yjh-GHsAAAAJ">Vahid Babaei</a>
+    </p>
+    <p>
+      Combined latent-space diffusion with large-batch neural multi-objective Bayesian optimization
+      to inverse-design 2D airfoils, balancing lift–drag while promoting aerodynamic novelty.
+    </p>
+  </div>
+</div>
+
 
 <hr />
 
@@ -46,7 +71,7 @@ published: true
     <img src="/assets/img/publications/deep-rl-stock-trading_1.png"
          alt="Equity curves across strategies" class="top">
     <img src="/assets/img/publications/deep-rl-stock-trading-arch.png"
-         alt="PPO-LSTM + FinBERT architecture" class="bottom">
+         alt="PPO-LSTM + FinBERT architecture" class="bottom fit">
   </div>
 
   <div class="publication-content">
@@ -73,6 +98,8 @@ published: true
 </div>
 
 
+
+
 <hr />
 
 <div class="publication-entry">
@@ -80,7 +107,7 @@ published: true
     <img src="/assets/img/publications/SincNet.png"
          alt="SincNet overview for gait classification" class="top">
     <img src="/assets/img/publications/SincNet_2.png"
-         alt="Learned Sinc filters / salient frequency bands" class="bottom">
+         alt="Learned Sinc filters / salient frequency bands" class="bottom fit">
   </div>
 
   <div class="publication-content">
