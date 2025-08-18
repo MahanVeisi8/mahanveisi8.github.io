@@ -43,7 +43,7 @@ published: true
 
 <div class="publication-entry">
   <div class="publication-images-2" style="--pub-left-col-max: 320px;">
-    <img src="/assets/img/publications/deep-rl-stock-trading.png"
+    <img src="/assets/img/publications/deep-rl-stock-trading_1.png"
          alt="Equity curves across strategies" class="top">
     <img src="/assets/img/publications/deep-rl-stock-trading-arch.png"
          alt="PPO-LSTM + FinBERT architecture" class="bottom">

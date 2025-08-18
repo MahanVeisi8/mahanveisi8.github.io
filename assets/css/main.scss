@@ -189,20 +189,27 @@
   max-width: var(--pub-left-col-max);
   height: var(--pub-img-col-h);
   display: grid;
-  grid-template-rows: 1fr 1fr;   /* two equal rows */
+  /* make rows shrink to available space (prevents image pushing outside) */
+  grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: var(--pub-img-gap);
-  background: var(--blue-base);  /* matches your current look */
-  padding: 0.5rem;               /* small inner padding so images don’t touch the edges */
+  background: var(--blue-base);
+  padding: 0.5rem;
   box-sizing: border-box;
+  /* ensure nothing bleeds out even a pixel */
+  overflow: hidden;
+  /* allow children to shrink inside */
+  min-height: 0;
 }
 
 .publication-images-2 img {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;             /* fills each half neatly; crops as needed */
-  object-position: center;       /* change per-image with a class if you need different crop */
+  object-fit: cover;     /* fill each half neatly */
+  object-position: center;
   border-radius: 4px;
+  /* allow the image itself to shrink to the grid track */
+  min-height: 0;
 }
 
 /* Optional: quick helpers to control crop focus per image */
