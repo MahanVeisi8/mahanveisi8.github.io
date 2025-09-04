@@ -12,16 +12,18 @@ author_profile: true
     <img class="exp-card__logo" src="/assets/img/logos/sanger.jpg" alt="Wellcome Sanger Institute">
     <div class="exp-card__body">
       <header class="exp-card__header">
-        <h3 class="exp-card__role">Research Intern · Lotfollahi Lab</h3>
-        <div class="exp-card__dates">Apr 2025 – Present · Remote · Cambridge, UK</div>
+        <h3 class="exp-card__role">
+          Research Intern · <a class="exp-card__lab" href="https://lotfollahi.com/" target="_blank" rel="noopener">Lotfollahi Lab</a>
+        </h3>
+        <div class="exp-card__dates">Cambridge, UK</div>
       </header>
 
       <div class="exp-card__org">
-        Wellcome Sanger Institute (Prof. Mohammad Lotfollahi)
+        Wellcome Sanger Institute — <strong>Dr. Mohammad Lotfollahi</strong>
       </div>
 
       <p class="exp-card__summary">
-        Building a self-supervised transcriptomic transformer foundation model for integrative analysis of imaging- and sequencing-based data; focusing on cross-modal alignment and neighborhood-graph quality for downstream clustering/trajectory inference.
+        Spectral-diffusion neighborhood graphs for single-cell data to improve clustering and cross-modal alignment.
       </p>
 
       <ul class="exp-card__badges">
@@ -39,16 +41,18 @@ author_profile: true
     <img class="exp-card__logo" src="/assets/img/logos/hkust.jpg" alt="HKUST">
     <div class="exp-card__body">
       <header class="exp-card__header">
-        <h3 class="exp-card__role">Undergraduate Research Intern · SMART Lab</h3>
-        <div class="exp-card__dates">Dec 2024 – Jul 2025 · Hong Kong SAR</div>
+        <h3 class="exp-card__role">
+          Undergraduate Research Intern · <a class="exp-card__lab" href="https://smartlab.cse.ust.hk/" target="_blank" rel="noopener">SMART Lab</a>
+        </h3>
+        <div class="exp-card__dates">Hong Kong SAR</div>
       </header>
 
       <div class="exp-card__org">
-        The Hong Kong University of Science and Technology (Prof. Hao Chen)
+        The Hong Kong University of Science and Technology — <strong>Prof. Hao Chen</strong>
       </div>
 
       <p class="exp-card__summary">
-        Studied anomaly-diffusion for counterfactual medical images; developing diffusion-based reconstruction of undersampled MRI to shorten scan time (targeting MICCAI-style evaluation on reconstruction fidelity vs. acceleration).
+        Diffusion for counterfactual medical imaging and undersampled MRI reconstruction.
       </p>
 
       <ul class="exp-card__badges">
@@ -66,16 +70,18 @@ author_profile: true
     <img class="exp-card__logo" src="/assets/img/logos/mpi-inf.jpg" alt="Max Planck Institute for Informatics">
     <div class="exp-card__body">
       <header class="exp-card__header">
-        <h3 class="exp-card__role">Research Intern · AIDAM Group</h3>
-        <div class="exp-card__dates">Sep 2024 – Feb 2025 · Saarbrücken, Germany · Remote</div>
+        <h3 class="exp-card__role">
+          Research Intern · <a class="exp-card__lab" href="https://aidam.mpi-inf.mpg.de/" target="_blank" rel="noopener">AIDAM Group</a>
+        </h3>
+        <div class="exp-card__dates">Saarbrücken, Germany</div>
       </header>
 
       <div class="exp-card__org">
-        Max Planck Institute for Informatics (Dr. Vahid Babaei)
+        Max Planck Institute for Informatics — <strong>Dr. Vahid Babaei</strong>
       </div>
 
       <p class="exp-card__summary">
-        Combined latent-space diffusion with large-batch neural multi-objective Bayesian optimization to inverse-design airfoils, balancing lift–drag while promoting aerodynamic novelty.
+        Latent diffusion + neural multi-objective BO for airfoil inverse design.
       </p>
 
       <ul class="exp-card__badges">
@@ -87,21 +93,21 @@ author_profile: true
     </div>
   </article>
 
-  <!-- SBU Undergraduate Researcher (optional) -->
+  <!-- SBU Undergraduate Researcher -->
   <article class="exp-card">
     <img class="exp-card__logo" src="/assets/img/logos/sbu.jpg" alt="Shahid Beheshti University">
     <div class="exp-card__body">
       <header class="exp-card__header">
         <h3 class="exp-card__role">Undergraduate Researcher</h3>
-        <div class="exp-card__dates">Jun 2024 – Present · Tehran, Iran</div>
+        <div class="exp-card__dates">Tehran, Iran</div>
       </header>
 
       <div class="exp-card__org">
-        Shahid Beheshti University · Computer Engineering Faculty
+        Shahid Beheshti University — Computer Engineering Faculty
       </div>
 
       <p class="exp-card__summary">
-        MRI reconstruction (frequency-mining transformers) and self-supervised transcriptomic modeling; bridging medical imaging and computational biology.
+        MRI frequency-mining transformers and self-supervised transcriptomic modeling.
       </p>
 
       <ul class="exp-card__badges">
@@ -112,19 +118,19 @@ author_profile: true
     </div>
   </article>
 
-  <!-- Teaching Assistant (collapsible course list) -->
+  <!-- Teaching Assistant (full list, shown by default) -->
   <article class="exp-card">
-    <img class="exp-card__logo" src="/assets/img/logos/sbu.png" alt="Shahid Beheshti University">
+    <img class="exp-card__logo" src="/assets/img/logos/sbu.jpg" alt="Shahid Beheshti University">
     <div class="exp-card__body">
       <header class="exp-card__header">
-        <h3 class="exp-card__role">Undergraduate Teaching Assistant</h3>
-        <div class="exp-card__dates">Sep 2022 – Jun 2025 · Part-time · Tehran, Iran</div>
+        <h3 class="exp-card__role">Undergraduate Teaching Assistant (Part-time)</h3>
+        <div class="exp-card__dates">Tehran, Iran</div>
       </header>
 
-      <div class="exp-card__org">Shahid Beheshti University · Computer Science Faculty</div>
+      <div class="exp-card__org">Shahid Beheshti University — Computer Science Faculty</div>
 
       <p class="exp-card__summary">
-        Managed assignments, ran recitations, and mentored projects across core AI/ML courses.
+        Managed assignments, ran recitations, and mentored projects across core AI/ML coursework.
       </p>
 
       <ul class="exp-card__badges">
@@ -134,15 +140,28 @@ author_profile: true
         <li class="badge"><i class="fas fa-code"></i> Compilers · Advanced Prog.</li>
       </ul>
 
-      <details class="exp-card__details">
-        <summary>Show course list</summary>
+      <details class="exp-card__details" open>
+        <summary>Course list</summary>
         <ul class="exp-card__bullets">
-          <li><strong>Reinforcement Learning (Grad)</strong> — Spring 2025, Dr. Armin Salimi-Badr</li>
-          <li><strong>Machine Learning</strong> — Fall 2024 & Spring 2025, Dr. Hamed Malek</li>
-          <li><strong>Artificial Intelligence</strong> — Fall 2024 & Spring 2025, Dr. Armin Salimi-Badr / Dr. Shahabedin Nabavi</li>
-          <li><strong>Compiler Design</strong> — Fall 2024 & Spring 2024, Dr. Mehran Alidoost-Nia</li>
-          <li><strong>Signals & Systems</strong> — Fall 2023 & Spring 2024, Dr. Yasser Shekofteh / Dr. Armin Salimi-Badr</li>
-          <li><strong>Advanced Programming / Intro to Programming</strong> — 2022–2023, Dr. Mojtaba Vahidi / Dr. Sadegh AliAkbari</li>
+          <li><strong>Reinforcement Learning (Graduate)</strong> — Spring 2025, Dr. Armin Salimi-Badr</li>
+          <li><strong>Machine Learning</strong> — Spring 2025, Dr. Hamed Malek</li>
+          <li><strong>Artificial Intelligence</strong> — Spring 2025, Dr. Shahabedin Nabavi</li>
+          <li><hr></li>
+          <li><strong>Artificial Intelligence</strong> — Fall 2024, Dr. Armin Salimi-Badr</li>
+          <li><strong>Machine Learning</strong> — Fall 2024, Dr. Hamed Malek</li>
+          <li><strong>Compiler Design</strong> — Fall 2024, Dr. Mehran Alidoost-Nia</li>
+          <li><hr></li>
+          <li><strong>Compiler Design</strong> — Spring 2024, Dr. Mehran Alidoost-Nia</li>
+          <li><strong>Signals and Systems</strong> — Spring 2024, Dr. Armin Salimi-Badr</li>
+          <li><hr></li>
+          <li><strong>Signals & Systems</strong> — Fall 2023, Dr. Yasser Shekofteh</li>
+          <li><hr></li>
+          <li><strong>Advanced Programming</strong> — Spring 2023, Dr. Mojtaba Vahidi</li>
+          <li><strong>Advanced Programming</strong> — Spring 2023, Dr. Sadegh AliAkbari</li>
+          <li><strong>Formal Languages & Automata Theory</strong> — Spring 2023, Dr. Ramak Ghavamizadeh</li>
+          <li><hr></li>
+          <li><strong>Advanced Programming</strong> — Fall 2022, Dr. Mojtaba Vahidi</li>
+          <li><strong>Introduction to Programming</strong> — Fall 2022, Dr. Sadegh AliAkbari</li>
         </ul>
       </details>
     </div>

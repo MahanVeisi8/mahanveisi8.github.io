@@ -417,3 +417,9 @@
   .exp-card { grid-template-columns: 60px 1fr; padding: .9rem; }
   .exp-card__logo { width: 60px; height: 60px; border-radius: 8px; }
 }
+
+.exp-card__lab {
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(15,123,220,.35);
+}
+.exp-card__lab:hover { border-bottom-style: solid; }
