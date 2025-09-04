@@ -1,3 +1,84 @@
+C:\Users\mahan\Desktop\resume\GithubIO\mahanveisi8.github.io\_pages\about.md:
+```md
+---
+permalink: /
+title: "About Me"
+excerpt: "About Mahan Veisi"
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+
+
+<div class="about-hero-circular">
+  <img src="{{ '/assets/img/Mahan.png' | relative_url }}"
+       alt="Mahan Portrait"
+       class="about-hero-circular__img">
+  <div class="about-hero-circular__text">
+    <h1>Hi, I’m Mahan</h1>
+    <p>My Persian name means “moon‑like.”</p>
+  </div>
+</div>
+
+
+I’m a fourth‑year Computer Engineering undergrad (graduating January 2026) at Shahid Beheshti University, Iran, specializing in generative AI, medical imaging, and computational biology. I am actively seeking <span style="color:red">Master's or PhD</span> opportunities starting in 2026 in these areas.
+
+
+## Research Experience
+Across my research internships and B.Sc. thesis, I’ve contributed to:
+
+- **MRI Reconstruction**  
+  Cascaded transformer U‑Nets with Frequency Mining for faster, high‑quality multi‑contrast scans (my B.Sc. thesis); now exploring generative diffusion approaches to push this further.  
+
+- **Computational Biology**  
+  Self‑supervised transcriptomic transformers to decode the “language” of cellular systems across imaging and sequencing modalities.  
+
+- **Inverse‑Problem Optimization**  
+  Creative diffusion‑based generative models for high‑performance, diverse solutions to real‑world technical challenges.
+
+
+## Education
+
+- **B.Sc. in Computer Engineering** (Expected Jan 2026)
+  Shahid Beheshti University, Tehran, Iran
+  - Cumulative GPA: **18.10/20 (3.81/4)**
+  - Final-year GPA: **19.08/20 (4/4)**  
+  - **Relevant Courses (GPA:4/4)**: Reinforcement Learning, Machine Learning, Computer Vision, AI, Data Structures, Signals and Systems, Algorithms
+
+
+
+## Languages
+- **English**: IELTS 6.5 | S:7, L:7, R:6.5, W:6 (Dec 2024) – retaking in one month to boost my band.  
+- **Persian**: Native  
+- **Kurdish**: Native
+
+
+## Teaching Assistantship
+I have served as a teaching assistant for courses including **Reinforcement Learning (for MS/PHD students)**, **Machine Learning, Artificial Intelligence**, and **Signals and Systems**, where I supported students by managing assignments, teaching supplementary sessions, and guiding project work. These roles allowed me to strengthen my ability to communicate complex concepts effectively and to provide academic support across various aspects of AI and image processing.
+
+
+## Outside the Lab
+Outside of academics, I enjoy running and playing the guitar. Running helps me maintain focus and energy for research, while playing guitar brings a creative balance to my routine. I’m still learning, but you can [check out a recent performance on Instagram](https://www.instagram.com/reel/C4d2jSgseuJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)—don’t judge the beginner’s flair!! I’m improving every day!
+
+I also enjoy playing soccer (both on the field and in FC video games) and am always up for a friendly match. I’ll pick Manchester United—what team will you bring?
+
+<!-- 
+
+## What’s Next?
+I’m driven to bridge generative AI and real‑world biology/healthcare. In the short term, I’m refining my MRI and transcriptomics models for top conference submissions; long‑term, I aim to build human‑centered AI systems that enhance diagnostics and accelerate scientific discovery. 
+-->
+
+```
+
+
+#############################
+#############################
+#############################
+#############################
+#############################
+
 C:\Users\mahan\Desktop\resume\GithubIO\mahanveisi8.github.io\_pages\publications.md:
 ```md
 ---
@@ -10,11 +91,17 @@ published: true
 
 ## Conference and Journal Papers
 
+
 <div class="publication-entry">
-  <div class="publication-image">
-    <img src="/assets/img/publications/CMRI_Recon.png"
-         alt="MRI Reconstruction with Cascaded Transformers">
+  <div class="publication-images-2">
+    <img src="/assets/img/publications/CMRI_Recon.jpg"
+         alt="MRI Reconstruction: input vs. recon (k-space)"
+         class="top">
+    <img src="/assets/img/publications/CMRI_Recon_2.png"
+         alt="MRI Reconstruction: qualitative comparison"
+         class="bottom fit">
   </div>
+
   <div class="publication-content">
     <div class="publication-header">
       <h3>All-in-One MRI Reconstruction with Cascaded Transformers</h3>
@@ -28,8 +115,8 @@ published: true
     </p>
     <p>
       Developed a cascaded MRI reconstruction model utilizing <strong>Frequency Mining</strong> with
-      state‑of‑the‑art transformer‑based U‑Net models for k‑space data. This approach efficiently
-      handles multi‑contrast MRI and is targeted for the MICCAI 2025 reconstruction challenge.
+      state-of-the-art transformer-based U-Net models for k-space data. This approach efficiently
+      handles multi-contrast MRI and is targeted for the MICCAI 2025 reconstruction challenge.
     </p>
   </div>
 </div>
@@ -37,28 +124,51 @@ published: true
 <hr />
 
 <div class="publication-entry">
-  <figure class="publication-image">
-    <!-- your paper thumbnail, 500×300 -->
-    <img src="/assets/img/publications/deep-rl-stock-trading.png"
-         alt="Deep RL for Stock Trading paper"
-         width="500" height="300">
-  </figure>
+  <div class="publication-image" style="max-width: 320px;">
+    <img src="/assets/img/publications/airfoil_diff_opt.jpg"
+         alt="Diffusion-driven airfoil generation with multi-objective Bayesian optimization">
+  </div>
+
+  <div class="publication-content">
+    <div class="publication-header">
+      <h3>Diffusion-Driven Airfoil Optimization</h3>
+      <!-- <em>Manuscript in Preparation</em> -->
+    </div>
+    <p>
+      <strong>Mahan Veisi</strong>,
+      <a href="https://scholar.google.de/citations?user=k2TvtoAAAAAJ">Navid Ansari</a>,
+      <a href="https://scholar.google.de/citations?user=Yjh-GHsAAAAJ">Vahid Babaei</a>
+    </p>
+    <p>
+      Combined latent-space diffusion with large-batch neural multi-objective Bayesian optimization
+      to inverse-design 2D airfoils, balancing lift–drag while promoting aerodynamic novelty.
+    </p>
+  </div>
+</div>
+
+
+<hr />
+
+<div class="publication-entry">
+  <div class="publication-images-2" style="--pub-left-col-max: 320px;">
+    <img src="/assets/img/publications/deep-rl-stock-trading_1.png"
+         alt="Equity curves across strategies" class="top">
+    <img src="/assets/img/publications/deep-rl-stock-trading-arch.png"
+         alt="PPO-LSTM + FinBERT architecture" class="bottom fit">
+  </div>
+
   <div class="publication-content">
     <div class="publication-header">
       <h3>Deep Reinforcement Learning for Stock Trading</h3>
-      <em>IEEE ICCKE 2024</em>
+      <em>IEEE ICCKE 2024</em>
     </div>
     <p>
       <strong>Mahan Veisi</strong>, Sadra Berangi,
-      <a href="https://scholar.google.com/citations?user=QufpdNgAAAAJ&hl=en">
-        Mahdi Shahbazi Khojasteh
-      </a>,
-      <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en">
-        Armin Salimi‑Badr
-      </a>
+      <a href="https://scholar.google.com/citations?user=QufpdNgAAAAJ&hl=en">Mahdi Shahbazi Khojasteh</a>,
+      <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en">Armin Salimi-Badr</a>
     </p>
     <p>
-      Integrated <strong>FinBERT</strong> within a PPO‑LSTM model,
+      Integrated <strong>FinBERT</strong> within a PPO-LSTM model,
       achieving <strong>134.39% cumulative return</strong> and a
       <strong>1.46 Sharpe ratio</strong>, outperforming standard benchmarks.
     </p>
@@ -70,13 +180,19 @@ published: true
   </div>
 </div>
 
+
+
+
 <hr />
 
 <div class="publication-entry">
-  <div class="publication-image">
+  <div class="publication-images-2">
     <img src="/assets/img/publications/SincNet.png"
-         alt="SincNet for Parkinson’s Disease Detection">
+         alt="SincNet overview for gait classification" class="top">
+    <img src="/assets/img/publications/SincNet_2.png"
+         alt="Learned Sinc filters / salient frequency bands" class="bottom fit">
   </div>
+
   <div class="publication-content">
     <div class="publication-header">
       <h3>SincNet for Parkinson’s Disease Detection</h3>
@@ -84,13 +200,12 @@ published: true
     </div>
     <p>
       <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en">Armin Salimi-Badr</a>,
-      <strong>Mahan Veisi</strong>,
-      Sadra Berangi
+      <strong>Mahan Veisi</strong>, Sadra Berangi
     </p>
     <p>
       Applied <strong>SincNet layers</strong> to classify Parkinson’s Disease from gait data,
       achieving <strong>98.7% accuracy</strong>. After training, filters were pruned using
-      K‑means clustering and silhouette scores to highlight key frequency bands significant in
+      K-means clustering and silhouette scores to highlight key frequency bands significant in
       disease detection. This study enhances explainable AI by identifying critical signal
       components in Parkinson’s diagnosis.
     </p>
@@ -134,6 +249,258 @@ published: true
     </div>
   </div>
 </div>
+
+```
+
+###################################################################
+###################################################################
+###################################################################
+###################################################################
+###################################################################
+###################################################################
+
+
+C:\Users\mahan\Desktop\resume\GithubIO\mahanveisi8.github.io\_pages\projects.md
+
+```md
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+published: true
+---
+
+
+<div class="project-entry">
+  <figure class="project-image">
+    <!-- 3. Latent Diffusion MNIST -->
+    <img src="/assets/img/projects/grid_diffusion_gif.gif"
+         alt="Latent Diffusion MNIST"
+         width="500" height="300">
+  </figure>
+  <div class="project-content">
+    <h3>Latent Diffusion Models for MNIST</h3>
+    <p>
+      Built an unconditional latent diffusion model on MNIST using:
+      <ul>
+        <li>Autoencoders + Channel Attention Blocks</li>
+        <li>U‑Net DDPM for denoising in latent space</li>
+      </ul>
+      Visualized t‑SNE embeddings and reconstruction quality.
+    </p>
+    <div class="project-link">
+      <a href="https://github.com/MahanVeisi8/Latent-Diffusion-MNIST-DDPM-using-Autoencoder">
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div class="project-entry">
+  <figure class="project-image">
+    <!-- Rock–Paper–Scissors with YOLOv11 -->
+    <img src="/assets/img/projects/rock-paper-scissors-yolov11.gif"
+         alt="Rock–Paper–Scissors Game Automation with YOLOv11"
+         width="500" height="300">
+  </figure>
+  <div class="project-content">
+    <h3>Rock–Paper–Scissors Game Automation with YOLOv11</h3>
+    <p>
+      Real‑time hand gesture detection to power a fully automated Rock–Paper–Scissors game—
+      complete with cheating detection and dynamic winner celebration.
+    </p>
+    <ul>
+      <li>YOLOv11 object detection for Rock, Paper, Scissors gestures at ~98.2% mAP@0.5</li>
+      <li>Cheating detection: red mask overlay &amp; –1 point penalty for mid‑countdown changes</li>
+      <li>Winner recognition: golden crown overlay with animated highlight</li>
+    </ul>
+    <div class="project-link">
+      <a href="https://github.com/SBUformers/Rock-Paper-Scissors-Simulator">GitHub</a> |
+      <a href="https://github.com/SBUformers/Rock-Paper-Scissors-Simulator/blob/main/Final_report.pdf">Computer Vision Course Final Project Report</a>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div class="project-entry">
+  <figure class="project-image">
+    <!-- 4. VAE MNIST -->
+    <img src="/assets/img/projects/vae-mnist.png"
+         alt="VAE Latent Spaces"
+         width="500" height="300">
+  </figure>
+  <div class="project-content">
+    <h3>VAE for MNIST: Exploring Latent Spaces</h3>
+    <p>
+      Trained a Variational Autoencoder to compare reconstructions
+      across different latent dimensions, illustrating the
+      trade‑off between compression and fidelity.
+    </p>
+    <div class="project-link">
+      <a href="https://github.com/MahanVeisi8/VAE-MNIST-Variable-Latent-Size-Reconstruction-and-Visualization">
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div class="project-entry">
+  <figure class="project-image">
+    <!-- 5. Denoising Emotion Dataset -->
+    <img src="/assets/img/projects/denoising-emotion.png"
+         alt="Denoising Emotion Dataset"
+         width="500" height="300">
+  </figure>
+  <div class="project-content">
+    <h3>Denoising Facial Emotion Dataset with Attention U‑Net and GAN</h3>
+    <p>
+      Addressed Gaussian and salt‑and‑pepper noise using an
+      Attention U‑Net + PatchGAN pipeline, achieving high PSNR/SSIM
+      for clearer emotion‑labeled images.
+    </p>
+    <div class="project-link">
+      <a href="https://github.com/MahanVeisi8/From-Chaos-to-Clarity-Denoising-Images-with-UNet-and-GANs">
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
+<hr />
+<div class="project-entry">
+  <figure class="project-image">
+    <img src="/assets/img/projects/rl-practices.gif"
+         alt="Reinforcement Learning Practices"
+         width="500" height="300">
+  </figure>
+  <div class="project-content">
+    <h3>Reinforcement Learning Practices</h3>
+    <p>
+      Explored DQN, SARSA, D3QN, etc., with Boltzmann exploration
+      optimizations. A hands‑on study of classic RL algorithms.
+    </p>
+    <div class="project-link">
+      <a href="https://github.com/MahanVeisi8/RL_practices">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<hr />
+<div class="project-entry">
+  <figure class="project-image">
+    <!-- 7. Fashion Tagger -->
+    <img src="/assets/img/projects/fashion-tagger.png"
+         alt="Fashion Tagger: AI-Powered Fashion Image Labeling"
+         width="500" height="300">
+  </figure>
+  <div class="project-content">
+    <h3>Fashion Tagger: AI‑Powered Fashion Image Labeling</h3>
+    <p>
+      Developed a multi‑label classification model trained on 44,000 fashion images,
+      enabling real‑time tagging of fashion items. This tool assists in organizing
+      and searching large fashion datasets efficiently.
+    </p>
+    <div class="project-link">
+      <a href="https://github.com/MahanVeisi8/FashionTagger">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<!-- <div class="project-entry">
+  <figure class="project-image">
+    <img src="/assets/img/projects/bioml-sbu.png"
+         alt="BioML‑SBU: RNA and Protein Generative Models"
+         width="500" height="300">
+  </figure>
+  <div class="project-content">
+    <h3>BioML‑SBU: RNA and Protein Generative Models</h3>
+    <p>
+      Built RNA classification and diffusion models for structured bio‑sequence design.
+      Explores the intersection of bioinformatics and generative AI, aiming to advance
+      molecular‑level innovation.
+    </p>
+    <div class="project-link">
+      <a href="https://github.com/BioML-SBU">GitHub</a>
+    </div>
+  </div>
+</div>
+
+
+<hr /> -->
+<div class="project-entry">
+  <figure class="project-image">
+    <!-- 11. Face Recognition -->
+    <img src="/assets/img/projects/face-recognition.gif"
+         alt="Iranian Celebrity Face Recognition"
+         width="500" height="300">
+  </figure>
+  <div class="project-content">
+    <h3>Iranian Celebrity Face Recognition</h3>
+    <p>
+      Built a CNN‑based face recognition app (Flask + JS) to accurately identify
+      Iranian celebrities, showcasing deep learning’s potential in real‑time image apps.
+    </p>
+    <div class="project-link">
+      <a href="https://github.com/MahanVeisi8/Face_recognition">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+
+<div class="project-entry">
+  <figure class="project-image">
+    <!-- 9. Automated README Generator -->
+    <img src="/assets/img/projects/automated-readme-generator.jpg"
+         alt="Automated README Generator with Multi‑Agent CrewAI"
+         width="500" height="300">
+  </figure>
+  <div class="project-content">
+    <h3>Automated README Generator with Multi‑Agent CrewAI</h3>
+    <p>
+      Utilized LLaMA 3 and CrewAI to automate the generation of comprehensive,
+      stylistically consistent README files, streamlining documentation across repos.
+    </p>
+    <div class="project-link">
+      <a href="https://github.com/MahanVeisi8/Automated-readme-generator-with-Multi-Agent-CrewAI">
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div class="project-entry">
+  <figure class="project-image">
+    <!-- 10. Machine Learning Practices -->
+    <img src="/assets/img/projects/ml-practices.png"
+         alt="Machine Learning Practices"
+         width="500" height="300">
+  </figure>
+  <div class="project-content">
+    <h3>Machine Learning Practices</h3>
+    <p>
+      Developed ML models for tasks like KNN, SVC, and Decision Trees, providing a
+      hands‑on survey of standard supervised learning techniques on diverse datasets.
+    </p>
+    <div class="project-link">
+      <a href="https://github.com/MahanVeisi8/MLPractices">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<hr />
+
 
 ```
 

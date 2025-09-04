@@ -24,7 +24,7 @@ redirect_from:
 I’m a fourth‑year Computer Engineering undergrad (graduating January 2026) at Shahid Beheshti University, Iran, specializing in generative AI, medical imaging, and computational biology. I am actively seeking <span style="color:red">Master's or PhD</span> opportunities starting in 2026 in these areas.
 
 
-## Research Experience
+<!-- ## Research Experience
 Across my research internships and B.Sc. thesis, I’ve contributed to:
 
 - **MRI Reconstruction**  
@@ -34,7 +34,7 @@ Across my research internships and B.Sc. thesis, I’ve contributed to:
   Self‑supervised transcriptomic transformers to decode the “language” of cellular systems across imaging and sequencing modalities.  
 
 - **Inverse‑Problem Optimization**  
-  Creative diffusion‑based generative models for high‑performance, diverse solutions to real‑world technical challenges.
+  Creative diffusion‑based generative models for high‑performance, diverse solutions to real‑world technical challenges. -->
 
 
 ## Education
@@ -46,15 +46,15 @@ Across my research internships and B.Sc. thesis, I’ve contributed to:
   - **Relevant Courses (GPA:4/4)**: Reinforcement Learning, Machine Learning, Computer Vision, AI, Data Structures, Signals and Systems, Algorithms
 
 
+## Experience
+I’ve summarized my internships and teaching work on a dedicated page:
+**[See Experience →](/experience/)**
+
 
 ## Languages
-- **English**: IELTS 6.5 | S:7, L:7, R:6.5, W:6 (Dec 2024) – retaking in one month to boost my band.  
 - **Persian**: Native  
 - **Kurdish**: Native
-
-
-## Teaching Assistantship
-I have served as a teaching assistant for courses including **Reinforcement Learning (for MS/PHD students)**, **Machine Learning, Artificial Intelligence**, and **Signals and Systems**, where I supported students by managing assignments, teaching supplementary sessions, and guiding project work. These roles allowed me to strengthen my ability to communicate complex concepts effectively and to provide academic support across various aspects of AI and image processing.
+- **English**: IELTS 7 | S:7, L:7.5, R:7, W:7  
 
 
 ## Outside the Lab

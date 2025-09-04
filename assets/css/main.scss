@@ -319,3 +319,101 @@
   font-style: normal;
   color: #555;
 }
+
+
+/* === Experience cards === */
+:root {
+  --exp-bg: #f8fbff;
+  --exp-border: #e4eef8;
+  --exp-accent: #0f7bdc;
+  --badge-bg: #eaf3ff;
+  --badge-text: #0f4573;
+}
+
+.experience-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.exp-card {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem 1.25rem;
+  background: var(--exp-bg);
+  border: 1px solid var(--exp-border);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.04);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0,0,0,.08);
+}
+
+.exp-card__logo {
+  width: 88px; height: 88px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #fff;
+  border: 1px solid var(--exp-border);
+}
+
+.exp-card__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .25rem .75rem;
+  margin-bottom: .25rem;
+}
+
+.exp-card__role {
+  font-size: 1.05rem;
+  margin: 0;
+  color: #143a52;
+}
+
+.exp-card__dates {
+  font-size: .9rem;
+  color: #5b6b7a;
+}
+
+.exp-card__org {
+  font-weight: 600;
+  color: #254b6b;
+  margin-bottom: .25rem;
+}
+
+.exp-card__summary { margin: .25rem 0 .5rem; color: #384b5a; }
+
+.exp-card__badges {
+  display: flex; flex-wrap: wrap; gap: .5rem;
+  list-style: none; padding: 0; margin: .25rem 0 0;
+}
+
+.badge {
+  display: inline-flex; align-items: center; gap: .35rem;
+  padding: .28rem .55rem;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  border: 1px solid rgba(15,123,220,.12);
+  border-radius: 999px;
+  font-size: .82rem; font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge i { font-size: .9em; opacity: .9; }
+
+.exp-card__details summary {
+  cursor: pointer; margin-top: .35rem; color: var(--exp-accent); font-weight: 600;
+}
+.exp-card__bullets { margin: .5rem 0 0 .9rem; }
+.exp-card__bullets li { margin: .15rem 0; }
+
+/* Mobile */
+@media (max-width: 640px) {
+  .exp-card { grid-template-columns: 60px 1fr; padding: .9rem; }
+  .exp-card__logo { width: 60px; height: 60px; border-radius: 8px; }
+}
