@@ -23,7 +23,7 @@ author_profile: true
       </div>
 
       <p class="exp-card__summary">
-        Spectral-diffusion neighborhood graphs for single-cell data to improve clustering and cross-modal alignment.
+        Self-supervised transcriptomic foundation modeling and diffusion-based single-cell graph generation to improve clustering, trajectory inference, and cross-modal alignment.
       </p>
 
       <ul class="exp-card__badges">
