@@ -27,10 +27,8 @@ author_profile: true
       </p>
 
       <ul class="exp-card__badges">
-        <li class="badge"><i class="fas fa-brain"></i> Diffusion/GenAI</li>
         <li class="badge"><i class="fas fa-dna"></i> Transcriptomics</li>
         <li class="badge"><i class="fas fa-project-diagram"></i> Self-Supervised</li>
-        <li class="badge"><i class="fas fa-flask"></i> Bioinformatics</li>
         <li class="badge"><i class="fas fa-network-wired"></i> Transformers</li>
       </ul>
     </div>
@@ -57,10 +55,8 @@ author_profile: true
 
       <ul class="exp-card__badges">
         <li class="badge"><i class="fas fa-magnet"></i> MRI Reconstruction</li>
-        <li class="badge"><i class="fas fa-heartbeat"></i> Medical Imaging</li>
         <li class="badge"><i class="fas fa-random"></i> Anomaly Diffusion</li>
         <li class="badge"><i class="fas fa-magic"></i> Counterfactuals</li>
-        <li class="badge"><i class="fas fa-robot"></i> Generative AI</li>
       </ul>
     </div>
   </article>
@@ -88,7 +84,6 @@ author_profile: true
         <li class="badge"><i class="fas fa-wind"></i> Generative Design</li>
         <li class="badge"><i class="fas fa-stream"></i> Diffusion Models</li>
         <li class="badge"><i class="fas fa-tasks"></i> Multi-Objective BO</li>
-        <li class="badge"><i class="fas fa-chart-line"></i> Aerodynamics</li>
       </ul>
     </div>
   </article>
@@ -112,8 +107,7 @@ author_profile: true
 
       <ul class="exp-card__badges">
         <li class="badge"><i class="fas fa-microscope"></i> Med-AI</li>
-        <li class="badge"><i class="fas fa-layer-group"></i> Multi-Contrast MRI</li>
-        <li class="badge"><i class="fas fa-code-branch"></i> SSL</li>
+        <li class="badge"><i class="fas fa-layer-group"></i> Multi-Contrast MRI Reconstruction</li>
       </ul>
     </div>
   </article>
@@ -136,8 +130,6 @@ author_profile: true
       <ul class="exp-card__badges">
         <li class="badge"><i class="fas fa-chalkboard-teacher"></i> Teaching</li>
         <li class="badge"><i class="fas fa-brain"></i> RL/ML/AI</li>
-        <li class="badge"><i class="fas fa-wave-square"></i> Signals & Systems</li>
-        <li class="badge"><i class="fas fa-code"></i> Compilers · Advanced Prog.</li>
       </ul>
 
       <details class="exp-card__details" open>
@@ -146,20 +138,15 @@ author_profile: true
           <li><strong>Reinforcement Learning (Graduate)</strong> — Spring 2025, Dr. Armin Salimi-Badr</li>
           <li><strong>Machine Learning</strong> — Spring 2025, Dr. Hamed Malek</li>
           <li><strong>Artificial Intelligence</strong> — Spring 2025, Dr. Shahabedin Nabavi</li>
-          <li><hr></li>
           <li><strong>Artificial Intelligence</strong> — Fall 2024, Dr. Armin Salimi-Badr</li>
           <li><strong>Machine Learning</strong> — Fall 2024, Dr. Hamed Malek</li>
           <li><strong>Compiler Design</strong> — Fall 2024, Dr. Mehran Alidoost-Nia</li>
-          <li><hr></li>
           <li><strong>Compiler Design</strong> — Spring 2024, Dr. Mehran Alidoost-Nia</li>
           <li><strong>Signals and Systems</strong> — Spring 2024, Dr. Armin Salimi-Badr</li>
-          <li><hr></li>
           <li><strong>Signals & Systems</strong> — Fall 2023, Dr. Yasser Shekofteh</li>
-          <li><hr></li>
           <li><strong>Advanced Programming</strong> — Spring 2023, Dr. Mojtaba Vahidi</li>
           <li><strong>Advanced Programming</strong> — Spring 2023, Dr. Sadegh AliAkbari</li>
           <li><strong>Formal Languages & Automata Theory</strong> — Spring 2023, Dr. Ramak Ghavamizadeh</li>
-          <li><hr></li>
           <li><strong>Advanced Programming</strong> — Fall 2022, Dr. Mojtaba Vahidi</li>
           <li><strong>Introduction to Programming</strong> — Fall 2022, Dr. Sadegh AliAkbari</li>
         </ul>
