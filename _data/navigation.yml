@@ -7,3 +7,5 @@ main:
     url: /experience/
   - title: "Projects"
     url: "/projects/"
+  - title: "Achievements"
+    url: /achievements/

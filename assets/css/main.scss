@@ -423,3 +423,48 @@
   border-bottom: 1px dotted rgba(15,123,220,.35);
 }
 .exp-card__lab:hover { border-bottom-style: solid; }
+
+
+/* === Certifications & Honors === */
+:root{
+  --card-bg:#f8fbff; --card-b:#e4eef8; --card-ac:#0f7bdc;
+  --badge-bg:#eaf3ff; --badge-t:#0f4573;
+}
+
+/* grid wrappers */
+.cert-grid, .honor-grid { display:grid; gap:1.25rem; }
+
+/* cards */
+.cert-card, .honor-card{
+  display:grid; grid-template-columns:88px 1fr; gap:1rem;
+  align-items:start; padding:1rem 1.25rem;
+  background:var(--card-bg); border:1px solid var(--card-b);
+  border-radius:12px; box-shadow:0 8px 16px rgba(0,0,0,.04);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.cert-card:hover, .honor-card:hover{ transform:translateY(-2px); box-shadow:0 12px 24px rgba(0,0,0,.08); }
+
+.cert-card__logo, .honor-card__logo{
+  width:88px; height:88px; border-radius:12px; object-fit:cover; background:#fff; border:1px solid var(--card-b);
+}
+
+.cert-card__title, .honor-card__title{ margin:.1rem 0 .25rem; font-size:1.05rem; color:#143a52; }
+.cert-card__org, .honor-card__org{ font-weight:600; color:#254b6b; }
+.cert-card__meta{ font-size:.9rem; color:#5b6b7a; margin:.15rem 0 .35rem; }
+.cert-card__badges{ display:flex; flex-wrap:wrap; gap:.5rem; list-style:none; padding:0; margin:0; }
+
+.badge{ display:inline-flex; align-items:center; gap:.35rem; padding:.28rem .55rem;
+  background:var(--badge-bg); color:var(--badge-t);
+  border:1px solid rgba(15,123,220,.12); border-radius:999px; font-size:.82rem; font-weight:600; white-space:nowrap; }
+.badge i{ font-size:.9em; opacity:.9; }
+
+.cert-link{ display:inline-block; margin-top:.5rem; color:var(--card-ac); font-weight:700; text-decoration:none; }
+.cert-link:hover{ text-decoration:underline; }
+
+.honor-photos{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:.6rem; margin-top:.5rem; }
+.honor-photos img{ width:100%; height:140px; object-fit:cover; border-radius:8px; border:1px solid var(--card-b); }
+
+@media (max-width:640px){
+  .cert-card, .honor-card{ grid-template-columns:60px 1fr; padding:.9rem; }
+  .cert-card__logo, .honor-card__logo{ width:60px; height:60px; border-radius:8px; }
+}
