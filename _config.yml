@@ -40,15 +40,15 @@ social:
 
 # Analytics
 analytics:
-  provider: "google-universal"
+  provider: "google-gtag"
   google:
-    tracking_id: # Add Google Analytics ID if desired
+    tracking_id: "G-T3LXE0QKCS"
 
 # Site Author
 author:
   name: "Mahan Veisi"
-  avatar: "profile.jpg" # Add your profile image to /images folder
-  bio: "Computer Engineering B.S. Student at Shahid Beheshti University, passionate about AI, Medical Imaging, and Generative Models."
+  avatar: "profile.jpg" 
+  bio: "Computer Engineering B.S. Student at Shahid Beheshti University, passionate about AI and Generative Models."
   location: "Tehran, Iran"
   googlescholar: "https://scholar.google.com/citations?user=LQL2vyQAAAAJ&hl=en"
   email: "mahan8292@gmail.com"
