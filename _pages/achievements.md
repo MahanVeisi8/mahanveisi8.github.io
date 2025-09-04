@@ -53,11 +53,11 @@ author_profile: true
     <div class="cert-card__body">
       <h3 class="cert-card__title">IELTS Academic</h3>
       <div class="cert-card__org">IELTS Official</div>
-      <div class="cert-card__meta">Issued Feb 2025 · Expires Feb 2027 · Credential ID: 24IR512117VEIM120A</div>
-      <ul class="cert-card__badges">
+      <div class="cert-card__meta">Issued Sep 2025</div>
+      <!-- <ul class="cert-card__badges">
         <li class="badge"><i class="fas fa-language"></i> Academic</li>
         <li class="badge"><i class="far fa-id-badge"></i> Verified</li>
-      </ul>
+      </ul> -->
       <!-- <a class="cert-link" href="YOUR_LINK">View credential</a> -->
     </div>
   </article>
@@ -68,12 +68,12 @@ author_profile: true
     <div class="cert-card__body">
       <h3 class="cert-card__title">Generative Adversarial Networks (3-Course Specialization)</h3>
       <div class="cert-card__org">DeepLearning.AI</div>
-      <div class="cert-card__meta">Issued Sep 2024 · Credential ID: 0YFNYEMJQVVW</div>
-      <ul class="cert-card__badges">
+      <div class="cert-card__meta">Issued Sep 2024</div>
+      <!-- <ul class="cert-card__badges">
         <li class="badge"><i class="fas fa-project-diagram"></i> GANs</li>
         <li class="badge"><i class="fas fa-clone"></i> Pix2Pix / CycleGAN</li>
         <li class="badge"><i class="fas fa-images"></i> StyleGAN</li>
-      </ul>
+      </ul> -->
       <a class="cert-link" href="https://www.coursera.org/account/accomplishments/specialization/0YFNYEMJQVVW">View credential</a>
     </div>
   </article>
@@ -85,10 +85,10 @@ author_profile: true
       <h3 class="cert-card__title">Multi AI Agent Systems with crewAI</h3>
       <div class="cert-card__org">DeepLearning.AI</div>
       <div class="cert-card__meta">Issued Aug 2024</div>
-      <ul class="cert-card__badges">
+      <!-- <ul class="cert-card__badges">
         <li class="badge"><i class="fas fa-users-cog"></i> Multi-Agent</li>
         <li class="badge"><i class="fas fa-robot"></i> LLM Ops</li>
-      </ul>
+      </ul> -->
       <a class="cert-link" href="https://learn.deeplearning.ai/accomplishments/4b048f51-bc25-4e85-9e05-63279e790b43?usp=sharing">View credential</a>
     </div>
   </article>
@@ -99,11 +99,11 @@ author_profile: true
     <div class="cert-card__body">
       <h3 class="cert-card__title">Deep Learning Specialization (5 Courses)</h3>
       <div class="cert-card__org">DeepLearning.AI</div>
-      <div class="cert-card__meta">Issued Jan 2024 · Credential ID: 3G2YEFA247AR</div>
-      <ul class="cert-card__badges">
+      <div class="cert-card__meta">Issued Jan 2024</div>
+      <!-- <ul class="cert-card__badges">
         <li class="badge"><i class="fas fa-brain"></i> CNN / RNN</li>
         <li class="badge"><i class="fas fa-microchip"></i> Transformers</li>
-      </ul>
+      </ul> -->
       <a class="cert-link" href="https://www.coursera.org/account/accomplishments/specialization/3G2YEFA247AR">View credential</a>
     </div>
   </article>
@@ -114,11 +114,11 @@ author_profile: true
     <div class="cert-card__body">
       <h3 class="cert-card__title">Machine Learning Specialization (3 Courses)</h3>
       <div class="cert-card__org">DeepLearning.AI</div>
-      <div class="cert-card__meta">Issued Aug 2023 · Credential ID: 3WJRF69LL4QJ</div>
-      <ul class="cert-card__badges">
+      <div class="cert-card__meta">Issued Aug 2023</div>
+      <!-- <ul class="cert-card__badges">
         <li class="badge"><i class="fas fa-project-diagram"></i> Supervised/Unsupervised</li>
         <li class="badge"><i class="fas fa-chess"></i> RL Basics</li>
-      </ul>
+      </ul> -->
       <a class="cert-link" href="https://www.coursera.org/account/accomplishments/specialization/certificate/3WJRF69LL4QJ">View credential</a>
     </div>
   </article>
@@ -170,10 +170,10 @@ author_profile: true
     <div class="cert-card__body">
       <h3 class="cert-card__title">Programming in Python</h3>
       <div class="cert-card__org">Meta</div>
-      <div class="cert-card__meta">Issued Feb 2023 · Credential ID: LQB6VRBD26RE</div>
-      <ul class="cert-card__badges">
+      <div class="cert-card__meta">Issued Feb 2023</div>
+      <!-- <ul class="cert-card__badges">
         <li class="badge"><i class="fab fa-python"></i> Python</li>
-      </ul>
+      </ul> -->
       <a class="cert-link" href="https://www.coursera.org/account/accomplishments/certificate/LQB6VRBD26RE">View credential</a>
       
     </div>
