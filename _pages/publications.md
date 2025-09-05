@@ -104,7 +104,7 @@ published: true
 
 <div class="publication-entry">
   <div class="publication-images-2">
-    <img src="/assets/img/publications/SincNet.png"
+    <img src="/assets/img/publications/SincNet.jpg"
          alt="SincNet overview for gait classification" class="top">
     <img src="/assets/img/publications/SincNet_2.png"
          alt="Learned Sinc filters / salient frequency bands" class="bottom fit">
