@@ -115,7 +115,7 @@ classes: wide
       <header class="pub-head">
         <h3 class="pub-title">SincNet for Parkinson’s Disease Detection</h3>
         <div class="pub-actions">
-          <a class="icon-btn" href="https://www.arxiv.org/abs/2502.17463" title="arXiv" aria-label="arXiv"><i class="ai ai-arxiv"></i></a>
+          <a class="icon-btn" href="https://www.arxiv.org/abs/2502.17463" title="Paper (PDF)" aria-label="PDF"><i class="far fa-file-pdf"></i></a>
           <a class="icon-btn" href="https://github.com/MahanVeisi8/Explainable-PD-Diagnosis-using-SincNet-and-Gait-Analysis" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </header>
