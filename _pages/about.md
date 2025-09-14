@@ -57,7 +57,7 @@ Across my research internships and B.Sc. thesis, I’ve contributed to:
 
   <ul class="edu-stats">
     <li class="stat"><span class="stat__label">Cumulative</span><span class="stat__value">18.10/20 (3.81/4)</span></li>
-    <li class="stat"><span class="stat__label">Final-year</span><span class="stat__value">19.08/20 (4/4)</span></li>
+    <li class="stat"><span class="stat__label">Last two years</span><span class="stat__value">19.08/20 (4/4)</span></li>
   </ul>
 
   <div class="course-chips">

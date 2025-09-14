@@ -26,6 +26,7 @@ $(document).ready(function(){
   // init sticky sidebar
   $(".sticky").Stickyfill();
 
+
   var stickySideBar = function(){
     var show = $(".author__urls-wrapper button").length === 0 ? $(window).width() > 1024 : !$(".author__urls-wrapper button").is(":visible");
     // console.log("has button: " + $(".author__urls-wrapper button").length === 0);
@@ -95,4 +96,13 @@ $(document).ready(function(){
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
+  // Publications: smooth "Read more" toggle
+  $(".pub-toggle").on("click", function(){
+    const $btn = $(this);
+    const $extra = $btn.next(".pub-extra");
+    const isOpen = $btn.attr("aria-expanded") === "true";
+    $extra.stop(true, true).slideToggle(180);
+    $btn.attr("aria-expanded", String(!isOpen));
+    $btn.text(isOpen ? "Read more" : "Read less");
+  });
 });
