@@ -11,20 +11,17 @@ classes: wide
 
 <section class="pub-grid">
 
-  <!-- MRI RECON -->
+  <!-- MRI RECON (no public links yet) -->
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/CMRI_Recon.jpg" alt="All-in-One MRI Reconstruction">
-      <span class="pub-ribbon is-draft">Manuscript in Progress</span>
+      <span class="pub-ribbon-corner is-draft">Manuscript in Progress</span>
     </div>
 
     <div class="pub-body">
       <header class="pub-head">
         <h3 class="pub-title">All-in-One MRI Reconstruction with Cascaded Transformers</h3>
-        <div class="pub-actions">
-          <a class="icon-btn" href="#" title="arXiv/PDF" aria-label="arXiv"><i class="ai ai-arxiv"></i></a>
-          <a class="icon-btn" href="#" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        </div>
+        <!-- no icons while unpublished -->
       </header>
 
       <div class="pub-authors">
@@ -34,29 +31,28 @@ classes: wide
         <a href="https://scholar.google.com/citations?user=trWxrgcAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Mohsen Ebrahimi Moghaddam</a>
       </div>
 
-      <p class="pub-blurb">Cascaded transformer U-Nets with Frequency Mining for efficient multi-contrast MRI reconstruction from k-space (MICCAI-style benchmarks).</p>
+      <p class="pub-blurb">
+        Cascaded transformer U-Nets with Frequency Mining for multi-contrast MRI reconstruction from k-space (MICCAI-style benchmarks).
+      </p>
 
       <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
       <div class="pub-extra">
-        <p>We emphasize robustness across contrasts and acceleration factors, with careful artifact mitigation and strong generalization.</p>
+        <p>Emphasizes robustness across contrasts/accelerations with artifact mitigation and strong generalization.</p>
       </div>
     </div>
   </article>
 
-  <!-- AIRFOIL -->
+  <!-- AIRFOIL (no public links yet) -->
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/airfoil_diff_opt.jpg" alt="Diffusion-Driven Airfoil Optimization">
-      <span class="pub-ribbon is-accepted">In Prep</span>
+      <span class="pub-ribbon-corner is-draft">Manuscript in Progress</span>
     </div>
 
     <div class="pub-body">
       <header class="pub-head">
         <h3 class="pub-title">Diffusion-Driven Airfoil Optimization</h3>
-        <div class="pub-actions">
-          <a class="icon-btn" href="#" title="arXiv/PDF" aria-label="arXiv"><i class="ai ai-arxiv"></i></a>
-          <a class="icon-btn" href="#" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        </div>
+        <!-- no icons while unpublished -->
       </header>
 
       <div class="pub-authors">
@@ -65,7 +61,9 @@ classes: wide
         <a href="https://scholar.google.de/citations?user=Yjh-GHsAAAAJ"><i class="ai ai-google-scholar"></i> Vahid Babaei</a>
       </div>
 
-      <p class="pub-blurb">Latent-space diffusion + neural multi-objective BO for inverse-designing 2D airfoils, balancing lift–drag while encouraging novelty.</p>
+      <p class="pub-blurb">
+        Latent-space diffusion + neural multi-objective BO for inverse-designing 2D airfoils with lift–drag trade-offs and novelty.
+      </p>
 
       <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
       <div class="pub-extra">
@@ -78,14 +76,14 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/deep-rl-stock-trading_1.png" alt="Deep RL for Stock Trading">
-      <span class="pub-ribbon is-published">IEEE ICCKE 2024</span>
+      <span class="pub-ribbon-corner is-published">IEEE ICCKE 2024</span>
     </div>
 
     <div class="pub-body">
       <header class="pub-head">
         <h3 class="pub-title">Deep Reinforcement Learning for Stock Trading</h3>
         <div class="pub-actions">
-          <a class="icon-btn" href="https://ieeexplore.ieee.org/document/10874515" title="IEEE Xplore" aria-label="PDF"><i class="far fa-file-pdf"></i></a>
+          <a class="icon-btn" href="https://ieeexplore.ieee.org/document/10874515" title="Paper (PDF)" aria-label="PDF"><i class="far fa-file-pdf"></i></a>
           <a class="icon-btn" href="https://github.com/MahanVeisi8/LSTMppo-DRL-StockTrader" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
           <a class="icon-btn" href="https://youtu.be/Jfpc6_kGLYo?si=U9xVX03Jn_7jxY1d" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
@@ -97,7 +95,7 @@ classes: wide
         <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Armin Salimi-Badr</a>
       </div>
 
-      <p class="pub-blurb">FinBERT sentiment fused with PPO-LSTM; 134.39% cumulative return and 1.46 Sharpe, beating DJIA and PPO baselines.</p>
+      <p class="pub-blurb">FinBERT + PPO-LSTM; 134.39% cumulative return and 1.46 Sharpe, beating DJIA and PPO baselines.</p>
 
       <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
       <div class="pub-extra">
@@ -110,7 +108,7 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/SincNet.jpg" alt="SincNet for Parkinson’s Gait">
-      <span class="pub-ribbon is-underreview">Under Review — AIHC</span>
+      <span class="pub-ribbon-corner is-underreview">Under Review — AIHC</span>
     </div>
 
     <div class="pub-body">
@@ -136,31 +134,26 @@ classes: wide
     </div>
   </article>
 
-  <!-- ROBOCUP -->
+  <!-- ROBOCUP (title + readmore only) -->
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/Soccer2d.png" alt="RoboCup Soccer Simulation">
-      <span class="pub-ribbon is-published">RoboCup Proc.</span>
+      <span class="pub-ribbon-corner is-published">RoboCup Proc.</span>
     </div>
 
     <div class="pub-body">
       <header class="pub-head">
         <h3 class="pub-title">Intelligent Agents for RoboCup Soccer Simulation</h3>
         <div class="pub-actions">
-          <a class="icon-btn" href="https://archive.robocup.info/Soccer/Simulation/2D/TDPs/RoboCup/2023/R3CESBU_SS2D_RC2023_TDP.pdf" title="PDF" aria-label="PDF"><i class="far fa-file-pdf"></i></a>
+          <a class="icon-btn" href="https://archive.robocup.info/Soccer/Simulation/2D/TDPs/RoboCup/2023/R3CESBU_SS2D_RC2023_TDP.pdf" title="Paper (PDF)" aria-label="PDF"><i class="far fa-file-pdf"></i></a>
         </div>
       </header>
 
-      <div class="pub-authors">
-        Mohammad Hesam Nasiri, Seyed Hassan Majid Zonouzi, Arya Parvizi, Seyed Mostafa Atyabi,
-        Seyedeh Rana Rokni, Sanaz Moosapour, <strong>Mahan Veisi</strong>, Kiarah Kowsari, Farbod Saghfi
-      </div>
-
-      <p class="pub-blurb">Role-optimized agents (goalkeeping, defense, teamwork) in the 2D Simulation League; team placed 2nd at IranOpen 2023.</p>
+      <p class="pub-blurb">Role-optimized agents for goalkeeping, defense, and teamwork in the 2D Simulation League.</p>
 
       <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
       <div class="pub-extra">
-        <p>Hybrid heuristics + learned policies stabilized cooperation and transitions.</p>
+        <p>Team placed 2nd at IranOpen 2023.</p>
       </div>
     </div>
   </article>
