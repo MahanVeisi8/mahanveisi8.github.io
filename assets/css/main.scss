@@ -504,11 +504,10 @@
   color:var(--chip-text); border-radius:999px; font-size:.85rem; font-weight:600;
   white-space:nowrap;
 }
-
 /* === Publications (single-hero, blue boxes) === */
 :root{
   --p-bg:#f7fbff; --p-br:#e2eefb; --p-ac:#0f7bdc; --p-ac-2:#084a9a;
-  --p-chip:#eaf3ff; --p-text:#143a52; --p-ratio: 16/7;
+  --p-chip:#eaf3ff; --p-text:#143a52; --p-ratio: 16/7; /* hero aspect */
 }
 
 .pub-grid{ display:grid; gap:1.25rem; }
@@ -526,7 +525,7 @@
   position:relative; background:#e9f3ff; border-bottom:1px solid var(--p-br);
   aspect-ratio: var(--p-ratio);
   padding:.65rem; display:flex; align-items:center; justify-content:center;
-  overflow:hidden; /* keeps the ribbon inside the box */
+  overflow:hidden; /* keeps the ribbon fully inside the box */
 }
 .pub-hero img{
   width:100%; height:100%; object-fit:contain; display:block; border-radius:10px;
@@ -534,22 +533,24 @@
 }
 .pub-card:hover .pub-hero img{ transform:scale(1.02); }
 
-/* diagonal ribbon – inside corner, rounded, adaptive */
-.pub-ribbon-corner{
-  position:absolute; top:clamp(8px,1vw,12px); right:clamp(8px,1vw,12px);
-  padding: .4rem .9rem;
-  font-weight:800; line-height:1; color:#fff;
-  font-size: clamp(.7rem,.85vw,.9rem);
+/* diagonal strap ribbon — rounded, adaptive, inside the box */
+.pub-hero .pub-ribbon-strap{
+  position:absolute; top:0; right:0; pointer-events:none;
+  /* tweak these four lines to taste */
+  --angle: 19deg;
+  width: clamp(170px, 44%, 360px);       /* adaptive length */
+  transform-origin: 100% 0%;
+  transform: translate(28%,-42%) rotate(var(--angle));
+  /* visuals */
+  padding:.42rem .9rem; text-align:center;
+  color:#fff; font-weight:800; font-size:clamp(.70rem,.85vw,.95rem); line-height:1;
   background:linear-gradient(135deg,#2fa3ff,#0f7bdc);
   border-radius:999px;
-  box-shadow:0 8px 18px rgba(15,123,220,.28), inset 0 0 0 1px rgba(255,255,255,.25);
-  transform: rotate(-16deg);  /* slight crooked look */
-  transform-origin: 100% 0%;  /* pivot around top-right */
-  pointer-events:none;        /* never blocks clicks */
+  box-shadow:0 10px 18px rgba(15,123,220,.28), inset 0 0 0 1px rgba(255,255,255,.25);
 }
-.pub-ribbon-corner.is-underreview{ background:linear-gradient(135deg,#36c2ff,#0ea5e9);}
-.pub-ribbon-corner.is-draft{ background:linear-gradient(135deg,#82b6ff,#3b82f6);}
-.pub-ribbon-corner.is-published{ background:linear-gradient(135deg,#2fa3ff,#0f7bdc);}
+.pub-hero .pub-ribbon-strap.is-underreview{ background:linear-gradient(135deg,#36c2ff,#0ea5e9); }
+.pub-hero .pub-ribbon-strap.is-draft{       background:linear-gradient(135deg,#82b6ff,#3b82f6); }
+.pub-hero .pub-ribbon-strap.is-published{   background:linear-gradient(135deg,#2fa3ff,#0f7bdc); }
 
 .pub-body{ padding:1rem 1.25rem 1.15rem; }
 
@@ -573,28 +574,29 @@
 .pub-authors a:hover{ border-bottom-style:solid; }
 .pub-authors i{ margin-right:.25rem; opacity:.9; }
 
-/* details/summary: accessible + pretty + animated with JS */
-.pub-more{ margin:.2rem 0 0; }
-.pub-more > .pub-toggle{
-  list-style:none;
-  appearance:none; border:0; background:#eaf3ff; color:#0f5bb8;
-  font-weight:800; cursor:pointer; padding:.46rem .95rem; border-radius:999px;
-  display:inline-flex; align-items:center; gap:.35rem;
+.pub-blurb{ margin:.25rem 0 .35rem; color:#314b63; }
+
+/* Accessible, JS-free Read more using details/summary */
+.pub-more{ margin:.25rem 0 0; }
+.pub-more > summary{
+  list-style:none; cursor:pointer; user-select:none;
+  background:#eaf3ff; color:#0f5bb8; font-weight:800;
+  padding:.46rem .95rem; border-radius:999px; display:inline-flex; align-items:center; gap:.35rem;
   box-shadow:0 3px 8px rgba(0,0,0,.06);
 }
-.pub-more > .pub-toggle::after{
+.pub-more > summary::-webkit-details-marker{ display:none; } /* hide default triangle */
+.pub-more > summary::after{
   content:"▾"; display:inline-block; transition:transform .15s ease;
 }
-.pub-more[open] > .pub-toggle::after{ transform:rotate(180deg); }
+.pub-more[open] > summary::after{ transform:rotate(180deg); } /* up when open */
 
-/* hidden by default if JS is off */
-.pub-more:not([open]) .pub-extra{ display:none; }
 .pub-extra{
   margin-top:.55rem; color:#334155;
   padding:.75rem .9rem; background:#f0f7ff; border:1px solid #e0edff; border-radius:10px;
 }
+.pub-more:not([open]) .pub-extra{ display:none; } /* hidden when closed */
 
-/* responsive ratio tweak */
+/* responsive hero ratio tweak */
 @media (max-width:640px){
   :root{ --p-ratio: 16/10; }
 }

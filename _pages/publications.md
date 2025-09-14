@@ -15,7 +15,7 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/CMRI_Recon.jpg" alt="All-in-One MRI Reconstruction">
-      <span class="pub-ribbon is-draft">Manuscript in Progress</span>
+      <span class="pub-ribbon-strap is-draft">Manuscript in Progress</span>
     </div>
 
     <div class="pub-body">
@@ -32,12 +32,10 @@ classes: wide
 
       <details class="pub-more">
         <summary>Read more</summary>
-        <div class="pub-more__content">
-          <div class="pub-more__inner">
-            <p class="pub-blurb">
-              Cascaded transformer U-Nets with Frequency Mining for multi-contrast MRI reconstruction from k-space (MICCAI-style benchmarks). Emphasizes robustness across contrasts and acceleration factors with artifact mitigation and strong generalization.
-            </p>
-          </div>
+        <div class="pub-extra">
+          <p class="pub-blurb">
+            Cascaded transformer U-Nets with Frequency Mining for multi-contrast MRI reconstruction from k-space (MICCAI-style benchmarks). Emphasizes robustness across contrasts and acceleration factors with artifact mitigation and strong generalization.
+          </p>
         </div>
       </details>
     </div>
@@ -47,7 +45,7 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/airfoil_diff_opt.jpg" alt="Diffusion-Driven Airfoil Optimization">
-      <span class="pub-ribbon is-draft">Manuscript in Progress</span>
+      <span class="pub-ribbon-strap is-draft">Manuscript in Progress</span>
     </div>
 
     <div class="pub-body">
@@ -63,12 +61,10 @@ classes: wide
 
       <details class="pub-more">
         <summary>Read more</summary>
-        <div class="pub-more__content">
-          <div class="pub-more__inner">
-            <p class="pub-blurb">
-              Latent-space diffusion + neural multi-objective BO for inverse-designing 2D airfoils, balancing lift–drag while encouraging novelty; large-batch acquisition improves Pareto diversity.
-            </p>
-          </div>
+        <div class="pub-extra">
+          <p class="pub-blurb">
+            Latent-space diffusion + neural multi-objective BO for inverse-designing 2D airfoils, balancing lift–drag while encouraging novelty; large-batch acquisition improves Pareto diversity.
+          </p>
         </div>
       </details>
     </div>
@@ -77,8 +73,8 @@ classes: wide
   <!-- DRL TRADING -->
   <article class="pub-card">
     <div class="pub-hero">
-      <img src="/assets/img/publications/deep-rl-stock-trading_1.png" alt="Deep RL for Stock Trading">
-      <span class="pub-ribbon is-published">IEEE ICCKE 2024</span>
+      <img src="/assets/img/publications/deep-rl-stock-trading_1.jpg" alt="Deep RL for Stock Trading">
+      <span class="pub-ribbon-strap is-published">IEEE ICCKE 2024</span>
     </div>
 
     <div class="pub-body">
@@ -99,12 +95,10 @@ classes: wide
 
       <details class="pub-more">
         <summary>Read more</summary>
-        <div class="pub-more__content">
-          <div class="pub-more__inner">
-            <p class="pub-blurb">
-              FinBERT sentiment fused with PPO-LSTM; reached <strong>134.39% cumulative return</strong> and <strong>1.46 Sharpe</strong>, outperforming DJIA, Ensemble, and PPO baselines, with risk-aware reward shaping and rolling-window evaluation.
-            </p>
-          </div>
+        <div class="pub-extra">
+          <p class="pub-blurb">
+            FinBERT sentiment fused with PPO-LSTM; reached <strong>134.39% cumulative return</strong> and <strong>1.46 Sharpe</strong>, outperforming DJIA, Ensemble, and PPO baselines, with risk-aware reward shaping and rolling-window evaluation.
+          </p>
         </div>
       </details>
     </div>
@@ -114,7 +108,7 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/SincNet.jpg" alt="SincNet for Parkinson’s Gait">
-      <span class="pub-ribbon is-underreview">Under Review — AIHC</span>
+      <span class="pub-ribbon-strap is-underreview">Under Review — AIHC</span>
     </div>
 
     <div class="pub-body">
@@ -133,12 +127,10 @@ classes: wide
 
       <details class="pub-more">
         <summary>Read more</summary>
-        <div class="pub-more__content">
-          <div class="pub-more__inner">
-            <p class="pub-blurb">
-              SincNet-based gait classification with post-hoc filter clustering to surface medically relevant frequency bands; achieved <strong>98.7% accuracy</strong> with interpretable components.
-            </p>
-          </div>
+        <div class="pub-extra">
+          <p class="pub-blurb">
+            SincNet-based gait classification with post-hoc filter clustering to surface medically relevant frequency bands; achieved <strong>98.7% accuracy</strong> with interpretable components.
+          </p>
         </div>
       </details>
     </div>
@@ -148,7 +140,7 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/Soccer2d.png" alt="RoboCup Soccer Simulation">
-      <span class="pub-ribbon is-published">RoboCup Proc.</span>
+      <span class="pub-ribbon-strap is-published">RoboCup Proc.</span>
     </div>
 
     <div class="pub-body">
@@ -161,12 +153,10 @@ classes: wide
 
       <details class="pub-more">
         <summary>Read more</summary>
-        <div class="pub-more__content">
-          <div class="pub-more__inner">
-            <p class="pub-blurb">
-              Role-optimized agents (goalkeeping, defense, teamwork) in the 2D Simulation League; team placed 2nd at IranOpen 2023.
-            </p>
-          </div>
+        <div class="pub-extra">
+          <p class="pub-blurb">
+            Role-optimized agents (goalkeeping, defense, teamwork) in the 2D Simulation League; team placed 2nd at IranOpen 2023.
+          </p>
         </div>
       </details>
     </div>
