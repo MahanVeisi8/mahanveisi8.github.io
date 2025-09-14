@@ -423,6 +423,6 @@
   .pub-hero{ padding: max(2px, calc(var(--pub-img-eps) - 2px)); }
   .pub-hero .pub-ribbon-strap{
     width: clamp(130px, 60%, 260px);
-    transform: rotate(16deg);
+    // transform: rotate(0deg);
   }
 }
