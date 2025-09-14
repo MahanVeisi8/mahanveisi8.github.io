@@ -105,19 +105,7 @@
 }
 
 
-/* Mobile: stack card vertically and make images span full width */
-@media (max-width: 768px) {
-  .publication-entry { flex-direction: column; }
-  .publication-images-2 {
-    max-width: 100%;
-    width: 100%;
-    /* Keep two rows; adjust total height if you want taller thumbs on mobile */
-    --pub-img-col-h: 300px;
-  }
-}
-
-.project-entry,
-.publication-entry {
+.project-entry {
   display: flex;
   background: var(--blue-light);
   border-radius: 0.5rem;
@@ -127,14 +115,12 @@
   margin-bottom: 2rem;
 }
 
-.project-entry:hover,
-.publication-entry:hover {
+.project-entry:hover{
   transform: translateY(-4px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
-.project-image,
-.publication-image {
+.project-image{
   flex: 0 0 40%;
   max-width: 300px;
   background: var(--blue-base);
@@ -143,60 +129,44 @@
   justify-content: center;
 }
 
-.project-image img,
-.publication-image img {
+.project-image img{
   width: 100%;
   height: auto;
   display: block;
 }
 
-.project-content,
-.publication-content {
+.project-content {
   flex: 1;
   padding: 1rem 1.5rem;
 }
 
-.project-content h3,
-.publication-content h3 {
+.project-content h3{
   margin-top: 0;
   color: var(--blue-dark);
   font-size: 1.4rem;
 }
 
-.project-content p,
-.publication-content p {
+.project-content p {
   color: #333;
   line-height: 1.5;
 }
 
-.project-link,
-.publication-link {
+.project-link {
   margin-top: 1rem;
   text-align: right;
 }
 
-.project-link a,
-.publication-link a {
+.project-link a {
   color: var(--blue-dark);
   font-weight: bold;
   text-decoration: none;
 }
 
-.project-link a:hover,
-.publication-link a:hover {
+.project-link a:hover {
   text-decoration: underline;
 }
 
-/* Publication header tweaks */
-.publication-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.publication-header em {
-  font-style: normal;
-  color: #555;
-}
+
 
 
 /* === Experience cards === */
@@ -382,6 +352,7 @@
   color:var(--chip-text); border-radius:999px; font-size:.85rem; font-weight:600;
   white-space:nowrap;
 }
+
 /* === Publications (single-hero, blue boxes) === */
 :root{
   --p-bg:#f7fbff; --p-br:#e2eefb; --p-ac:#0f7bdc; --p-ac-2:#084a9a;
@@ -398,22 +369,26 @@
 }
 .pub-card:hover{ transform:translateY(-2px); box-shadow:0 14px 28px rgba(0,0,0,.08); }
 
-/* hero image with padding and no crop */
+/* hero image — full bleed with a small margin; creates its own stacking context */
 .pub-hero{
-  position:relative; background:#e9f3ff; border-bottom:1px solid var(--p-br);
+  position:relative; isolation:isolate; /* make z-index work predictably */
+  background:#e9f3ff; border-bottom:1px solid var(--p-br);
   aspect-ratio: var(--p-ratio);
-  padding:.65rem; display:flex; align-items:center; justify-content:center;
-  overflow:hidden; /* keep the pill ends inside the hero */
+  padding:.55rem; /* this = the “slight margin” around the image */
+  overflow:hidden;
 }
 .pub-hero img{
-  width:100%; height:100%; object-fit:contain; display:block; border-radius:10px;
+  position:relative; z-index:1;
+  width:100%; height:100%;
+  object-fit:cover; object-position:center;
+  display:block; border-radius:10px;
   transform:scale(1.0); transition:transform .25s ease;
 }
 .pub-card:hover .pub-hero img{ transform:scale(1.02); }
 
-/* Top-right ribbon — visible, on top, gently faded blue */
+/* Top-right ribbon — inside the box, above the image */
 .pub-hero .pub-ribbon-strap{
-  position:absolute; top:.6rem; right:.6rem; z-index:9; pointer-events:none;
+  position:absolute; top:.6rem; right:.6rem; z-index:2; pointer-events:none;
 
   /* size & rotation */
   width:clamp(160px, 38%, 320px);
@@ -426,7 +401,7 @@
   font-size:clamp(.72rem,.9vw,.98rem); line-height:1;
   white-space:nowrap; border-radius:999px;
 
-  /* stylish blue with slight fade */
+  /* stylish blue with subtle fade at ends */
   background:linear-gradient(90deg,
     rgba(97,179,255,.92) 0%,
     rgba(37,126,235,.97) 55%,
@@ -434,13 +409,11 @@
   box-shadow:
     0 10px 22px rgba(15,123,220,.28),
     inset 0 0 0 1px rgba(255,255,255,.28);
-
-  /* soft edge fade so ends don’t look chopped */
   -webkit-mask-image:linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
           mask-image:linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
 }
 
-/* Same color for all states (published/under review/draft) */
+/* Same color for all states for a classy consistent look */
 .pub-hero .pub-ribbon-strap.is-underreview,
 .pub-hero .pub-ribbon-strap.is-draft,
 .pub-hero .pub-ribbon-strap.is-published{
@@ -474,7 +447,7 @@
 
 .pub-blurb{ margin:.25rem 0 .35rem; color:#314b63; }
 
-/* Accessible, JS-free Read more using details/summary */
+/* Accessible, JS-free Read more */
 .pub-more{ margin:.25rem 0 0; }
 .pub-more > summary{
   list-style:none; cursor:pointer; user-select:none;
@@ -483,9 +456,7 @@
   box-shadow:0 3px 8px rgba(0,0,0,.06);
 }
 .pub-more > summary::-webkit-details-marker{ display:none; }
-.pub-more > summary::after{
-  content:"▾"; display:inline-block; transition:transform .15s ease;
-}
+.pub-more > summary::after{ content:"▾"; display:inline-block; transition:transform .15s ease; }
 .pub-more[open] > summary::after{ transform:rotate(180deg); }
 
 .pub-extra{
@@ -493,9 +464,10 @@
   padding:.75rem .9rem; background:#f0f7ff; border:1px solid #e0edff; border-radius:10px;
 }
 
-/* responsive hero ratio tweak */
+/* responsiveness */
 @media (max-width:640px){
   :root{ --p-ratio: 16/10; }
+  .pub-hero{ padding:.5rem; }
   .pub-hero .pub-ribbon-strap{
     top:.5rem; right:.5rem;
     width:clamp(150px, 60%, 280px);
