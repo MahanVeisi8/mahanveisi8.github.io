@@ -504,10 +504,11 @@
   color:var(--chip-text); border-radius:999px; font-size:.85rem; font-weight:600;
   white-space:nowrap;
 }
-/* === Publications (single-hero, blue boxes, in-card ribbon) === */
+
+/* === Publications (single-hero, blue boxes) === */
 :root{
   --p-bg:#f7fbff; --p-br:#e2eefb; --p-ac:#0f7bdc; --p-ac-2:#084a9a;
-  --p-chip:#eaf3ff; --p-text:#143a52; --p-ratio: 16/7; /* shorter hero */
+  --p-chip:#eaf3ff; --p-text:#143a52; --p-ratio: 16/7;
 }
 
 .pub-grid{ display:grid; gap:1.25rem; }
@@ -520,12 +521,12 @@
 }
 .pub-card:hover{ transform:translateY(-2px); box-shadow:0 14px 28px rgba(0,0,0,.08); }
 
-/* hero image with blue frame and no crop */
+/* hero image with padding and no crop */
 .pub-hero{
   position:relative; background:#e9f3ff; border-bottom:1px solid var(--p-br);
   aspect-ratio: var(--p-ratio);
-  padding:.6rem;
-  display:flex; align-items:center; justify-content:center;
+  padding:.65rem; display:flex; align-items:center; justify-content:center;
+  overflow:hidden; /* keeps the ribbon inside the box */
 }
 .pub-hero img{
   width:100%; height:100%; object-fit:contain; display:block; border-radius:10px;
@@ -533,19 +534,22 @@
 }
 .pub-card:hover .pub-hero img{ transform:scale(1.02); }
 
-/* small rounded ribbon sitting INSIDE the image, slightly tilted */
-.pub-ribbon{
-  position:absolute; top:.75rem; right:.75rem; z-index:2;
-  padding:.32rem .7rem .34rem;
-  font-weight:800; font-size:.78rem; letter-spacing:.1px;
-  color:#fff; background:linear-gradient(135deg, #2fa3ff, #0f7bdc);
+/* diagonal ribbon – inside corner, rounded, adaptive */
+.pub-ribbon-corner{
+  position:absolute; top:clamp(8px,1vw,12px); right:clamp(8px,1vw,12px);
+  padding: .4rem .9rem;
+  font-weight:800; line-height:1; color:#fff;
+  font-size: clamp(.7rem,.85vw,.9rem);
+  background:linear-gradient(135deg,#2fa3ff,#0f7bdc);
   border-radius:999px;
-  transform: rotate(10deg);
-  box-shadow:0 6px 14px rgba(15,123,220,.25);
+  box-shadow:0 8px 18px rgba(15,123,220,.28), inset 0 0 0 1px rgba(255,255,255,.25);
+  transform: rotate(-16deg);  /* slight crooked look */
+  transform-origin: 100% 0%;  /* pivot around top-right */
+  pointer-events:none;        /* never blocks clicks */
 }
-.pub-ribbon.is-underreview{ background:linear-gradient(135deg, #36c2ff, #0ea5e9); }
-.pub-ribbon.is-draft{ background:linear-gradient(135deg, #82b6ff, #3b82f6); }
-.pub-ribbon.is-published{ background:linear-gradient(135deg, #2fa3ff, #0f7bdc); }
+.pub-ribbon-corner.is-underreview{ background:linear-gradient(135deg,#36c2ff,#0ea5e9);}
+.pub-ribbon-corner.is-draft{ background:linear-gradient(135deg,#82b6ff,#3b82f6);}
+.pub-ribbon-corner.is-published{ background:linear-gradient(135deg,#2fa3ff,#0f7bdc);}
 
 .pub-body{ padding:1rem 1.25rem 1.15rem; }
 
@@ -556,50 +560,41 @@
 .icon-btn{
   display:inline-flex; align-items:center; justify-content:center;
   width:40px; height:40px; border-radius:12px;
-  background:#eef6ff; border:1px solid #d9e8fb;
-  color:var(--p-ac-2); font-size:1.15rem;
-  transition:transform .12s ease, background .12s ease, border-color .12s ease;
+  background:#eef6ff; border:1px solid #d9e8fb; color:var(--p-ac-2);
+  font-size:1.15rem; transition:transform .12s ease, background .12s ease, border-color .12s ease;
 }
 .icon-btn:hover{ transform:translateY(-1px); background:#e6f1ff; border-color:#cfe3ff; }
 
 .pub-authors{
-  display:flex; flex-wrap:wrap; gap:.35rem .75rem; margin:.2rem 0 .1rem;
+  display:flex; flex-wrap:wrap; gap:.35rem .75rem; margin:.25rem 0 .35rem;
   color:#2a4a68; font-size:.98rem;
 }
 .pub-authors a{ color:#0f6bdc; text-decoration:none; border-bottom:1px dotted rgba(15,107,220,.25); }
 .pub-authors a:hover{ border-bottom-style:solid; }
 .pub-authors i{ margin-right:.25rem; opacity:.9; }
 
-.pub-blurb{ margin:.25rem 0 0; color:#314b63; }
+/* details/summary: accessible + pretty + animated with JS */
+.pub-more{ margin:.2rem 0 0; }
+.pub-more > .pub-toggle{
+  list-style:none;
+  appearance:none; border:0; background:#eaf3ff; color:#0f5bb8;
+  font-weight:800; cursor:pointer; padding:.46rem .95rem; border-radius:999px;
+  display:inline-flex; align-items:center; gap:.35rem;
+  box-shadow:0 3px 8px rgba(0,0,0,.06);
+}
+.pub-more > .pub-toggle::after{
+  content:"▾"; display:inline-block; transition:transform .15s ease;
+}
+.pub-more[open] > .pub-toggle::after{ transform:rotate(180deg); }
 
-/* details/summary “Read more” with animated reveal */
-.pub-more{ margin-top:.5rem; }
-.pub-more > summary{
-  list-style:none; cursor:pointer; user-select:none;
-  display:inline-block; padding:.42rem .9rem;
-  background:#eaf3ff; color:#0f5bb8; font-weight:800;
-  border-radius:999px; box-shadow:0 3px 8px rgba(0,0,0,.06);
-}
-.pub-more > summary::-webkit-details-marker{ display:none; }
-.pub-more > summary::after{
-  content:" ▾"; display:inline-block; transition:transform .15s ease;
-}
-.pub-more[open] > summary::after{ transform:rotate(180deg); }
-
-/* animated content container */
-.pub-more__content{
-  display:grid; grid-template-rows:0fr;
-  transition:grid-template-rows .25s ease;
-  margin-top:.45rem;
-}
-.pub-more[open] .pub-more__content{ grid-template-rows:1fr; }
-.pub-more__inner{
-  overflow:hidden;
-  background:#f0f7ff; border:1px solid #e0edff; border-radius:10px;
-  padding:.7rem .85rem; color:#334155;
+/* hidden by default if JS is off */
+.pub-more:not([open]) .pub-extra{ display:none; }
+.pub-extra{
+  margin-top:.55rem; color:#334155;
+  padding:.75rem .9rem; background:#f0f7ff; border:1px solid #e0edff; border-radius:10px;
 }
 
-/* responsive */
-@media (max-width: 640px){
+/* responsive ratio tweak */
+@media (max-width:640px){
   :root{ --p-ratio: 16/10; }
 }
