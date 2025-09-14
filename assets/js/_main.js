@@ -96,14 +96,5 @@ $(document).ready(function(){
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
-  // // Publications
-  $(document).on("click", ".pub-toggle", function (e) {
-    e.preventDefault();
-    const $btn   = $(this);
-    const $extra = $btn.closest(".pub-body").find(".pub-extra").first();
-    const isOpen = $btn.attr("aria-expanded") === "true";
-    $extra.stop(true, true).slideToggle(220);
-    $btn.attr("aria-expanded", String(!isOpen))
-        .text(isOpen ? "Read more" : "Read less");
-  });
+
 });

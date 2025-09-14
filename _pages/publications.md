@@ -15,8 +15,8 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/CMRI_Recon.jpg" alt="All-in-One MRI Reconstruction">
+      <span class="pub-ribbon is-draft">Manuscript in Progress</span>
     </div>
-    <span class="pub-ribbon-corner is-draft">Manuscript in Progress</span>
 
     <div class="pub-body">
       <header class="pub-head">
@@ -30,13 +30,16 @@ classes: wide
         <a href="https://scholar.google.com/citations?user=trWxrgcAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Mohsen Ebrahimi Moghaddam</a>
       </div>
 
-      <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
-      <div class="pub-extra">
-        <p class="pub-blurb">
-          Cascaded transformer U-Nets with Frequency Mining for multi-contrast MRI reconstruction from k-space (MICCAI-style benchmarks).
-        </p>
-        <p>Emphasizes robustness across contrasts/accelerations with artifact mitigation and strong generalization.</p>
-      </div>
+      <details class="pub-more">
+        <summary>Read more</summary>
+        <div class="pub-more__content">
+          <div class="pub-more__inner">
+            <p class="pub-blurb">
+              Cascaded transformer U-Nets with Frequency Mining for multi-contrast MRI reconstruction from k-space (MICCAI-style benchmarks). Emphasizes robustness across contrasts and acceleration factors with artifact mitigation and strong generalization.
+            </p>
+          </div>
+        </div>
+      </details>
     </div>
   </article>
 
@@ -44,8 +47,8 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/airfoil_diff_opt.jpg" alt="Diffusion-Driven Airfoil Optimization">
+      <span class="pub-ribbon is-draft">Manuscript in Progress</span>
     </div>
-    <span class="pub-ribbon-corner is-draft">Manuscript in Progress</span>
 
     <div class="pub-body">
       <header class="pub-head">
@@ -58,13 +61,16 @@ classes: wide
         <a href="https://scholar.google.de/citations?user=Yjh-GHsAAAAJ"><i class="ai ai-google-scholar"></i> Vahid Babaei</a>
       </div>
 
-      <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
-      <div class="pub-extra">
-        <p class="pub-blurb">
-          Latent-space diffusion + neural multi-objective BO for inverse-designing 2D airfoils with lift–drag trade-offs and novelty.
-        </p>
-        <p>Large-batch acquisition and novelty encouragement diversify the Pareto front without sacrificing performance.</p>
-      </div>
+      <details class="pub-more">
+        <summary>Read more</summary>
+        <div class="pub-more__content">
+          <div class="pub-more__inner">
+            <p class="pub-blurb">
+              Latent-space diffusion + neural multi-objective BO for inverse-designing 2D airfoils, balancing lift–drag while encouraging novelty; large-batch acquisition improves Pareto diversity.
+            </p>
+          </div>
+        </div>
+      </details>
     </div>
   </article>
 
@@ -72,8 +78,8 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/deep-rl-stock-trading_1.png" alt="Deep RL for Stock Trading">
+      <span class="pub-ribbon is-published">IEEE ICCKE 2024</span>
     </div>
-    <span class="pub-ribbon-corner is-published">IEEE ICCKE 2024</span>
 
     <div class="pub-body">
       <header class="pub-head">
@@ -91,11 +97,16 @@ classes: wide
         <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Armin Salimi-Badr</a>
       </div>
 
-      <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
-      <div class="pub-extra">
-        <p class="pub-blurb">FinBERT + PPO-LSTM; 134.39% cumulative return and 1.46 Sharpe, beating DJIA and PPO baselines.</p>
-        <p>Risk-aware reward shaping and robust evaluation across rolling windows.</p>
-      </div>
+      <details class="pub-more">
+        <summary>Read more</summary>
+        <div class="pub-more__content">
+          <div class="pub-more__inner">
+            <p class="pub-blurb">
+              FinBERT sentiment fused with PPO-LSTM; reached <strong>134.39% cumulative return</strong> and <strong>1.46 Sharpe</strong>, outperforming DJIA, Ensemble, and PPO baselines, with risk-aware reward shaping and rolling-window evaluation.
+            </p>
+          </div>
+        </div>
+      </details>
     </div>
   </article>
 
@@ -103,8 +114,8 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/SincNet.jpg" alt="SincNet for Parkinson’s Gait">
+      <span class="pub-ribbon is-underreview">Under Review — AIHC</span>
     </div>
-    <span class="pub-ribbon-corner is-underreview">Under Review — AIHC</span>
 
     <div class="pub-body">
       <header class="pub-head">
@@ -120,20 +131,25 @@ classes: wide
         <strong>Mahan Veisi</strong>, Sadra Berangi
       </div>
 
-      <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
-      <div class="pub-extra">
-        <p class="pub-blurb">SincNet-based gait classification with post-hoc filter clustering; 98.7% accuracy with interpretable bands.</p>
-        <p>Silhouette-guided pruning surfaces medically relevant frequency bands for PD diagnosis.</p>
-      </div>
+      <details class="pub-more">
+        <summary>Read more</summary>
+        <div class="pub-more__content">
+          <div class="pub-more__inner">
+            <p class="pub-blurb">
+              SincNet-based gait classification with post-hoc filter clustering to surface medically relevant frequency bands; achieved <strong>98.7% accuracy</strong> with interpretable components.
+            </p>
+          </div>
+        </div>
+      </details>
     </div>
   </article>
 
-  <!-- ROBOCUP -->
+  <!-- ROBOCUP (title + short readmore only) -->
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/Soccer2d.png" alt="RoboCup Soccer Simulation">
+      <span class="pub-ribbon is-published">RoboCup Proc.</span>
     </div>
-    <span class="pub-ribbon-corner is-published">RoboCup Proc.</span>
 
     <div class="pub-body">
       <header class="pub-head">
@@ -143,10 +159,16 @@ classes: wide
         </div>
       </header>
 
-      <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
-      <div class="pub-extra">
-        <p class="pub-blurb">Role-optimized agents for goalkeeping, defense, and teamwork in the 2D Simulation League. Team placed 2nd at IranOpen 2023.</p>
-      </div>
+      <details class="pub-more">
+        <summary>Read more</summary>
+        <div class="pub-more__content">
+          <div class="pub-more__inner">
+            <p class="pub-blurb">
+              Role-optimized agents (goalkeeping, defense, teamwork) in the 2D Simulation League; team placed 2nd at IranOpen 2023.
+            </p>
+          </div>
+        </div>
+      </details>
     </div>
   </article>
 
