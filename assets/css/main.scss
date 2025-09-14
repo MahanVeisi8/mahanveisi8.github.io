@@ -357,72 +357,66 @@
 :root{
   --p-bg:#f7fbff; --p-br:#e2eefb; --p-ac:#0f7bdc; --p-ac-2:#084a9a;
   --p-chip:#eaf3ff; --p-text:#143a52; --p-ratio: 16/7;
-  --pub-img-eps: 6px; /* ← tweak this (2–8px) to change the thin blue margin */
+  --pub-img-eps: 2px; /* ← tweak this (2–8px) to change the thin blue margin */
+  --rb-h: 42px;        /* ribbon height; tweak 34–48px */
+  --rb-gap: 4px;       /* space between ribbon and image */
 }
-
+/* === Publications: straight ribbon inside the hero === */
 .pub-hero{
   position: relative;
   isolation: isolate;
   background:#e9f3ff;
   border-bottom:1px solid var(--p-br);
   aspect-ratio: var(--p-ratio);
-  padding: var(--pub-img-eps);         /* slight margin around the image */
-  overflow: visible;                    /* let the angled ribbon breathe */
+
+  /* thin blue frame everywhere... */
+  padding: var(--pub-img-eps);
+  /* ...plus EXTRA top padding to reserve a band for the ribbon */
+  padding-top: calc(var(--pub-img-eps) + var(--rb-h) + var(--rb-gap));
+
+  overflow: hidden; /* keep everything inside the rounded hero */
 }
 
 .pub-hero img{
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;                  /* never crop; fully visible */
-  object-position: 50% 50%;
-  display: block;
-  border-radius: 10px;
-  transform: none;                      /* no zoom-in effect */
+  position: relative; z-index:1;
+  width:100%; height:100%;
+  object-fit:contain; object-position:center; /* fill all the space below the ribbon */
+  display:block; border-radius:10px;
+  transform:none;
 }
 
-/* Top-right ribbon (inside hero, not clipped) */
 .pub-hero .pub-ribbon-strap{
-  position: absolute;
-  z-index: 2;
-  pointer-events: none;
+  position:absolute; z-index:2; pointer-events:none;
 
-  top: calc(var(--pub-img-eps) + .25rem);
-  right: calc(var(--pub-img-eps) + .25rem);
+  /* straight, top-right, inside the box */
+  top: var(--pub-img-eps);
+  right: var(--pub-img-eps);
+  height: var(--rb-h);
+  padding: 0 .9rem;
 
-  width: clamp(150px, 40%, 320px);
-  padding: .5rem 1rem;
-  border-radius: 999px;
+  display:inline-flex; align-items:center; justify-content:center;
+  white-space:nowrap; border-radius:999px;
+  transform:none;               /* <- no angle */
 
-  transform-origin: 100% 0%;
-  transform: rotate(14deg);
-
-  color: #fff;
-  font-weight: 800;
-  letter-spacing: .15px;
-  line-height: 1;
-  white-space: nowrap;
-
+  color:#fff; font-weight:800; font-size:clamp(.72rem,.9vw,.98rem); letter-spacing:.15px;
   background: linear-gradient(90deg,
-    rgba(97,179,255,.92) 0%,
-    rgba(37,126,235,.97) 55%,
-    rgba(15,92,184,.95) 100%);
-  box-shadow:
-    0 8px 18px rgba(15,123,220,.26),
-    inset 0 0 0 1px rgba(255,255,255,.28);
-
-  /* remove masks that caused odd clipping on some browsers */
-  -webkit-mask-image: none;
-  mask-image: none;
+    var(--rb-c1, #61b3ff) 0%,
+    var(--rb-c2, #257eeb) 55%,
+    var(--rb-c3, #0f5cb8) 100%);
+  box-shadow: 0 8px 18px rgba(15,123,220,.26), inset 0 0 0 1px rgba(255,255,255,.28);
 }
 
-/* Phone tweaks */
+/* Optional: smaller ribbon on phones + a bit taller image area */
 @media (max-width: 640px){
-  :root{ --p-ratio: 16/10; }
-  .pub-hero{ padding: max(2px, calc(var(--pub-img-eps) - 2px)); }
-  .pub-hero .pub-ribbon-strap{
-    width: clamp(130px, 60%, 260px);
-    // transform: rotate(0deg);
-  }
+  :root{ --p-ratio: 16/10; --rb-h: 34px; --rb-gap: 6px; }
 }
+
+// /* Phone tweaks */
+// @media (max-width: 640px){
+//   :root{ --p-ratio: 16/10; }
+//   .pub-hero{ padding: max(2px, calc(var(--pub-img-eps) - 2px)); }
+//   .pub-hero .pub-ribbon-strap{
+//     width: clamp(130px, 60%, 260px);
+//     // transform: rotate(0deg);
+//   }
+// }
