@@ -534,64 +534,71 @@
 .pub-card:hover .pub-hero img{ transform:scale(1.02); }
 /* diagonal strap ribbon — rounded, adaptive, inside the box */
 .pub-hero .pub-ribbon-strap{
-  position:absolute; z-index:2; top:0; right:0; pointer-events:none;
+  position:absolute; z-index:5; top:0; right:0; pointer-events:none;
 
-  /* layout/placement (tweak if you want a slightly different tilt) */
-  --strap-angle: 21deg;
-  --strap-shift-x: 34%;
-  --strap-shift-y: -48%;
-  width: clamp(180px, 46%, 360px);
+  /* base placement (works for most viewports) */
+  --strap-angle: 18deg;
+  --strap-shift-x: 18%;   /* smaller = closer to the corner */
+  --strap-shift-y: -26%;  /* less negative = lower */
+  width: clamp(160px, 38%, 320px);
+
   transform-origin: 100% 0%;
   transform: translate(var(--strap-shift-x), var(--strap-shift-y)) rotate(var(--strap-angle));
 
   /* look & feel */
   padding:.46rem 1rem;
   text-align:center;
-  color:#fff;
-  font-weight:850;
-  font-size:clamp(.72rem,.9vw,.98rem);
-  line-height:1;
-  letter-spacing:.15px;
-  background: linear-gradient(
-    90deg,
-    rgba(97, 179, 255, .92) 0%,
-    rgba(37, 126, 235, .97) 55%,
-    rgba(15, 92, 184, .95) 100%
-  );
+  color:#fff; font-weight:850;
+  font-size:clamp(.72rem,.9vw,.98rem); line-height:1; letter-spacing:.15px;
+  background: linear-gradient(90deg,
+    rgba(97,179,255,.92) 0%,
+    rgba(37,126,235,.97) 55%,
+    rgba(15,92,184,.95) 100%);
   border-radius:999px;
+  box-shadow:0 10px 22px rgba(15,123,220,.28), inset 0 0 0 1px rgba(255,255,255,.28);
 
-  /* soft glow + subtle depth */
-  box-shadow:
-    0 10px 22px rgba(15,123,220,.28),
-    inset 0 0 0 1px rgba(255,255,255,.28);
-
-  /* fade both ends so it never looks chopped */
+  /* soft fade on ends so it never looks chopped */
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
           mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
 }
 
-/* (Optional) keep a single classy blue for all states */
+/* unify color across states (keeps the classy blue) */
 .pub-hero .pub-ribbon-strap.is-underreview,
 .pub-hero .pub-ribbon-strap.is-draft,
 .pub-hero .pub-ribbon-strap.is-published{
-  background: linear-gradient(
-    90deg,
-    rgba(97, 179, 255, .92) 0%,
-    rgba(37, 126, 235, .97) 55%,
-    rgba(15, 92, 184, .95) 100%
-  );
+  background: linear-gradient(90deg,
+    rgba(97,179,255,.92) 0%,
+    rgba(37,126,235,.97) 55%,
+    rgba(15,92,184,.95) 100%);
+}
+
+/* nudge for very wide screens (the old values were pushing it completely off) */
+@media (min-width: 1200px){
+  .pub-hero .pub-ribbon-strap{
+    --strap-shift-x: 12%;
+    --strap-shift-y: -22%;
+    width: clamp(170px, 34%, 340px);
+  }
+}
+@media (min-width: 1600px){
+  .pub-hero .pub-ribbon-strap{
+    --strap-shift-x: 8%;
+    --strap-shift-y: -18%;
+    width: clamp(180px, 30%, 360px);
+  }
 }
 
 /* small screens: shorten and nudge a bit so it stays perfect */
 @media (max-width: 900px){
   .pub-hero .pub-ribbon-strap{
-    --strap-angle: 20deg;
-    --strap-shift-x: 30%;
-    --strap-shift-y: -50%;
-    width: clamp(160px, 52%, 300px);
+    --strap-angle: 19deg;
+    --strap-shift-x: 22%;
+    --strap-shift-y: -34%;
+    width: clamp(150px, 50%, 300px);
     padding:.42rem .9rem;
   }
 }
+
 
 .pub-body{ padding:1rem 1.25rem 1.15rem; }
 
