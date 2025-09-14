@@ -15,13 +15,12 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/CMRI_Recon.jpg" alt="All-in-One MRI Reconstruction">
-      <span class="pub-ribbon-corner is-draft">Manuscript in Progress</span>
     </div>
+    <span class="pub-ribbon-corner is-draft">Manuscript in Progress</span>
 
     <div class="pub-body">
       <header class="pub-head">
         <h3 class="pub-title">All-in-One MRI Reconstruction with Cascaded Transformers</h3>
-        <!-- no icons while unpublished -->
       </header>
 
       <div class="pub-authors">
@@ -31,12 +30,11 @@ classes: wide
         <a href="https://scholar.google.com/citations?user=trWxrgcAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Mohsen Ebrahimi Moghaddam</a>
       </div>
 
-      <p class="pub-blurb">
-        Cascaded transformer U-Nets with Frequency Mining for multi-contrast MRI reconstruction from k-space (MICCAI-style benchmarks).
-      </p>
-
       <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
       <div class="pub-extra">
+        <p class="pub-blurb">
+          Cascaded transformer U-Nets with Frequency Mining for multi-contrast MRI reconstruction from k-space (MICCAI-style benchmarks).
+        </p>
         <p>Emphasizes robustness across contrasts/accelerations with artifact mitigation and strong generalization.</p>
       </div>
     </div>
@@ -46,13 +44,12 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/airfoil_diff_opt.jpg" alt="Diffusion-Driven Airfoil Optimization">
-      <span class="pub-ribbon-corner is-draft">Manuscript in Progress</span>
     </div>
+    <span class="pub-ribbon-corner is-draft">Manuscript in Progress</span>
 
     <div class="pub-body">
       <header class="pub-head">
         <h3 class="pub-title">Diffusion-Driven Airfoil Optimization</h3>
-        <!-- no icons while unpublished -->
       </header>
 
       <div class="pub-authors">
@@ -61,12 +58,11 @@ classes: wide
         <a href="https://scholar.google.de/citations?user=Yjh-GHsAAAAJ"><i class="ai ai-google-scholar"></i> Vahid Babaei</a>
       </div>
 
-      <p class="pub-blurb">
-        Latent-space diffusion + neural multi-objective BO for inverse-designing 2D airfoils with lift–drag trade-offs and novelty.
-      </p>
-
       <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
       <div class="pub-extra">
+        <p class="pub-blurb">
+          Latent-space diffusion + neural multi-objective BO for inverse-designing 2D airfoils with lift–drag trade-offs and novelty.
+        </p>
         <p>Large-batch acquisition and novelty encouragement diversify the Pareto front without sacrificing performance.</p>
       </div>
     </div>
@@ -76,8 +72,8 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/deep-rl-stock-trading_1.png" alt="Deep RL for Stock Trading">
-      <span class="pub-ribbon-corner is-published">IEEE ICCKE 2024</span>
     </div>
+    <span class="pub-ribbon-corner is-published">IEEE ICCKE 2024</span>
 
     <div class="pub-body">
       <header class="pub-head">
@@ -95,10 +91,9 @@ classes: wide
         <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Armin Salimi-Badr</a>
       </div>
 
-      <p class="pub-blurb">FinBERT + PPO-LSTM; 134.39% cumulative return and 1.46 Sharpe, beating DJIA and PPO baselines.</p>
-
       <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
       <div class="pub-extra">
+        <p class="pub-blurb">FinBERT + PPO-LSTM; 134.39% cumulative return and 1.46 Sharpe, beating DJIA and PPO baselines.</p>
         <p>Risk-aware reward shaping and robust evaluation across rolling windows.</p>
       </div>
     </div>
@@ -108,8 +103,8 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/SincNet.jpg" alt="SincNet for Parkinson’s Gait">
-      <span class="pub-ribbon-corner is-underreview">Under Review — AIHC</span>
     </div>
+    <span class="pub-ribbon-corner is-underreview">Under Review — AIHC</span>
 
     <div class="pub-body">
       <header class="pub-head">
@@ -125,21 +120,20 @@ classes: wide
         <strong>Mahan Veisi</strong>, Sadra Berangi
       </div>
 
-      <p class="pub-blurb">SincNet-based gait classification with post-hoc filter clustering; 98.7% accuracy with interpretable bands.</p>
-
       <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
       <div class="pub-extra">
+        <p class="pub-blurb">SincNet-based gait classification with post-hoc filter clustering; 98.7% accuracy with interpretable bands.</p>
         <p>Silhouette-guided pruning surfaces medically relevant frequency bands for PD diagnosis.</p>
       </div>
     </div>
   </article>
 
-  <!-- ROBOCUP (title + readmore only) -->
+  <!-- ROBOCUP -->
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/Soccer2d.png" alt="RoboCup Soccer Simulation">
-      <span class="pub-ribbon-corner is-published">RoboCup Proc.</span>
     </div>
+    <span class="pub-ribbon-corner is-published">RoboCup Proc.</span>
 
     <div class="pub-body">
       <header class="pub-head">
@@ -149,11 +143,9 @@ classes: wide
         </div>
       </header>
 
-      <p class="pub-blurb">Role-optimized agents for goalkeeping, defense, and teamwork in the 2D Simulation League.</p>
-
       <button class="pub-toggle" type="button" aria-expanded="false">Read more</button>
       <div class="pub-extra">
-        <p>Team placed 2nd at IranOpen 2023.</p>
+        <p class="pub-blurb">Role-optimized agents for goalkeeping, defense, and teamwork in the 2D Simulation League. Team placed 2nd at IranOpen 2023.</p>
       </div>
     </div>
   </article>
