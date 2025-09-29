@@ -1,0 +1,12 @@
+/* re-usable pills and chips also used on About */
+.chip{
+    display:inline-flex; align-items:center; padding:.24rem .55rem;
+    background:var(--chip-bg); border:1px solid var(--chip-b);
+    color:var(--chip-text); border-radius:999px; font-size:.85rem; font-weight:600;
+    white-space:nowrap;
+  }
+  
+  /* generic hover elevation for cards/entries */
+  .u-elevate:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(0,0,0,.08); }
+
+  .text-accent { color:#b42318; font-weight:800; }

@@ -1,0 +1,61 @@
+:root {
+    /* brand blues used in your cards */
+    --blue-light: #e0f7ff;
+    --blue-base:  #0095dd;
+    --blue-dark:  #006f9a;
+  
+    /* publications sizing */
+    --pub-left-col-basis: 40%;
+    --pub-left-col-max: 300px;
+    --pub-img-col-h: 340px;
+    --pub-img-gap: 8px;
+  
+    /* experience & certs vars */
+    --exp-bg: #f8fbff;
+    --exp-border: #e4eef8;
+    --exp-accent: #0f7bdc;
+    --badge-bg: #eaf3ff;
+    --badge-text: #0f4573;
+  
+    --card-bg:#f8fbff; --card-b:#e4eef8; --card-ac:#070bf5;
+    --chip-bg:#eef6ff; --chip-b:#d9e8fb; --chip-text:#0f4573;
+  
+    --p-bg:#f7fbff; --p-br:#e2eefb; --p-ac:#0f7bdc; --p-ac-2:#084a9a;
+    --p-text:#143a52; --p-ratio: 16/7; --pub-img-eps: 6px; --rb-h: 42px; --rb-gap: 6px;
+
+    /* Glow / gradient border for Experience cards */
+    --exp-radius: 14px;
+    --exp-bw: 1.6px;                 /* border width */
+    --exp-glow: 0 16px 36px rgba(15, 105, 189, 0.482);   /* outer glow */
+    --exp-glow-hover: 0 24px 54px rgba(7, 246, 242, 0.544);
+
+    /* warm blue gradient edge */
+    --exp-grad-1: #01f6f29a;           /* light cyan-blue */
+    --exp-grad-2: #0c56ebcd;           /* vivid royal blue */
+    --exp-grad-3: #000808b9;           /* deeper blue for angle mix */
+
+    /* logo sizes */
+    --exp-logo: 100px;                /* default single logo square */
+    --exp-lab-logo: 80px;            /* stacked lab logos */
+    --exp-lab-gap: 25px;              /* gap between stacked logos */
+  }
+  
+
+  :root{
+    /* Projects (gradient edge + glow) */
+    --proj-radius: 14px;
+    --proj-bw: 1.6px;
+    --proj-bg: #f8fbff;
+    --proj-glow: 0 16px 36px rgba(15,105,189,.22);
+    --proj-glow-hover: 0 22px 48px rgba(7,246,242,.28);
+  
+    /* gradient edge (harmonized with Experience) */
+    --proj-grad-1: #9bf8ff;   /* light cyan */
+    --proj-grad-2: #2f7cf0;   /* royal blue */
+    --proj-grad-3: #0a2038cc; /* deep blue */
+  
+    /* media sizing for project cards */
+    --proj-media-w: 300px;
+    --proj-media-ratio: 16/10;
+  }
+  

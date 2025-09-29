@@ -1,0 +1,99 @@
+.project-entry{
+    display:flex; background:var(--blue-light);
+    border-radius:.5rem; overflow:hidden; box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    transition: transform .2s, box-shadow .2s; margin-bottom:2rem;
+  }
+  .project-entry:hover{ transform:translateY(-4px); box-shadow:0 8px 16px rgba(0,0,0,.15); }
+  
+  .project-image{ flex:0 0 40%; max-width:300px; background:var(--blue-base);
+    display:flex; align-items:center; justify-content:center; }
+  .project-image img{ width:100%; height:auto; display:block; }
+  
+  .project-content{ flex:1; padding:1rem 1.5rem; }
+  .project-content h3{ margin-top:0; color:var(--blue-dark); font-size:1.4rem; }
+  .project-content p{ color:#333; line-height:1.5; }
+  
+  .project-link{ margin-top:1rem; text-align:right; }
+  .project-link a{ color:var(--blue-dark); font-weight:bold; text-decoration:none; }
+  .project-link a:hover{ text-decoration:underline; }
+
+/* ===== Projects (gradient cards) ===== */
+
+.project-grid{
+  display:grid;
+  gap:1.25rem;
+}
+
+/* Card with gradient border, glow, two-column layout */
+.project-card{
+  display:grid;
+  grid-template-columns: minmax(220px, var(--proj-media-w)) 1fr;
+  gap:1rem;
+  align-items:stretch;
+  padding:1rem 1.1rem;
+  border-radius:var(--proj-radius);
+
+  /* gradient edge like Experience */
+  background:
+    linear-gradient(var(--proj-bg), var(--proj-bg)) padding-box,
+    linear-gradient(135deg, var(--proj-grad-1), var(--proj-grad-2) 55%, var(--proj-grad-3)) border-box;
+  border:var(--proj-bw) solid transparent;
+
+  box-shadow: 0 8px 16px rgba(0,0,0,.04), var(--proj-glow);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.project-card:hover{ transform:translateY(-2px); box-shadow:0 12px 24px rgba(0,0,0,.08), var(--proj-glow-hover); }
+
+/* default: contain (letterbox if needed) */
+.project-media img{
+  width:100%;
+  height:100%;
+  object-fit:contain;         /* <-- no cropping */
+  object-position:center;
+  display:block;
+}
+
+/* --- Per-card fit modifiers --- */
+.project-media.fit-cover img{ object-fit:cover; }   /* allow crop when desired */
+.project-media.fit-fill  img{ object-fit:fill;  }   /* stretch (rarely recommended) */
+
+/* Optional: control position if the subject isn’t centered */
+.project-media.pos-top img{    object-position: top center; }
+.project-media.pos-bottom img{ object-position: bottom center; }
+.project-media.pos-left img{   object-position: center left; }
+.project-media.pos-right img{  object-position: center right; }
+
+/* Responsive keeps working as before */
+@media (max-width: 860px){
+  .project-card{ grid-template-columns: 1fr; }
+  .project-media{ aspect-ratio: 16/9; }
+}
+
+/* body */
+.project-body{ display:flex; flex-direction:column; gap:.5rem; }
+.project-title{ margin:.1rem 0 .2rem; font-size:1.22rem; color:#143a52; font-weight:800; }
+.project-desc{ color:#344a5a; margin:0; }
+.project-list{ margin:.35rem 0 0 1rem; }
+
+/* actions */
+.project-actions{
+  margin-top:auto; display:flex; gap:.5rem; justify-content:flex-end; flex-wrap:wrap;
+}
+.proj-btn{
+  display:inline-flex; align-items:center; gap:.45rem;
+  padding:.44rem .82rem; border-radius:10px; text-decoration:none;
+  background:#eef6ff; border:1px solid #d9e8fb; color:#0f5cb8; font-weight:800;
+  transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+}
+.proj-btn:hover{ transform:translateY(-1px); background:#e6f1ff; box-shadow:0 6px 14px rgba(15,91,184,.16); }
+.proj-btn i{ font-size:1.05rem; }
+
+/* optional tags (if you want) */
+.project-tags{ display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.15rem; }
+.project-tags .chip{ font-size:.8rem; }
+
+/* responsive */
+@media (max-width: 860px){
+  .project-card{ grid-template-columns: 1fr; }
+  .project-media{ aspect-ratio: 16/9; }
+}

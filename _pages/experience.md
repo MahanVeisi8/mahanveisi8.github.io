@@ -7,13 +7,16 @@ author_profile: true
 
 <section class="experience-list">
 
-  <!-- Wellcome Sanger Institute -->
-  <article class="exp-card">
-    <img class="exp-card__logo" src="/assets/img/logos/sanger.jpg" alt="Wellcome Sanger Institute">
+  <article class="exp-card exp-card--lab">
+    <div class="exp-card__logos">
+      <img src="/assets/img/logos/sanger.jpg" alt="Wellcome Sanger Institute">
+      <img src="/assets/img/logos/Cambridge.png" alt="University of Cambridge">
+    </div>
+
     <div class="exp-card__body">
       <header class="exp-card__header">
         <h3 class="exp-card__role">
-          Research Intern · <a class="exp-card__lab" href="https://lotfollahi.com/" target="_blank" rel="noopener">Lotfollahi Lab</a>
+          Research Intern · <a class="exp-card__lab" href="https://lotfollahi.com/Lab" target="_blank" rel="noopener">Lotfollahi Lab</a>
         </h3>
         <div class="exp-card__dates">Cambridge, UK</div>
       </header>
@@ -34,9 +37,12 @@ author_profile: true
     </div>
   </article>
 
-  <!-- HKUST -->
-  <article class="exp-card">
-    <img class="exp-card__logo" src="/assets/img/logos/hkust.jpg" alt="HKUST">
+  <article class="exp-card exp-card--lab">
+    <div class="exp-card__logos">
+      <img src="/assets/img/logos/hkust.jpg" alt="HKUST">
+      <img src="/assets/img/logos/smartlab.png" alt="SMART Lab">
+    </div>
+
     <div class="exp-card__body">
       <header class="exp-card__header">
         <h3 class="exp-card__role">
@@ -85,6 +91,45 @@ author_profile: true
         <li class="badge"><i class="fas fa-stream"></i> Diffusion Models</li>
         <li class="badge"><i class="fas fa-tasks"></i> Multi-Objective BO</li>
       </ul>
+
+    <details class="rec-drawer">
+      <summary><i class="far fa-comment-dots"></i> See recommendation</summary>
+
+      <div class="rec">
+        <div class="rec__head">
+          <div class="rec__who">
+            <!-- Navid avatar -->
+            <img class="rec__avatar" src="/assets/img/logos/Navid.jpg" alt="Navid Ansari">
+
+            <div class="rec__txt">
+              <p class="rec__name">Navid Ansari</p>
+              <p class="rec__meta">
+                <!-- tiny Huawei logo next to role -->
+                <img class="rec__org-logo" src="/assets/img/logos/huawei_logo.jpg" alt="Huawei">
+                Insight AI Researcher @ Huawei
+              </p>
+            </div>
+          </div>
+
+          <!-- View on LinkedIn -->
+          <a class="rec__cta" href="https://www.linkedin.com/in/navid-ansari-9a957b128/" target="_blank" rel="noopener" title="View on LinkedIn">
+            View on <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+
+        <div class="rec__body">
+          <p>
+            I supervised Mahan Veisi during his research internship in the Artificial Intelligence Design and Manufacturing (AIDAM)
+            Group at the Max Planck Institute for Informatics. We collaborated on developing a creative generative model to explore
+            innovative high-performing designs within a system.
+          </p>
+          <p>
+            I appreciated Mahan’s dedication, creativity, problem-solving skills, and strong teamwork throughout the project.
+            He is an excellent fit for machine learning roles, particularly those involving generative modelling. I highly recommend him.
+          </p>
+        </div>
+      </div>
+    </details>
     </div>
   </article>
 
@@ -155,3 +200,5 @@ author_profile: true
   </article>
 
 </section>
+
+
