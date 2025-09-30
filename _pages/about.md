@@ -75,6 +75,29 @@ Across my research internships and B.Sc. thesis, I’ve contributed to:
 I’ve summarized my internships and teaching work on a dedicated page:
 **[See Experience →](/experience/)**
 
+<!-- Institutes logo row -->
+<div class="exp-logos-strip" aria-label="Institutes">
+  <a class="logo-pill edge-blue" href="https://lotfollahi.com/Lab" target="_blank" rel="noopener"
+     title="Lotfollahi Lab — Wellcome Sanger Institute">
+    <img src="/assets/img/logos/sanger.jpg" alt="Wellcome Sanger Institute">
+  </a>
+
+  <a class="logo-pill edge-teal" href="https://smartlab.cse.ust.hk/" target="_blank" rel="noopener"
+     title="SMART Lab — HKUST">
+    <img src="/assets/img/logos/hkust.jpg" alt="HKUST">
+  </a>
+
+  <a class="logo-pill edge-indigo" href="https://aidam.mpi-inf.mpg.de/" target="_blank" rel="noopener"
+     title="AIDAM Group — MPI-INF">
+    <img src="/assets/img/logos/mpi-inf.jpg" alt="Max Planck Institute for Informatics">
+  </a>
+
+  <!-- SBU: styled circle, intentionally NOT a link -->
+  <span class="logo-pill edge-slate" title="Shahid Beheshti University">
+    <img src="/assets/img/logos/sbu.jpg" alt="Shahid Beheshti University">
+  </span>
+</div>
+
 
 ## Languages
 <!-- - **Persian**: Native  

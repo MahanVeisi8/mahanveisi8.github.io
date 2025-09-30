@@ -9,8 +9,8 @@ author_profile: true
 
   <article class="exp-card exp-card--lab">
     <div class="exp-card__logos">
-      <img src="/assets/img/logos/sanger.jpg" alt="Wellcome Sanger Institute">
       <img src="/assets/img/logos/Cambridge.png" alt="University of Cambridge">
+      <img src="/assets/img/logos/lotfollahiLab.jpg" alt="Wellcome Sanger Institute">
     </div>
 
     <div class="exp-card__body">

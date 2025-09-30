@@ -1,38 +1,189 @@
 _sass\custom\_about.scss:
 ```md
+/* ===== About page (styles only; no content changes) ===== */
+
 /* circular hero on About */
-.about-hero-circular {
-    display:flex; align-items:center; justify-content:flex-start; margin-bottom:2rem;
-  
-    &__img {
-      width:200px; height:200px; border-radius:50%;
-      object-fit:cover; margin-right:1.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.3);
-    }
-    &__text {
-      h1 { font-size:2rem; margin:0; }
-      p  { margin:.25rem 0 0; font-size:1.1rem; }
-    }
+.about-hero-circular{
+  display:flex; align-items:center; justify-content:flex-start; gap:1.25rem;
+  margin-bottom:2rem;
+  transition: transform .2s ease, filter .2s ease;
+}
+.about-hero-circular:hover{
+  transform: translateY(-2px);
+  filter: brightness(1.02);
+}
+
+.about-hero-circular__img{
+  width:200px; height:200px; border-radius:50%; object-fit:cover;
+  /* gradient edge + glow to align with the rest of the site */
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, var(--proj-grad-1), var(--proj-grad-2) 55%, var(--proj-grad-3)) border-box;
+  border: var(--proj-bw) solid transparent;
+  box-shadow: 0 10px 24px rgba(0,0,0,.10), var(--proj-glow);
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+.about-hero-circular:hover .about-hero-circular__img{
+  transform: rotate(-1.5deg) scale(1.02);
+  box-shadow: 0 16px 36px rgba(0,0,0,.14), var(--proj-glow-hover);
+  filter: saturate(1.05) contrast(1.02);
+}
+
+.about-hero-circular__text h1{ font-size:2rem; margin:0; color:#143a52; }
+.about-hero-circular__text p{ margin:.25rem 0 0; font-size:1.1rem; color:#375a86; }
+
+/* ===== Education card ===== */
+.edu-card{
+  padding:1rem 1.25rem; border-radius:12px;
+  /* upgrade to gradient edge + glow for consistency */
+  background:
+    linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+    linear-gradient(135deg, var(--proj-grad-1), var(--proj-grad-2) 55%, var(--proj-grad-3)) border-box;
+  border: var(--proj-bw) solid transparent;
+  box-shadow: 0 8px 16px rgba(0,0,0,.04), var(--proj-glow);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.edu-card:hover{ transform:translateY(-2px); box-shadow:0 12px 24px rgba(0,0,0,.08), var(--proj-glow-hover); }
+
+.edu-card__title{ margin:0; color:#143a52; font-weight:800; }
+.edu-card__meta{ color:#5b6b7a; margin:.15rem 0 .5rem; }
+
+.edu-stats{
+  display:flex; flex-wrap:wrap; gap:.5rem; padding:0; margin:0 0 .5rem 0; list-style:none;
+}
+.stat{
+  display:inline-flex; align-items:center; gap:.4rem;
+  padding:.22rem .55rem; font-size:.85rem; border-radius:999px;
+  background:#f3f7fc; border:1px solid #e2ebf7; color:#2a4a68;
+}
+.stat__label{ opacity:.8; }
+.stat__value{ font-weight:700; }
+
+/* ===== Languages block as a small card ===== */
+.lang-chips{
+  display:flex; flex-wrap:wrap; gap:.45rem; margin-top:.5rem;
+  padding:.6rem .8rem;
+  border-radius:12px;
+  background:
+    linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+    linear-gradient(135deg, var(--proj-grad-1), var(--proj-grad-2) 55%, var(--proj-grad-3)) border-box;
+  border: var(--proj-bw) solid transparent;
+  box-shadow: 0 6px 12px rgba(0,0,0,.04), var(--proj-glow);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.lang-chips:hover{ transform:translateY(-2px); box-shadow:0 12px 22px rgba(0, 0, 0, 0.08), var(--proj-glow-hover); }
+
+/* also used for course chips on this page */
+.course-chips{ display:flex; flex-wrap:wrap; gap:.45rem; margin-top:.25rem; }
+
+/* ===== Chip hover (subtle brighten, keep your existing look) ===== */
+.chip{
+  transition: transform .12s ease, box-shadow .12s ease, background .12s ease, border-color .12s ease;
+}
+.chip:hover{
+  transform: translateY(-1px);
+  background:#2eb9b4d5;
+  border-color:#05f8f8;
+  box-shadow:30 200px 200px rgba(0, 1, 2, 0.927);
+}
+
+/* ===== Responsive tweaks ===== */
+@media (max-width:700px){
+  .about-hero-circular{ align-items:flex-start; }
+  .about-hero-circular__img{ width:400px; height:400px; }
+  .about-hero-circular__text h1{ font-size:2rem; }
+}
+/* ===== Institute logo row (About) ===== */
+:root{
+  /* size clamps keep things even across wide + small screens */
+  --logo-min: 78px;          /* smallest circle */
+  --logo-ideal: 12vw;        /* fluid growth on mid screens */
+  --logo-max: 112px;         /* cap on desktop */
+  --logo-bw: 1.8px;          /* gradient border width */
+}
+
+/* even distribution across the full row */
+.exp-logos-strip{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);   /* 4 logos → 4 equal tracks */
+  align-items:center;
+  gap: 1.2rem;
+  margin: 1rem 0 1.8rem;                   /* extra vertical space */
+  padding: .2rem 0 1rem;                   /* room for drop shadows */
+}
+
+/* pill = circular card with gradient edge + inner shine */
+.logo-pill{
+  --edge-1:#2f7cf0;     /* start color (overridden by edge-* helpers below) */
+  --edge-2:#000000;     /* end color: black */
+  --shine: rgba(50,130,255,.14);
+
+  justify-self:center;                          /* center each pill in its cell */
+  width: clamp(var(--logo-min), var(--logo-ideal), var(--logo-max));
+  height: clamp(var(--logo-min), var(--logo-ideal), var(--logo-max));
+  border-radius: 999px;
+  display: grid; place-items: center;
+  text-decoration:none;
+  position: relative;
+  cursor: pointer;
+
+  /* gradient border + soft elevation */
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, var(--edge-1), var(--edge-2) 72%) border-box;
+  border: var(--logo-bw) solid transparent;
+  box-shadow: 0 8px 18px rgba(0,0,0,.06);
+
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+
+/* inner glassy shine */
+.logo-pill::after{
+  content:"";
+  position:absolute; inset:4px;
+  border-radius:inherit;
+  box-shadow: inset 0 0 32px rgba(255,255,255,.92);
+  pointer-events:none;
+}
+
+/* contained logo image */
+.logo-pill img{
+  width:100%; height:100%;
+  border-radius:50%;
+  object-fit: contain;
+  background:#fff;
+  filter: saturate(.92);
+  transition: transform .18s ease, filter .18s ease;
+}
+
+/* hover = lift, brighten, glow */
+.logo-pill:hover{
+  transform: translateY(-2px) scale(1.08);
+  box-shadow: 0 16px 36px rgba(1, 11, 21, 0.884), 0 0 0 4px rgba(4, 238, 250, 0.495);
+}
+.logo-pill:hover img{
+  transform: scale(1.04);
+  filter: none;
+}
+
+/* edge color variants (blue → black gradient) */
+.edge-blue   { --edge-1:#2f7cf0; }
+.edge-teal   { --edge-1:#00c2d8; }
+.edge-indigo { --edge-1:#4f46e5; }
+.edge-slate  { --edge-1:#4b5563; }
+
+/* SBU is a non-link but keeps identical styling */
+.logo-pill:not(a){ cursor: default; }
+
+/* responsive: 2 per row on phones */
+@media (max-width: 720px){
+  .exp-logos-strip{ grid-template-columns: repeat(2, 1fr); gap: 1rem 1.25rem; }
+  :root{
+    --logo-min: 68px;
+    --logo-ideal: 24vw;
+    --logo-max: 96px;
   }
-  
-  /* Education & languages blocks */
-  .edu-card{
-    padding:1rem 1.25rem; border:1px solid #e6edf5; background:#f9fbfe;
-    border-radius:12px; box-shadow:0 6px 12px rgba(0,0,0,.04);
-  }
-  .edu-card__title{ margin:0; color:#143a52; }
-  .edu-card__meta{ color:#5b6b7a; margin:.15rem 0 .5rem; }
-  
-  .edu-stats{ display:flex; flex-wrap:wrap; gap:.5rem; padding:0; margin:0 0 .5rem 0; list-style:none; }
-  .stat{
-    display:inline-flex; align-items:center; gap:.4rem;
-    padding:.22rem .55rem; font-size:.85rem; border-radius:999px;
-    background:#f3f7fc; border:1px solid #e2ebf7; color:#2a4a68;
-  }
-  .stat__label{ opacity:.8; }
-  .stat__value{ font-weight:700; }
-  
-  .course-chips, .lang-chips{ display:flex; flex-wrap:wrap; gap:.45rem; margin-top:.25rem; }
-  
+}
 
 ```
 
