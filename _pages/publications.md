@@ -139,7 +139,7 @@ classes: wide
   <!-- ROBOCUP (title + short readmore only) -->
   <article class="pub-card">
     <div class="pub-hero">
-      <img src="/assets/img/publications/Soccer2d.png" alt="RoboCup Soccer Simulation">
+      <img src="/assets/img/publications/Soccer2d.gif" alt="RoboCup Soccer Simulation">
       <span class="pub-ribbon-strap is-published">RoboCup Proc.</span>
     </div>
 
