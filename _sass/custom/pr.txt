@@ -1,36 +1,106 @@
 _sass\custom\_about.scss:
 ```md
-/* ===== About page (styles only; no content changes) ===== */
+/* ===== About page hero (portrait + text) ===== */
 
-/* circular hero on About */
 .about-hero-circular{
-  display:flex; align-items:center; justify-content:flex-start; gap:1.25rem;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:1.25rem;
   margin-bottom:2rem;
   transition: transform .2s ease, filter .2s ease;
 }
+
 .about-hero-circular:hover{
   transform: translateY(-2px);
   filter: brightness(1.02);
 }
 
-.about-hero-circular__img{
-  width:200px; height:200px; border-radius:50%; object-fit:cover;
-  /* gradient edge + glow to align with the rest of the site */
+/* circular media wrapper that holds BOTH the still png and the hover gif */
+.about-hero-circular__media{
+  position: relative;
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  flex-shrink:0;
+
+  /* gradient edge + glow that you already had */
   background:
     linear-gradient(#fff, #fff) padding-box,
     linear-gradient(135deg, var(--proj-grad-1), var(--proj-grad-2) 55%, var(--proj-grad-3)) border-box;
   border: var(--proj-bw) solid transparent;
   box-shadow: 0 10px 24px rgba(0,0,0,.10), var(--proj-glow);
+
+  overflow:hidden;
   transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
 }
-.about-hero-circular:hover .about-hero-circular__img{
+
+/* tilt/glow effect on hover */
+.about-hero-circular:hover .about-hero-circular__media{
   transform: rotate(-1.5deg) scale(1.02);
   box-shadow: 0 16px 36px rgba(0,0,0,.14), var(--proj-glow-hover);
   filter: saturate(1.05) contrast(1.02);
 }
 
-.about-hero-circular__text h1{ font-size:2rem; margin:0; color:#143a52; }
-.about-hero-circular__text p{ margin:.25rem 0 0; font-size:1.1rem; color:#375a86; }
+/* base style shared by both frames (png + gif) */
+.hero-frame{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+  transition: opacity .18s ease;
+}
+
+/* still image: visible by default */
+.hero-frame--still{
+  opacity:1;
+  pointer-events:none;
+}
+
+/* gif image: hidden by default */
+.hero-frame--anim{
+  opacity:0;
+  pointer-events:none;
+}
+
+/* on hover: fade gif in, fade still out */
+.about-hero-circular:hover .hero-frame--still{
+  opacity:0;
+}
+.about-hero-circular:hover .hero-frame--anim{
+  opacity:1;
+}
+
+/* text block next to the portrait */
+.about-hero-circular__text h1{
+  font-size:2rem;
+  margin:0;
+  color:#143a52;
+}
+.about-hero-circular__text p{
+  margin:.25rem 0 0;
+  font-size:1.1rem;
+  color:#375a86;
+}
+
+/* responsive tweaks for mobile */
+@media (max-width:700px){
+  .about-hero-circular{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .about-hero-circular__media{
+    width:180px;
+    height:180px;
+  }
+
+  .about-hero-circular__text h1{
+    font-size:1.75rem;
+  }
+}
 
 /* ===== Education card ===== */
 .edu-card{

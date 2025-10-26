@@ -1,0 +1,345 @@
+###########################################################
+###########################################################
+###########################################################
+###########################################################
+###########################################################
+###########################################################
+
+
+package.json:
+```json
+
+{
+  "name": "minimal-mistakes",
+  "version": "3.4.2",
+  "description": "Minimal Mistakes Jekyll theme npm build scripts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mmistakes/minimal-mistakes.git"
+  },
+  "keywords": [
+    "jekyll",
+    "theme",
+    "minimal"
+  ],
+  "author": "Michael Rose",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
+  },
+  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^1.7.0",
+    "onchange": "^2.2.0",
+    "uglify-js": "^2.6.1"
+  },
+
+  "scripts": {
+    "uglify": "uglifyjs assets/js/vendor/jquery/jquery-1.12.4.min.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.smooth-scroll.min.js assets/js/plugins/stickyfill.min.js assets/js/_main.js -c -m -o assets/js/main.min.js",
+    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
+    "build:js": "npm run uglify",
+    "serve": "docker run --rm -p 4000:4000 -p 35729:35729 -v \"${PWD}:/srv/jekyll\" -it jekyll/jekyll:pages jekyll serve --livereload --host 0.0.0.0 --config _config.yml,_config.dev.yml",
+    "dev": "npm-run-all --parallel serve watch:js",
+    "build": "bundle exec jekyll build --config _config.yml,_config.dev.yml",
+    "serve:ruby": "bundle exec jekyll serve --livereload --force_polling --config _config.yml,_config.dev.yml",
+    "dev:ruby": "npm-run-all --parallel serve:ruby watch:js",
+    "clean": "bundle exec jekyll clean",
+    "deploy": "npm run build && git push"
+  }
+  
+}
+
+
+```
+
+
+###########################################################
+###########################################################
+###########################################################
+###########################################################
+###########################################################
+###########################################################
+
+
+package-lock.json:
+```json
+
+{
+  "name": "minimal-mistakes",
+  "version": "3.4.2",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "minimal-mistakes",
+      "version": "3.4.2",
+      "license": "MIT",
+      "devDependencies": {
+        "npm-run-all": "^1.7.0", 
+        .....
+```
+
+Gemfile:
+```
+source "https://rubygems.org"
+
+gem "github-pages", group: :jekyll_plugins
+
+gem "wdm", "~> 0.1.1", platforms: [:mingw, :x64_mingw, :mswin] if Gem.win_platform? && RUBY_VERSION < "3.4"
+
+# Plugins
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "hawkins"
+end
+
+gem "tzinfo-data", "~> 1.2025"
+
+
+```
+
+
+
+
+###########################################################
+###########################################################
+###########################################################
+###########################################################
+###########################################################
+###########################################################
+_config.yml:
+```yml
+# Site Settings
+locale: "en-US"
+title: "Mahan Veisi"
+title_separator: "-"
+name: &name "Mahan Veisi"
+description: &description "Computer Engineering Student and AI Researcher with Interests in Medical AI, Generative Models, and Reinforcement Learning"
+url: https://mahanveisi8.github.io
+baseurl: ""
+repository: "MahanVeisi8/MahanVeisi8.github.io"
+teaser: # add a teaser image filename from the /images folder if you have one
+breadcrumbs: false
+words_per_minute: 160
+future: true
+read_more: "disabled"
+talkmap_link: false
+comments:
+  provider: false
+
+# SEO Related
+google_site_verification:
+bing_site_verification:
+alexa_site_verification:
+yandex_site_verification:
+
+# Social Sharing
+facebook:
+  username:
+  app_id:
+  publisher:
+og_image: # Open Graph/Twitter default site image
+
+# Social Profiles
+social:
+  type: Person
+  name: "Mahan Veisi"
+  links:
+    - "https://github.com/MahanVeisi8"
+    - "https://www.linkedin.com/in/mahan-veisi-427934226/"
+    - "https://scholar.google.com/citations?user=LQL2vyQAAAAJ&hl=en"
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-T3LXE0QKCS"
+
+# Site Author
+author:
+  name: "Mahan Veisi"
+  avatar: "profile.jpg" 
+  bio: "Computer Engineering B.S. Student at Shahid Beheshti University, passionate about AI and Generative Models."
+  location: "Tehran, Iran"
+  googlescholar: "https://scholar.google.com/citations?user=LQL2vyQAAAAJ&hl=en"
+  email: "mahan8292@gmail.com"
+  github: "MahanVeisi8"
+  linkedin: "mahan-veisi-427934226"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - LICENSE
+  - README
+  - Rakefile
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - config
+  - gulpfile.js
+  - log
+  - node_modules
+  - package.json
+  - tmp
+  - vendor
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Collections
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Asia/Tehran
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-redirect-from
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+```
+
+
+
+
+
+###########################################################
+###########################################################
+###########################################################
+###########################################################
+###########################################################
+###########################################################
+
+
+_config.dev.yml:
+```yml
+# Develop override settings
+
+url: http://localhost:4000
+
+analytics:
+  provider: false
+
+comments:
+  disqus:
+    shortname: "mmistakes-dev"
+
+sass:
+  style: expanded
+
+```
+
