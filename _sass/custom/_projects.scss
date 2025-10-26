@@ -1,144 +1,230 @@
-/* ====== GitHub summary header cards ====== */
-
-.github-summary{
+/* ===== Basic project entry legacy styles (kept for safety / other pages) ===== */
+.project-entry {
   display:flex;
-  flex-wrap:wrap;
-  gap:1rem;
+  background:var(--blue-light);
+  border-radius:.5rem;
+  overflow:hidden;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+  transition: transform .2s, box-shadow .2s;
   margin-bottom:2rem;
 }
+.project-entry:hover {
+  transform:translateY(-4px);
+  box-shadow:0 8px 16px rgba(0,0,0,.15);
+}
 
-.github-summary__card{
-  flex:1 1 260px;
-  min-width:260px;
+.project-image {
+  flex:0 0 40%;
+  max-width:300px;
+  background:var(--blue-base);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.project-image img {
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.project-content {
+  flex:1;
+  padding:1rem 1.5rem;
+}
+.project-content h3 {
+  margin-top:0;
+  color:var(--blue-dark);
+  font-size:1.4rem;
+}
+.project-content p {
+  color:#333;
+  line-height:1.5;
+}
+
+.project-link {
+  margin-top:1rem;
+  text-align:right;
+}
+.project-link a {
+  color:var(--blue-dark);
+  font-weight:bold;
+  text-decoration:none;
+}
+.project-link a:hover {
+  text-decoration:underline;
+}
+
+
+/* ===== Projects page layout ===== */
+
+/* container for all project cards */
+.project-grid {
+  display:grid;
+  gap:1.25rem;
+}
+
+/* base project card look (gradient border, glow, padding, etc.) */
+.project-card {
+  display:grid;
+  /* default 2-col fallback, overridden by .project-card--triple on desktop */
+  grid-template-columns: minmax(220px, var(--proj-media-w)) 1fr;
+
+  gap:1rem;
+  align-items:stretch;
+  padding:1rem 1.1rem;
+  border-radius:var(--proj-radius);
 
   background:
     linear-gradient(var(--proj-bg), var(--proj-bg)) padding-box,
     linear-gradient(135deg, var(--proj-grad-1), var(--proj-grad-2) 55%, var(--proj-grad-3)) border-box;
-  border: var(--proj-bw) solid transparent;
-  border-radius: var(--proj-radius);
+  border:var(--proj-bw) solid transparent;
 
-  box-shadow: 0 8px 16px rgba(0,0,0,.04), var(--proj-glow);
-  padding:1rem 1.1rem;
-  display:flex;
-  flex-direction:column;
-  gap:.75rem;
+  box-shadow:0 8px 16px rgba(0,0,0,.04), var(--proj-glow);
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.project-card:hover {
+  transform:translateY(-2px);
+  box-shadow:0 12px 24px rgba(0,0,0,.08), var(--proj-glow-hover);
 }
 
-.github-summary__title{
+/* desktop 3-col layout:
+   [image] [description] [repo sidebar] */
+.project-card--triple {
+  grid-template-columns:
+    minmax(220px, var(--proj-media-w))
+    1fr
+    minmax(240px, 280px);
+
+  /* we want each column to behave naturally in height */
+  align-items:start;
+}
+
+/* ===== Title row spanning all columns ===== */
+.project-card__titlebar {
+  grid-column: 1 / -1;  /* span across every column of the grid */
+  border-bottom: 1px solid var(--proj-br, #e4eef8);
+  padding: .25rem .25rem .6rem;
+  display:flex;
+  align-items:flex-start;
+}
+
+.project-title {
   margin:0;
-  font-size:1rem;
+  font-size:1.3rem;
   line-height:1.3;
   font-weight:800;
   color:#143a52;
 }
 
-.github-summary__imgwrap{
-  background:#fff;
-  border:1px solid var(--proj-br, #e4eef8);
-  border-radius:10px;
-  padding:.5rem;
-  box-shadow:0 6px 14px rgba(0,0,0,.05);
-}
-
-.github-summary__imgwrap img{
+/* ===== Left column (media) ===== */
+.project-media img {
   width:100%;
-  height:auto;
+  height:100%;
+  object-fit:contain;      /* don't crop GIFs / screenshots */
+  object-position:center;
   display:block;
 }
 
+/* optional modifiers you had */
+.project-media.fit-cover img    { object-fit:cover; }
+.project-media.fit-fill  img    { object-fit:fill;  }
+.project-media.pos-top img      { object-position: top center; }
+.project-media.pos-bottom img   { object-position: bottom center; }
+.project-media.pos-left img     { object-position: center left; }
+.project-media.pos-right img    { object-position: center right; }
 
-/* ====== Project card 3-col layout ====== */
-
-/* new modifier adds a 3rd column for the GitHub repo block */
-.project-card--triple{
-  grid-template-columns:
-    minmax(220px, var(--proj-media-w))
-    1fr
-    minmax(240px, 280px);
-}
-
-/* on mobile we still stack vertically */
-@media (max-width: 860px){
-  .project-card--triple{
-    grid-template-columns:1fr;
-  }
-
-  /* stack order to feel natural:
-     media first, then body, then repo card */
-  .project-media   { order:1; }
-  .project-body    { order:2; }
-  .project-meta    { order:3; }
-}
-
-/* right-hand column wrapper */
-.project-meta{
+/* ===== Middle column (text body) ===== */
+.project-body {
   display:flex;
   flex-direction:column;
-  justify-content:space-between;
+  gap:.5rem;
+  margin-top:.5rem; /* breathing room under the title bar */
 }
 
-/* mini repo card */
-.repo-embed{
+.project-desc {
+  color:#344a5a;
+  margin:0;
+  font-size:1rem;
+  line-height:1.5;
+}
+
+.project-list {
+  margin:.35rem 0 0 1rem;
+  color:#344a5a;
+  line-height:1.5;
+}
+
+/* ===== Right column (GitHub repo box) ===== */
+.project-meta {
+  display:flex;
+  flex-direction:column;
+}
+
+.repo-embed {
   background:#ffffff;
   border:1px solid var(--proj-br, #e4eef8);
   border-radius:12px;
   box-shadow:0 8px 16px rgba(0,0,0,.04);
+
   padding:.75rem .9rem;
   display:flex;
   flex-direction:column;
-  gap:.6rem;
-  min-height:100%;
+  gap:.75rem;
+
+  /* this makes the repo box sit at the bottom of the column
+     (the column grows, then we push this block down) */
+  margin-top:auto;
+  max-width:100%;
 }
 
-/* header row: GitHub icon + repo name */
-.repo-embed__header{
-  display:flex;
-  align-items:flex-start;
-  gap:.5rem;
-  font-size:.8rem;
-  line-height:1.3;
-  font-weight:600;
-  color:#0f5cb8;
-  word-break:break-word;
-}
-
-.repo-embed__header i{
-  font-size:1rem;
-  color:#0f5cb8;
-  line-height:1;
-}
-
-.repo-embed__name a{
-  color:#0f5cb8;
+/* clickable wrapper around the pinned repo preview image */
+.repo-embed__cardlink {
+  display:block;
   text-decoration:none;
-  border-bottom:1px dotted rgba(15,92,184,.35);
-  font-weight:700;
-  word-break:break-word;
-}
-.repo-embed__name a:hover{
-  border-bottom-style:solid;
+
+  /* we keep hover lift, but apply it to the <img> now */
+  transition:transform .12s ease,
+             box-shadow .12s ease,
+             background .12s ease;
 }
 
-/* pinned repo SVG from github-readme-stats */
-.repo-embed__cardimg{
-  border-radius:10px;
-  overflow:hidden;
-  background:#f8fbff;
-  border:1px solid var(--proj-br, #e4eef8);
-  box-shadow:0 4px 10px rgba(0,0,0,.04);
-}
-.repo-embed__cardimg img{
-  width:100%;
-  height:auto;
+/* container around the image:
+   strip all "mini card" visuals so it's JUST the image */
+.repo-embed__cardimg {
+  border:0;
+  background:transparent;
+  box-shadow:none;
+  border-radius:0;
+  padding:0;
+  min-height:auto;
   display:block;
 }
 
-/* CTA button at bottom of card */
-.repo-embed__btn{
+.repo-embed__cardimg img {
+  width:100%;
+  height:auto;
+  display:block;
+
+  /* you can later clamp height if needed, e.g. max-height:200px; */
+  max-height:none;
+
+  /* smooth hover transition lives on the img now */
+  transition:transform .12s ease,
+             box-shadow .12s ease;
+}
+
+/* hover effect: lift + subtle glow on the raw image itself */
+.repo-embed__cardlink:hover .repo-embed__cardimg img {
+  transform:translateY(-2px);
+  box-shadow:0 10px 20px rgba(15,91,184,.18);
+}
+
+/* "View Repo" button under the preview */
+.repo-embed__btn {
   display:inline-flex;
   align-items:center;
   gap:.45rem;
-  padding:.4rem .7rem;
+  padding:.5rem .8rem;
   border-radius:10px;
   text-decoration:none;
   font-weight:800;
@@ -148,17 +234,132 @@
   border:1px solid #d9e8fb;
   color:#0f5cb8;
 
-  transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+  transition:transform .12s ease,
+             box-shadow .12s ease,
+             background .12s ease;
   justify-content:center;
   text-align:center;
 }
-.repo-embed__btn:hover{
+.repo-embed__btn:hover {
   transform:translateY(-1px);
   background:#e6f1ff;
   box-shadow:0 6px 14px rgba(15,91,184,.16);
 }
-
-.repo-embed__btn i{
+.repo-embed__btn i {
   font-size:1rem;
   line-height:0;
+}
+
+/* ===== Optional action chips/buttons row (not used yet, safe to keep) ===== */
+.project-actions {
+  margin-top:auto;
+  display:flex;
+  gap:.5rem;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+}
+.proj-btn {
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  padding:.44rem .82rem;
+  border-radius:10px;
+  text-decoration:none;
+  background:#eef6ff;
+  border:1px solid #d9e8fb;
+  color:#0f5cb8;
+  font-weight:800;
+  transition:transform .12s ease,
+             box-shadow .12s ease,
+             background .12s ease;
+}
+.proj-btn:hover {
+  transform:translateY(-1px);
+  background:#e6f1ff;
+  box-shadow:0 6px 14px rgba(15,91,184,.16);
+}
+.proj-btn i {
+  font-size:1.05rem;
+}
+.project-tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:.4rem;
+  margin-top:.15rem;
+}
+.project-tags .chip {
+  font-size:.8rem;
+}
+
+
+/* ===== GitHub summary header cards (top of page) ===== */
+.github-summary {
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+  margin-bottom:2rem;
+}
+
+.github-summary__card {
+  flex:1 1 260px;
+  min-width:260px;
+
+  background:
+    linear-gradient(var(--proj-bg), var(--proj-bg)) padding-box,
+    linear-gradient(135deg, var(--proj-grad-1), var(--proj-grad-2) 55%, var(--proj-grad-3)) border-box;
+  border: var(--proj-bw) solid transparent;
+  border-radius: var(--proj-radius);
+
+  box-shadow:0 8px 16px rgba(0,0,0,.04), var(--proj-glow);
+  padding:1rem 1.1rem;
+  display:flex;
+  flex-direction:column;
+  gap:.75rem;
+}
+
+.github-summary__title {
+  margin:0;
+  font-size:1rem;
+  line-height:1.3;
+  font-weight:800;
+  color:#143a52;
+}
+
+.github-summary__imgwrap {
+  background:#fff;
+  border:1px solid var(--proj-br, #e4eef8);
+  border-radius:10px;
+  padding:.5rem;
+  box-shadow:0 6px 14px rgba(0,0,0,.05);
+}
+.github-summary__imgwrap img {
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+
+/* ===== Responsive rules ===== */
+
+/* small screens:
+   - collapse each project card to 1 column
+   - keep order: image -> body -> repo
+*/
+@media (max-width: 860px){
+
+  .project-card {
+    grid-template-columns:1fr;
+  }
+
+  .project-card--triple {
+    grid-template-columns:1fr;
+  }
+
+  /* natural reading order for mobile */
+  .project-media { order:1; }
+  .project-body  { order:2; }
+  .project-meta  { order:3; }
+
+  /* nice aspect ratio for media full-width */
+  .project-media { aspect-ratio:16/9; }
 }
