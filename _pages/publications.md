@@ -15,7 +15,7 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/CMRI_Recon.jpg" alt="All-in-One MRI Reconstruction">
-      <span class="pub-ribbon-strap is-draft">Manuscript in Progress</span>
+      <span class="pub-ribbon-strap is-draft">Under Review — Magnetic Resonance Imaging</span>
     </div>
 
     <div class="pub-body">
@@ -45,7 +45,7 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/airfoil_diff_opt.jpg" alt="Diffusion-Driven Airfoil Optimization">
-      <span class="pub-ribbon-strap is-draft">Manuscript in Progress</span>
+      <span class="pub-ribbon-strap is-draft">Under Review — Journal of Machine Learning Research</span>
     </div>
 
     <div class="pub-body">
@@ -108,7 +108,7 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/SincNet.jpg" alt="SincNet for Parkinson’s Gait">
-      <span class="pub-ribbon-strap is-underreview">Under Review — AIHC</span>
+      <span class="pub-ribbon-strap is-underreview">Under Review — Journal of Ambient Intelligence and Humanized Computing</span>
     </div>
 
     <div class="pub-body">
