@@ -27,15 +27,16 @@
 </div>
 
 {%- comment -%}
-  Year logic:
-  - set site.start_year: 2024 in _config.yml for a range like "2024–2025"
-  - otherwise it will show the current year only
+  Build a correct GitHub repo URL:
+  - Prefer site.github.repository_url (from jekyll-github-metadata)
+  - Else construct from site.repository ("Owner/Repo")
 {%- endcomment -%}
-{%- assign current_year = site.time | date: '%Y' -%}
-{%- if site.start_year and site.start_year != current_year -%}
-  {%- assign year_text = site.start_year | append: "–" | append: current_year -%}
+{%- if site.github.repository_url -%}
+  {%- assign repo_url = site.github.repository_url -%}
+{%- elsif site.repository -%}
+  {%- assign repo_url = "https://github.com/" | append: site.repository -%}
 {%- else -%}
-  {%- assign year_text = current_year -%}
+  {%- assign repo_url = nil -%}
 {%- endif -%}
 
 {%- assign repo_url = site.github.repository_url | default: "https://github.com/" | append: site.repository -%}
@@ -45,10 +46,13 @@
   Code:
   <a href="{{ repo_url }}/blob/master/LICENSE">MIT</a> ·
   Content:
-  <a href="{{ repo_url }}/blob/master/LICENSE-content">CC&nbsp;BY&nbsp;4.0</a> ·
+  <!-- use the filename you actually have: CONTENT_LICENSE or LICENSE-content -->
+  <a href="{{ repo_url }}/blob/master/CONTENT_LICENSE">CC&nbsp;BY&nbsp;4.0</a> ·
   Built on
   <a href="https://github.com/academicpages/academicpages.github.io">Academic&nbsp;Pages</a>
   (MIT), a fork of
   <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/">Minimal&nbsp;Mistakes</a>.
-  If you reuse, please keep notices or <a href="{{ repo_url }}">fork</a>.
+  {% if repo_url %}
+    If you reuse, please keep notices or <a href="{{ repo_url }}">fork</a>.
+  {% endif %}
 </div>
