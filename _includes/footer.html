@@ -12,13 +12,43 @@
       <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
     {% endif %}
     {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     {% endif %}
     {% if site.author.bitbucket %}
-      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
+      <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
     {% endif %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+    <li>
+      <a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}">
+        <i class="fa fa-fw fa-rss-square" aria-hidden="true"></i>
+        {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}
+      </a>
+    </li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+{%- comment -%}
+  Year logic:
+  - set site.start_year: 2024 in _config.yml for a range like "2024–2025"
+  - otherwise it will show the current year only
+{%- endcomment -%}
+{%- assign current_year = site.time | date: '%Y' -%}
+{%- if site.start_year and site.start_year != current_year -%}
+  {%- assign year_text = site.start_year | append: "–" | append: current_year -%}
+{%- else -%}
+  {%- assign year_text = current_year -%}
+{%- endif -%}
+
+{%- assign repo_url = site.github.repository_url | default: "https://github.com/" | append: site.repository -%}
+
+<div class="page__footer-copyright">
+  © {{ year_text }} {{ site.name | default: site.title }} ·
+  Code:
+  <a href="{{ repo_url }}/blob/master/LICENSE">MIT</a> ·
+  Content:
+  <a href="{{ repo_url }}/blob/master/LICENSE-content">CC&nbsp;BY&nbsp;4.0</a> ·
+  Built on
+  <a href="https://github.com/academicpages/academicpages.github.io">Academic&nbsp;Pages</a>
+  (MIT), a fork of
+  <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/">Minimal&nbsp;Mistakes</a>.
+  If you reuse, please keep notices or <a href="{{ repo_url }}">fork</a>.
+</div>
