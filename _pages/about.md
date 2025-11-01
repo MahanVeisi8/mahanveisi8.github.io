@@ -67,7 +67,7 @@ Across my research internships and B.Sc. thesis, I’ve contributed to:
   <div class="edu-card__meta">Expected Jan 2026</div>
 
   <ul class="edu-stats">
-    <li class="stat"><span class="stat__label">Cumulative</span><span class="stat__value">18.10/20 (3.81/4)</span></li>
+    <li class="stat"><span class="stat__label">Cumulative</span><span class="stat__value">18.12/20 (3.81/4)</span></li>
     <li class="stat"><span class="stat__label">Last two years</span><span class="stat__value">19.08/20 (4/4)</span></li>
   </ul>
 
