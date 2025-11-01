@@ -7,6 +7,7 @@ description: &description "Computer Engineering Student and AI Researcher with I
 url: https://mahanveisi8.github.io
 baseurl: ""
 repository: "MahanVeisi8/MahanVeisi8.github.io"
+start_year: 2024
 teaser: # add a teaser image filename from the /images folder if you have one
 breadcrumbs: false
 words_per_minute: 160
