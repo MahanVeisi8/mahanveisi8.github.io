@@ -71,8 +71,6 @@ exclude:
   - CHANGELOG
   - Capfile
   - Gemfile
-  - LICENSE
-  - README
   - Rakefile
   - assets/js/_main.js
   - assets/js/plugins
@@ -196,3 +194,14 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+footer:
+  links:
+    - label: "© 2025 Mahan Veisi"
+      url: "/"
+    - label: "Code: MIT"
+      url: "/LICENSE"
+    - label: "Content: CC BY 4.0"
+      url: "/CONTENT_LICENSE"
+    - label: "Legal"
+      url: "/legal/"

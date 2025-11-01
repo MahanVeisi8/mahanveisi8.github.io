@@ -1,10 +1,12 @@
-This site’s code and content include work by:
+NOTICE
 
-- Academic Pages (MIT), derived from Minimal Mistakes (MIT).
-  See: https://github.com/academicpages/academicpages.github.io  (MIT)
-  and upstream Minimal Mistakes notices kept where applicable.
+This repository contains two distinct licensing scopes:
 
-- © 2024–2025 Mahan Veisi. Site code is MIT (see LICENSE).
-  Site content is CC BY 4.0 (see LICENSE-content).
+• Site code (layouts, JS/CSS, build tooling): MIT — see LICENSE
+• Site content (posts, pages, figures, images, media): CC BY 4.0 — see CONTENT_LICENSE
 
-If you reuse this repository, keep this NOTICE and the LICENSE files.
+Credits:
+• Theme: Minimal Mistakes by Michael Rose — MIT
+• Template/boilerplate: Academic Pages (academicpages/academicpages.github.io) — MIT
+  Adapted and extended by Mahan Veisi; changes were made.
+• Third-party assets: Retain their original licenses as noted per item.

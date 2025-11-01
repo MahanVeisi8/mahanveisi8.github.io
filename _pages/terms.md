@@ -37,3 +37,18 @@ If you wish to disable cookies, you may do so through your web browser options. 
 #### Google Analytics
 
 Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](http://www.google.com/analytics/learn/privacy.html).
+
+
+## Licensing
+
+**Code** (layouts, JS/CSS, build tooling): MIT — see [LICENSE](/LICENSE).  
+**Content** (posts, pages, figures, images, media): **CC BY 4.0** — see [CONTENT_LICENSE](/CONTENT_LICENSE).
+
+**Attribution requirement.** Credit “Mahan Veisi,” link to the original page, and indicate if changes were made.
+
+**Suggested citation (page):** *Veisi, M. (2025). “<Post Title>.” https://mahanveisi8.github.io/<path>/*
+
+**Credits.**  
+Theme: Minimal Mistakes (MIT).  
+Template/boilerplate: Academic Pages (MIT), adapted with changes.  
+Third-party assets retain original licenses as noted per item.

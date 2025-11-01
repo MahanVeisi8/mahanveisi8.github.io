@@ -1,5 +1,31 @@
-Contributions are welcome! Please add issues and make pull requests. There are no stupid questions. All ideas are welcome. This is a volunteer project. Be excellent to each other.
+# Contributing
 
-Fork from master and go from there. This repository is intended to remain a generic, ready-to-fork template that demonstrates the features of academicpages.
+Thanks for your interest! This repository powers my personal site.
 
-If you make a pull request and change code, please make sure there is a closed issue tagged with 'code change' that has some comment linking to either the single commit (if the change was just one commit) or a diff comparing before/after the change (see [issue 21](https://github.com/academicpages/academicpages.github.io/issues/21) for example). This is so that those who have forked this repo and modified it for their purposes can more easily patch bugs and new features.
+## What this repo is
+- **Site code (layouts, JS/CSS, build tooling):** MIT-licensed.
+- **Site content (posts, pages, figures, images, media):** CC BY 4.0.  
+  Reuse is welcome **with attribution**. See [CONTENT_LICENSE](/CONTENT_LICENSE).
+
+## How to contribute
+- **Issues:** Bug reports, broken links, typos, and feature suggestions are welcome.
+- **Pull requests:**
+  - For **code/theme changes**, open or reference an issue first (tag it `code change`), then submit a PR.
+  - For **content**, small typo PRs are fine. Substantial content changes are usually declined (personal site).
+
+## Licensing of contributions
+By submitting a contribution, you agree that:
+- **Code contributions** are licensed under **MIT**.
+- **Content contributions** are licensed under **CC BY 4.0** with attribution to *Mahan Veisi* unless you state otherwise in the PR.
+- You have the right to contribute the material.
+
+## Using this repo as a template
+You’re welcome to **use this repo as a template** for your own site.  
+Please remove my personal content and keep a NOTICE credit similar to:
+
+> “Based on Academic Pages (MIT) and adapted from Mahan Veisi’s site; changes were made.”
+
+## Credits
+- Theme: Minimal Mistakes (MIT).
+- Template/boilerplate: Academic Pages (MIT).
+- Third-party assets retain original licenses.
