@@ -32,9 +32,11 @@ redirect_from:
 
 
 
-I’m a fourth‑year Computer Engineering undergrad (graduating January 2026) at Shahid Beheshti University, Iran, specializing in generative AI, medical imaging, and computational biology. I am actively seeking <span style="color:red">Master's or PhD</span> opportunities starting in 2026 in these areas.
+I’m a fifth‑year Computer Engineering undergrad (graduating January 2026) at Shahid Beheshti University, Iran, specializing in generative AI, medical imaging, and computational biology. 
 
-**Research focus:** Generative AI — especially **diffusion models**.
+Currently I am actively seeking <span style="color:red">Master's or PhD</span> opportunities starting in 2026.
+
+**Research focus:** Generative AI — especially **diffusion models** in signal processing.
 
 <!-- ## Research Experience
 Across my research internships and B.Sc. thesis, I’ve contributed to:
