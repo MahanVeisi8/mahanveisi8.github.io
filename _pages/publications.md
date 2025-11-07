@@ -15,7 +15,7 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/CMRI_Recon.jpg" alt="All-in-One MRI Reconstruction">
-      <span class="pub-ribbon-strap is-draft">Under Review — Magnetic Resonance Imaging</span>
+      <span class="pub-ribbon-strap is-draft">Under Review — Magnetic Resonance in Medicine </span>
     </div>
 
     <div class="pub-body">
