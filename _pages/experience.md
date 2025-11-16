@@ -170,12 +170,7 @@ author_profile: true
       <div class="rec-block">
 
         <!-- radios FIRST (hidden), so CSS can react to :checked -->
-        <input
-          type="radio"
-          name="rec-sbu"
-          id="rec-sbu-nabavi"
-          class="rec-tabinput"
-        />
+
         <input
           type="radio"
           name="rec-sbu"
@@ -183,23 +178,15 @@ author_profile: true
           class="rec-tabinput"
         />
 
+        <input
+          type="radio"
+          name="rec-sbu"
+          id="rec-sbu-nabavi"
+          class="rec-tabinput"
+        />
+        
         <!-- the row of pills (left = Shahab, right = Armin) -->
         <div class="rec-tabs-row">
-
-          <!-- Shahabedin pill -->
-          <label class="rec-summary" for="rec-sbu-nabavi">
-            <span class="rec-summary__avatarwrap">
-              <img class="rec-summary__avatar" src="/assets/img/logos/Shahab.jpg" alt="Shahabedin Nabavi">
-              <span class="rec-summary__bubble">
-                <i class="fas fa-comment-dots"></i>
-              </span>
-            </span>
-
-            <span class="rec-summary__textwrap">
-              <span class="rec-summary__label">See recommendation</span>
-              <span class="rec-summary__byline">Dr. Shahabedin&nbsp;Nabavi · SBU</span>
-            </span>
-          </label>
 
           <!-- Armin pill -->
           <label class="rec-summary" for="rec-sbu-armin">
@@ -216,77 +203,28 @@ author_profile: true
             </span>
           </label>
 
+
+          <!-- Shahabedin pill -->
+          <label class="rec-summary" for="rec-sbu-nabavi">
+            <span class="rec-summary__avatarwrap">
+              <img class="rec-summary__avatar" src="/assets/img/logos/Shahab.jpg" alt="Shahabedin Nabavi">
+              <span class="rec-summary__bubble">
+                <i class="fas fa-comment-dots"></i>
+              </span>
+            </span>
+
+            <span class="rec-summary__textwrap">
+              <span class="rec-summary__label">See recommendation</span>
+              <span class="rec-summary__byline">Dr. Shahabedin&nbsp;Nabavi · SBU</span>
+            </span>
+          </label>
+
+
         </div><!-- /.rec-tabs-row -->
 
 
         <!-- PANELS (the actual letters) -->
         <div class="rec-panels">
-
-          <!-- PANEL: Shahabedin -->
-          <section class="rec rec-panel rec-panel--nabavi">
-            <div class="rec__head">
-              <div class="rec__who">
-                <img class="rec__avatar" src="/assets/img/logos/Shahab.jpg" alt="Shahabedin Nabavi">
-
-                <div class="rec__txt">
-                  <p class="rec__name">Shahabedin Nabavi</p>
-                  <p class="rec__meta">
-                    <img class="rec__org-logo" src="/assets/img/logos/sbu.jpg" alt="Shahid Beheshti University">
-                    Medical Imaging Researcher
-                  </p>
-                </div>
-              </div>
-
-              <a class="rec__cta"
-                 href="https://www.linkedin.com/in/shahabedin-nabavi-32a38458/"
-                 target="_blank"
-                 rel="noopener"
-                 title="View on LinkedIn">
-                View on <i class="fab fa-linkedin"></i>
-              </a>
-            </div>
-
-            <div class="rec__body">
-              <p>
-                It is my pleasure to strongly recommend Mr. Mahan Veisi, one of my undergraduate students,
-                for his exceptional academic performance, research engagement, and outstanding motivation
-                for learning. I have known Mahan since 2022 and have had the opportunity to teach and
-                supervise him in several capacities.
-              </p>
-              <p>
-                He took my “Operating Systems Lab” course and achieved a perfect score of 20/20. His final
-                project focused on optimizing the read-ahead feature using machine learning models,
-                applying regression techniques to predict optimal read-ahead sizes, which significantly
-                improved disk prefetching efficiency. In my “Introduction to Computer Vision with Deep
-                Learning” course, he went beyond course requirements by initiating and leading a team
-                project to create a unique Rock-Paper-Scissors dataset using YOLOv11. The model achieved
-                the highest accuracy among all projects and was integrated into an interactive
-                video-processing game. He also earned a 20/20 in this course.
-              </p>
-              <p>
-                In research, Mahan has been an active collaborator on a Cardiac MRI (CMRI) reconstruction
-                project utilizing prompt-in-prompt transformers. The project is now in its final stage,
-                and we are preparing a manuscript for submission to a leading journal. Notably, this
-                project won the Best Bachelor Project Award in our faculty, reflecting both the innovation
-                and technical depth of his work. In addition, Mahan joined our team for the CMRxRecon 2025
-                Challenge at MICCAI 2025, where our team achieved third place award — a remarkable
-                international accomplishment demonstrating his ability to translate research into
-                high-impact results.
-              </p>
-              <p>
-                Beyond research, Mahan has also contributed as a Teaching Assistant for my “Artificial
-                Intelligence and Machine Learning” (Spring 2025) course. He has been responsible for
-                managing assignments, conducting tutorial sessions, and assisting students, showing both
-                reliability and strong communication skills.
-              </p>
-              <p>
-                In summary, Mahan is a talented and motivated student with an impressive combination of
-                technical expertise, research curiosity, and teamwork. I am confident that he will excel
-                in any advanced academic or research environment he joins.
-              </p>
-            </div>
-          </section>
-
 
           <!-- PANEL: Armin -->
           <section class="rec rec-panel rec-panel--armin">
@@ -353,6 +291,72 @@ author_profile: true
                 In conclusion, Mahan possesses the dedication, creativity, and technical depth to thrive
                 in any program he chooses. I offer my highest recommendation and encourage you to
                 consider his application favorably.
+              </p>
+            </div>
+          </section>
+
+
+          <!-- PANEL: Shahabedin -->
+          <section class="rec rec-panel rec-panel--nabavi">
+            <div class="rec__head">
+              <div class="rec__who">
+                <img class="rec__avatar" src="/assets/img/logos/Shahab.jpg" alt="Shahabedin Nabavi">
+
+                <div class="rec__txt">
+                  <p class="rec__name">Shahabedin Nabavi</p>
+                  <p class="rec__meta">
+                    <img class="rec__org-logo" src="/assets/img/logos/sbu.jpg" alt="Shahid Beheshti University">
+                    Lecturer in Computer Science
+                  </p>
+                </div>
+              </div>
+
+              <a class="rec__cta"
+                 href="https://www.linkedin.com/in/shahabedin-nabavi-32a38458/"
+                 target="_blank"
+                 rel="noopener"
+                 title="View on LinkedIn">
+                View on <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+
+            <div class="rec__body">
+              <p>
+                It is my pleasure to strongly recommend Mr. Mahan Veisi, one of my undergraduate students,
+                for his exceptional academic performance, research engagement, and outstanding motivation
+                for learning. I have known Mahan since 2022 and have had the opportunity to teach and
+                supervise him in several capacities.
+              </p>
+              <p>
+                He took my “Operating Systems Lab” course and achieved a perfect score of 20/20. His final
+                project focused on optimizing the read-ahead feature using machine learning models,
+                applying regression techniques to predict optimal read-ahead sizes, which significantly
+                improved disk prefetching efficiency. In my “Introduction to Computer Vision with Deep
+                Learning” course, he went beyond course requirements by initiating and leading a team
+                project to create a unique Rock-Paper-Scissors dataset using YOLOv11. The model achieved
+                the highest accuracy among all projects and was integrated into an interactive
+                video-processing game. He also earned a 20/20 in this course.
+              </p>
+              <p>
+                In research, Mahan has been an active collaborator on a Cardiac MRI (CMRI) reconstruction
+                project utilizing prompt-in-prompt transformers. The project is now in its final stage,
+                and we are preparing a manuscript for submission to a leading journal. Notably, this
+                project won the Best Bachelor Project Award in our faculty, reflecting both the innovation
+                and technical depth of his work. In addition, Mahan joined our team for the CMRxRecon 2025
+                Challenge at MICCAI 2025, where our team achieved third place award — a remarkable
+                international accomplishment demonstrating his ability to translate research into
+                high-impact results.
+              </p>
+              <p>
+                Beyond research, Mahan has also contributed as a Teaching Assistant for my “Artificial
+                Intelligence and Machine Learning” (Spring 2025) course. He has been responsible for
+                managing assignments, conducting tutorial sessions, and assisting students, showing both
+                reliability and strong communication skills.
+              </p>
+              <p>
+                In summary, Mahan is a talented and motivated student with an impressive combination of
+                technical expertise, research curiosity, and teamwork. I am confident that he will excel
+                in any advanced academic or research environment he joins.
               </p>
             </div>
           </section>
