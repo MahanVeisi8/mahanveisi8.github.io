@@ -24,7 +24,7 @@ author_profile: true
 
       <!-- Right-aligned ranking pill (moved above photos) -->
       <div class="honor-actions">
-        <a class="rank-pill" href="https://www.synapse.org/Synapse:syn59814210/wiki/634966" target="_blank" rel="noopener">
+        <a class="rank-pill" href="https://www.synapse.org/Synapse:syn59814210/wiki/635078" target="_blank" rel="noopener">
           <i class="fas fa-trophy" aria-hidden="true"></i>
           Final rankings
         </a>
