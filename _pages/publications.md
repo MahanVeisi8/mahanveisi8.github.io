@@ -11,7 +11,7 @@ classes: wide
 
 <section class="pub-grid">
 
-  <!-- MRI RECON (no public links yet) -->
+  <!-- MRI RECON -->
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/CMRI_Recon.jpg" alt="All-in-One MRI Reconstruction">
@@ -21,12 +21,15 @@ classes: wide
     <div class="pub-body">
       <header class="pub-head">
         <h3 class="pub-title">All-in-One MRI Reconstruction with Cascaded Transformers</h3>
+        <div class="pub-actions">
+          <a class="icon-btn" href="https://github.com/MahanVeisi8/SpectraMR" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
       </header>
 
       <div class="pub-authors">
         <strong>Mahan Veisi</strong>
-        <a href="https://scholar.google.com/citations?user=gHVVhW4AAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Kian Anvari</a>
-        <a href="https://scholar.google.com/citations?user=D_mPA6sAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Shahabedin Nabavi</a>
+        <a href="https://scholar.google.com/citations?user=D_mPA6sAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Kian Anvari</a>
+        <a href="https://scholar.google.com/citations?user=gHVVhW4AAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Shahabedin Nabavi</a>
         <a href="https://scholar.google.com/citations?user=trWxrgcAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Mohsen Ebrahimi Moghaddam</a>
       </div>
 
@@ -34,28 +37,32 @@ classes: wide
         <summary>Read more</summary>
         <div class="pub-extra">
           <p class="pub-blurb">
-            Cascaded transformer U-Nets with Frequency Mining for multi-contrast MRI reconstruction from k-space (MICCAI-style benchmarks). Emphasizes robustness across contrasts and acceleration factors with artifact mitigation and strong generalization.
+            Developed a cascaded MRI reconstruction model using Frequency Mining with SOTA transformer-based U-Net models for k-space data, efficiently handling MRI multi-contrast.
           </p>
         </div>
       </details>
     </div>
   </article>
 
-  <!-- AIRFOIL (no public links yet) -->
+  <!-- DIFF-MOBO (replaces old AIRFOIL card) -->
   <article class="pub-card">
     <div class="pub-hero">
-      <img src="/assets/img/publications/airfoil_diff_opt.jpg" alt="Diffusion-Driven Airfoil Optimization">
-      <span class="pub-ribbon-strap is-draft">Under Review — Journal of Machine Learning Research</span>
+      <img src="/assets/img/publications/airfoil_diff_opt.jpg" alt="Diffusion-Driven Multi-Objective Design Optimization">
+      <span class="pub-ribbon-strap is-draft">Under Review — SIGGRAPH 2026</span>
     </div>
 
     <div class="pub-body">
       <header class="pub-head">
-        <h3 class="pub-title">Diffusion-Driven Airfoil Optimization</h3>
+        <h3 class="pub-title">Diffusion-Driven Multi-Objective Design Optimization</h3>
+        <div class="pub-actions">
+          <a class="icon-btn" href="https://github.com/MahanVeisi8/Diff-MOBO" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
       </header>
 
       <div class="pub-authors">
-        <strong>Mahan Veisi</strong>
+        <strong>Mahan Veisi</strong>, Bardiya Kariminia,
         <a href="https://scholar.google.de/citations?user=k2TvtoAAAAAJ"><i class="ai ai-google-scholar"></i> Navid Ansari</a>
+        <a href="https://scholar.google.com/citations?user=h-vdAT0AAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Kevin Tirta Wijaya</a>
         <a href="https://scholar.google.de/citations?user=Yjh-GHsAAAAJ"><i class="ai ai-google-scholar"></i> Vahid Babaei</a>
       </div>
 
@@ -63,7 +70,7 @@ classes: wide
         <summary>Read more</summary>
         <div class="pub-extra">
           <p class="pub-blurb">
-            Latent-space diffusion + neural multi-objective BO for inverse-designing 2D airfoils, balancing lift–drag while encouraging novelty; large-batch acquisition improves Pareto diversity.
+            Developed a generative framework coupled with multi-objective Bayesian optimization to creatively explore industrial design spaces under expensive native forward processes.
           </p>
         </div>
       </details>
@@ -97,7 +104,7 @@ classes: wide
         <summary>Read more</summary>
         <div class="pub-extra">
           <p class="pub-blurb">
-            FinBERT sentiment fused with PPO-LSTM; reached <strong>134.39% cumulative return</strong> and <strong>1.46 Sharpe</strong>, outperforming DJIA, Ensemble, and PPO baselines, with risk-aware reward shaping and rolling-window evaluation.
+            Integrated FinBERT, a financial sentiment analysis LLM, to extract sentiment from news and combined it with stock prices in a PPO-LSTM model for stock trading. Achieved <strong>134.39% cumulative return</strong> (2.34× initial budget) and a <strong>1.46 Sharpe ratio</strong>, significantly outperforming DJIA, Ensemble, and PPO models.
           </p>
         </div>
       </details>
@@ -129,7 +136,7 @@ classes: wide
         <summary>Read more</summary>
         <div class="pub-extra">
           <p class="pub-blurb">
-            SincNet-based gait classification with post-hoc filter clustering to surface medically relevant frequency bands; achieved <strong>98.7% accuracy</strong> with interpretable components.
+            Applied SincNet layers to classify Parkinson’s Disease from gait data, achieving <strong>98.7% accuracy</strong>. Pruned filters after initial training using K-means clustering and silhouette scores to identify key frequency bands that explain the model's decisions.
           </p>
         </div>
       </details>
