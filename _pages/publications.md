@@ -44,39 +44,6 @@ classes: wide
     </div>
   </article>
 
-  <!-- DIFF-MOBO (replaces old AIRFOIL card) -->
-  <article class="pub-card">
-    <div class="pub-hero">
-      <img src="/assets/img/publications/airfoil_diff_opt.jpg" alt="Diffusion-Driven Multi-Objective Design Optimization">
-      <span class="pub-ribbon-strap is-draft">Under Review — SIGGRAPH 2026</span>
-    </div>
-
-    <div class="pub-body">
-      <header class="pub-head">
-        <h3 class="pub-title">Diffusion-Driven Multi-Objective Design Optimization</h3>
-        <div class="pub-actions">
-          <a class="icon-btn" href="https://github.com/MahanVeisi8/Diff-MOBO" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-      </header>
-
-      <div class="pub-authors">
-        <strong>Mahan Veisi</strong>, Bardiya Kariminia,
-        <a href="https://scholar.google.de/citations?user=k2TvtoAAAAAJ"><i class="ai ai-google-scholar"></i> Navid Ansari</a>
-        <a href="https://scholar.google.com/citations?user=h-vdAT0AAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Kevin Tirta Wijaya</a>
-        <a href="https://scholar.google.de/citations?user=Yjh-GHsAAAAJ"><i class="ai ai-google-scholar"></i> Vahid Babaei</a>
-      </div>
-
-      <details class="pub-more">
-        <summary>Read more</summary>
-        <div class="pub-extra">
-          <p class="pub-blurb">
-            Developed a generative framework coupled with multi-objective Bayesian optimization to creatively explore industrial design spaces under expensive native forward processes.
-          </p>
-        </div>
-      </details>
-    </div>
-  </article>
-
   <!-- DRL TRADING -->
   <article class="pub-card">
     <div class="pub-hero">
