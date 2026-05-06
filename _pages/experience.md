@@ -83,7 +83,7 @@ author_profile: true
       </div>
 
       <p class="exp-card__summary">
-        Latent-space diffusion for aerodynamic shape generation, paired with large-batch neural multi-objective Bayesian optimization to discover diverse 2D airfoils that balance lift–drag, satisfy constraints, and expand the Pareto front.
+        Developed a generative framework coupled with multi-objective Bayesian optimization to creatively explore industrial design spaces under expensive native.
       </p>
 
       <ul class="exp-card__badges">
