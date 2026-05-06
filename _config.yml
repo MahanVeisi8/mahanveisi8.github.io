@@ -3,7 +3,7 @@ locale: "en-US"
 title: "Mahan Veisi"
 title_separator: "-"
 name: &name "Mahan Veisi"
-description: &description "Computer Engineering Student and AI Researcher with Interests in Medical AI, Generative Models, and Reinforcement Learning"
+description: &description "Computer Engineering Student and AI Researcher with Interests in Medical AI, Visual Modeling, and Reinforcement Learning"
 url: https://mahanveisi8.github.io
 baseurl: ""
 repository: "MahanVeisi8/MahanVeisi8.github.io"
@@ -49,7 +49,7 @@ analytics:
 author:
   name: "Mahan Veisi"
   avatar: "profile.jpg" 
-  bio: "Computer Engineering B.S. Student at Shahid Beheshti University, passionate about AI and Generative Models."
+  bio: "Computer Engineering B.S. Student at Shahid Beheshti University, passionate about Visual Reconstruction."
   location: "Tehran, Iran"
   googlescholar: "https://scholar.google.com/citations?user=LQL2vyQAAAAJ&hl=en"
   email: "mahan8292@gmail.com"
