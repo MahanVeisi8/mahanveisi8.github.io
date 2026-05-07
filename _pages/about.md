@@ -63,7 +63,7 @@ Across my research internships and B.Sc. thesis, I’ve contributed to:
   <div class="edu-card__title">
     <strong>B.Sc. in Computer Engineering</strong> — Shahid Beheshti University, Tehran, Iran
   </div>
-  <div class="edu-card__meta">Expected Jan 2026</div>
+  <div class="edu-card__meta">Expected May 2026</div>
 
   <ul class="edu-stats">
     <li class="stat"><span class="stat__label">Cumulative</span><span class="stat__value">18.12/20 (3.81/4)</span></li>
