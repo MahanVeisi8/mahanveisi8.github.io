@@ -32,7 +32,7 @@ redirect_from:
 
 
 
-I’m a fifth‑year Computer Engineering undergrad (graduating January 2026) at Shahid Beheshti University, Iran, specializing in generative computing, medical imaging, and computational biology. 
+I’m a fifth‑year Computer Engineering undergrad (graduating May 2026) at Shahid Beheshti University, Iran, specializing in generative computing, medical imaging, and computational biology. 
 
 Currently I am actively seeking <span style="color:red">Master's or PhD</span> opportunities starting in 2026.
 
