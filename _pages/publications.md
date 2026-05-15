@@ -14,14 +14,15 @@ classes: wide
   <!-- MRI RECON -->
   <article class="pub-card">
     <div class="pub-hero">
-      <img src="/assets/img/publications/CMRI_Recon.jpg" alt="All-in-One MRI Reconstruction">
-      <span class="pub-ribbon-strap is-draft">Under Review — Magnetic Resonance in Medicine </span>
+      <img src="/assets/img/publications/CMRI_Recon.jpg" alt="AdaptCMR">
+      <span class="pub-ribbon-strap is-draft">ISMRM 2026</span>
     </div>
 
     <div class="pub-body">
       <header class="pub-head">
-        <h3 class="pub-title">All-in-One MRI Reconstruction with Cascaded Transformers</h3>
+        <h3 class="pub-title">AdaptCMR: All-in-One MRI Reconstruction with Cascaded Transformers</h3>
         <div class="pub-actions">
+          <a class="icon-btn" href="https://echo.ismrm.org/program/ISMRM2026/at-a-glance/session/760" title="Paper (PDF)" aria-label="PDF"><i class="far fa-file-pdf"></i></a>
           <a class="icon-btn" href="https://github.com/MahanVeisi8/SpectraMR" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </header>
@@ -37,7 +38,7 @@ classes: wide
         <summary>Read more</summary>
         <div class="pub-extra">
           <p class="pub-blurb">
-            Developed a cascaded MRI reconstruction model using Frequency Mining with SOTA transformer-based U-Net models for k-space data, efficiently handling MRI multi-contrast.
+            AdaptCMR is a parameter-efficient, detail-preserving deep learning framework for cardiac MRI reconstruction. It uses a spectrally guided mixture of experts to generalize across different views, contrasts, and acceleration factors, preserving fine anatomical detail with fewer parameters and faster inference.
           </p>
         </div>
       </details>
