@@ -363,3 +363,164 @@
   /* nice aspect ratio for media full-width */
   .project-media { aspect-ratio:16/9; }
 }
+
+/* =========================================================
+   Native GitHub cards (replaces github-readme-stats images)
+   ========================================================= */
+
+.gh-card{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  background:#fff;
+  border:1px solid #d9e4ee;
+  border-radius:10px;
+  padding:.7rem .8rem;
+  transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+.gh-card:hover{
+  transform:translateY(-2px);
+  border-color:#b9d4f2;
+  box-shadow:0 10px 20px rgba(15,91,184,.16);
+}
+
+.gh-card__head{
+  display:flex;
+  align-items:center;
+  gap:.45rem;
+  margin-bottom:.4rem;
+  min-width:0;
+}
+.gh-card__pin{ color:#6b7a89; font-size:.85rem; flex:none; }
+.gh-card__repo{
+  font-size:.86rem;
+  line-height:1.25;
+  min-width:0;
+  word-break:break-word;
+}
+.gh-card__owner{ color:#5b6b7a; font-weight:500; }
+.gh-card__name{ color:#0f5cb8; font-weight:800; }
+
+.gh-card__desc{
+  margin:0 0 .55rem;
+  font-size:.78rem;
+  line-height:1.45;
+  color:#4a5a69;
+}
+
+.gh-card__meta{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.75rem;
+  font-size:.74rem;
+  color:#5b6b7a;
+}
+.gh-card__lang{ display:inline-flex; align-items:center; gap:.35rem; }
+.gh-card__stat{ display:inline-flex; align-items:center; gap:.3rem; }
+
+.gh-card__dot{
+  width:.62rem;
+  height:.62rem;
+  border-radius:50%;
+  display:inline-block;
+  flex:none;
+  background:#8b949e;          /* default for unlisted languages */
+}
+/* GitHub's own language colours */
+.gh-card__dot--python{ background:#3572a5; }
+.gh-card__dot--jupyter-notebook{ background:#da5b0b; }
+.gh-card__dot--javascript{ background:#f1e05a; }
+.gh-card__dot--typescript{ background:#3178c6; }
+.gh-card__dot--html{ background:#e34c26; }
+.gh-card__dot--css{ background:#563d7c; }
+.gh-card__dot--c{ background:#555555; }
+.gh-card__dot--java{ background:#b07219; }
+.gh-card__dot--shell{ background:#89e051; }
+.gh-card__dot--scss{ background:#c6538c; }
+.gh-card__dot--ruby{ background:#701516; }
+.gh-card__dot--matlab{ background:#e16737; }
+
+/* ---- Summary: overall stats ---- */
+.gh-stats{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0,1fr));
+  gap:.6rem;
+}
+.gh-stat{
+  background:#f6fafe;
+  border:1px solid #e4eef8;
+  border-radius:10px;
+  padding:.55rem .65rem;
+  text-align:center;
+}
+.gh-stat__value{
+  display:block;
+  font-size:1.35rem;
+  font-weight:800;
+  line-height:1.1;
+  color:#0f5cb8;
+}
+.gh-stat__label{
+  display:block;
+  margin-top:.2rem;
+  font-size:.72rem;
+  color:#5b6b7a;
+  font-weight:600;
+}
+.gh-profile-btn{ width:100%; margin-top:auto; }
+
+/* ---- Summary: language breakdown ---- */
+.gh-langbar{
+  display:flex;
+  width:100%;
+  height:.6rem;
+  border-radius:999px;
+  overflow:hidden;
+  background:#eef3f8;
+  margin:0;
+}
+:where(.gh-langbar__seg){ height:100%; background:#8b949e; }
+
+.gh-langlist{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0,1fr));
+  gap:.35rem .9rem;
+}
+.gh-langlist__item{
+  display:flex;
+  align-items:center;
+  gap:.4rem;
+  font-size:.78rem;
+  color:#4a5a69;
+  min-width:0;
+}
+.gh-langlist__name{
+  font-weight:600;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.gh-langlist__pct{ margin-left:auto; color:#5b6b7a; font-variant-numeric:tabular-nums; }
+
+.gh-empty{
+  font-size:.8rem;
+  color:#5b6b7a;
+  margin:0;
+}
+.gh-updated{
+  font-size:.72rem;
+  color:#6b7a89;
+  text-align:right;
+  margin:.15rem 0 1.25rem;
+}
+
+@media (max-width:480px){
+  .gh-stats, .gh-langlist{ grid-template-columns:1fr; }
+}

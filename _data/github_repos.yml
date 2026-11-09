@@ -1,0 +1,52 @@
+# Repositories shown as cards on /projects/.
+# `username` is the GitHub account whose overall stats appear in the summary header.
+# Per-repo stars / forks / languages are refreshed automatically by
+# .github/workflows/update-github-stats.yml into _data/github_stats.json.
+# The fields below are the fallback shown before the first workflow run.
+username: MahanVeisi8
+
+repos:
+  - full_name: MahanVeisi8/Latent-Diffusion-MNIST-DDPM-using-Autoencoder
+    title: Latent Diffusion MNIST
+    description: Unconditional latent diffusion on MNIST — autoencoders with channel attention and a U-Net DDPM denoising in latent space.
+    language: Jupyter Notebook
+
+  - full_name: SBUformers/Rock-Paper-Scissors-Simulator
+    title: Rock-Paper-Scissors Simulator
+    description: Real-time Rock–Paper–Scissors game automation with YOLOv11 gesture detection, cheating detection and winner recognition.
+    language: Python
+
+  - full_name: MahanVeisi8/VAE-MNIST-Variable-Latent-Size-Reconstruction-and-Visualization
+    title: VAE MNIST Latent Spaces
+    description: Variational autoencoders on MNIST across latent sizes, illustrating the compression–fidelity trade-off.
+    language: Jupyter Notebook
+
+  - full_name: MahanVeisi8/From-Chaos-to-Clarity-Denoising-Images-with-UNet-and-GANs
+    title: Denoising with U-Net and GANs
+    description: Denoising a facial emotion dataset with an attention U-Net and a GAN-based refinement stage.
+    language: Jupyter Notebook
+
+  - full_name: MahanVeisi8/RL_practices
+    title: Reinforcement Learning Practices
+    description: Implementations and experiments across classic and deep reinforcement learning algorithms.
+    language: Jupyter Notebook
+
+  - full_name: MahanVeisi8/FashionTagger
+    title: FashionTagger
+    description: AI-powered fashion image labeling — multi-attribute tagging of clothing images.
+    language: Jupyter Notebook
+
+  - full_name: MahanVeisi8/Face_recognition
+    title: Iranian Celebrity Face Recognition
+    description: Face recognition pipeline trained on an Iranian celebrity dataset.
+    language: Jupyter Notebook
+
+  - full_name: MahanVeisi8/Automated-readme-generator-with-Multi-Agent-CrewAI
+    title: Automated README Generator
+    description: Multi-agent CrewAI system that inspects a repository and writes its README automatically.
+    language: Python
+
+  - full_name: MahanVeisi8/MLPractices
+    title: Machine Learning Practices
+    description: A collection of machine learning exercises, notebooks and from-scratch implementations.
+    language: Jupyter Notebook

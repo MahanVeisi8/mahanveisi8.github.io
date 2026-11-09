@@ -1,0 +1,69 @@
+{%- comment -%}
+  Native GitHub summary: overall stats + top languages.
+  Data comes from _data/github_stats.json, refreshed daily by
+  .github/workflows/update-github-stats.yml. Degrades to a simple
+  profile link if that file has not been generated yet.
+{%- endcomment -%}
+{%- assign gh = site.data.github_stats -%}
+{%- assign user = site.data.github_repos.username -%}
+
+<section class="github-summary">
+  <div class="github-summary__card">
+    <h2 class="github-summary__title">GitHub Stats</h2>
+
+    {%- if gh and gh.user %}
+    <ul class="gh-stats">
+      <li class="gh-stat">
+        <span class="gh-stat__value">{{ gh.user.total_stars }}</span>
+        <span class="gh-stat__label"><i class="far fa-star" aria-hidden="true"></i> Stars earned</span>
+      </li>
+      <li class="gh-stat">
+        <span class="gh-stat__value">{{ gh.user.public_repos }}</span>
+        <span class="gh-stat__label"><i class="fas fa-book" aria-hidden="true"></i> Public repos</span>
+      </li>
+      <li class="gh-stat">
+        <span class="gh-stat__value">{{ gh.user.total_forks }}</span>
+        <span class="gh-stat__label"><i class="fas fa-code-branch" aria-hidden="true"></i> Forks</span>
+      </li>
+      <li class="gh-stat">
+        <span class="gh-stat__value">{{ gh.user.followers }}</span>
+        <span class="gh-stat__label"><i class="fas fa-users" aria-hidden="true"></i> Followers</span>
+      </li>
+    </ul>
+    {%- else %}
+    <p class="gh-empty">Stats refresh automatically once the GitHub Action has run.</p>
+    {%- endif %}
+
+    <a class="repo-embed__btn gh-profile-btn" href="https://github.com/{{ user }}" target="_blank" rel="noopener">
+      <i class="fab fa-github" aria-hidden="true"></i> @{{ user }}
+    </a>
+  </div>
+
+  <div class="github-summary__card">
+    <h2 class="github-summary__title">Top Languages</h2>
+
+    {%- if gh and gh.languages and gh.languages.size > 0 %}
+    <div class="gh-langbar" role="img" aria-label="Language breakdown across public repositories">
+      {%- for l in gh.languages limit: 6 %}
+      <span class="gh-langbar__seg gh-card__dot--{{ l.name | slugify }}"
+            style="width: {{ l.percent }}%" title="{{ l.name }} {{ l.percent }}%"></span>
+      {%- endfor %}
+    </div>
+    <ul class="gh-langlist">
+      {%- for l in gh.languages limit: 6 %}
+      <li class="gh-langlist__item">
+        <span class="gh-card__dot gh-card__dot--{{ l.name | slugify }}"></span>
+        <span class="gh-langlist__name">{{ l.name }}</span>
+        <span class="gh-langlist__pct">{{ l.percent }}%</span>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- else %}
+    <p class="gh-empty">Language breakdown refreshes automatically once the GitHub Action has run.</p>
+    {%- endif %}
+  </div>
+</section>
+
+{%- if gh and gh.generated_at %}
+<p class="gh-updated">GitHub data updated {{ gh.generated_at | date: "%-d %B %Y" }}</p>
+{%- endif %}

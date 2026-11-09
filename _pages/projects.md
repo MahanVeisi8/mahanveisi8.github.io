@@ -6,30 +6,8 @@ author_profile: true
 published: true
 ---
 
-<!-- ===== Overall GitHub Stats header ===== -->
-<section class="github-summary">
-  <div class="github-summary__card">
-    <h2 class="github-summary__title">Mahan Veisi's GitHub Stats</h2>
-    <div class="github-summary__imgwrap">
-      <img
-        src="https://github-readme-stats.vercel.app/api?username=MahanVeisi8&show_icons=true&theme=transparent&rank_icon=github"
-        alt="Mahan Veisi GitHub stats"
-        loading="lazy"
-      />
-    </div>
-  </div>
-
-  <div class="github-summary__card">
-    <h2 class="github-summary__title">Top Languages</h2>
-    <div class="github-summary__imgwrap">
-      <img
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=MahanVeisi8&layout=compact&theme=transparent"
-        alt="Top languages"
-        loading="lazy"
-      />
-    </div>
-  </div>
-</section>
+<!-- ===== Overall GitHub Stats header (native, no external service) ===== -->
+{% include github-summary.html %}
 
 
 <!-- ===== Project Cards ===== -->
@@ -63,16 +41,7 @@ published: true
     <aside class="project-meta">
       <div class="repo-embed">
 
-        <a class="repo-embed__cardlink"
-           href="https://github.com/MahanVeisi8/Latent-Diffusion-MNIST-DDPM-using-Autoencoder">
-          <div class="repo-embed__cardimg">
-            <img
-              src="https://github-readme-stats.vercel.app/api/pin/?username=MahanVeisi8&repo=Latent-Diffusion-MNIST-DDPM-using-Autoencoder&theme=transparent&show_owner=true"
-              alt="Latent Diffusion repo card"
-              loading="lazy"
-            />
-          </div>
-        </a>
+        {% include repo-card.html repo="MahanVeisi8/Latent-Diffusion-MNIST-DDPM-using-Autoencoder" %}
 
         <a class="repo-embed__btn"
            href="https://github.com/MahanVeisi8/Latent-Diffusion-MNIST-DDPM-using-Autoencoder">
@@ -114,16 +83,7 @@ published: true
     <aside class="project-meta">
       <div class="repo-embed">
 
-        <a class="repo-embed__cardlink"
-           href="https://github.com/SBUformers/Rock-Paper-Scissors-Simulator">
-          <div class="repo-embed__cardimg">
-            <img
-              src="https://github-readme-stats.vercel.app/api/pin/?username=SBUformers&repo=Rock-Paper-Scissors-Simulator&theme=transparent&show_owner=true"
-              alt="Rock Paper Scissors repo card"
-              loading="lazy"
-            />
-          </div>
-        </a>
+        {% include repo-card.html repo="SBUformers/Rock-Paper-Scissors-Simulator" %}
 
         <a class="repo-embed__btn"
            href="https://github.com/SBUformers/Rock-Paper-Scissors-Simulator">
@@ -166,16 +126,7 @@ published: true
     <aside class="project-meta">
       <div class="repo-embed">
 
-        <a class="repo-embed__cardlink"
-           href="https://github.com/MahanVeisi8/VAE-MNIST-Variable-Latent-Size-Reconstruction-and-Visualization">
-          <div class="repo-embed__cardimg">
-            <img
-              src="https://github-readme-stats.vercel.app/api/pin/?username=MahanVeisi8&repo=VAE-MNIST-Variable-Latent-Size-Reconstruction-and-Visualization&theme=transparent&show_owner=true"
-              alt="VAE MNIST repo card"
-              loading="lazy"
-            />
-          </div>
-        </a>
+        {% include repo-card.html repo="MahanVeisi8/VAE-MNIST-Variable-Latent-Size-Reconstruction-and-Visualization" %}
 
         <a class="repo-embed__btn"
            href="https://github.com/MahanVeisi8/VAE-MNIST-Variable-Latent-Size-Reconstruction-and-Visualization">
@@ -212,16 +163,7 @@ published: true
     <aside class="project-meta">
       <div class="repo-embed">
 
-        <a class="repo-embed__cardlink"
-           href="https://github.com/MahanVeisi8/From-Chaos-to-Clarity-Denoising-Images-with-UNet-and-GANs">
-          <div class="repo-embed__cardimg">
-            <img
-              src="https://github-readme-stats.vercel.app/api/pin/?username=MahanVeisi8&repo=From-Chaos-to-Clarity-Denoising-Images-with-UNet-and-GANs&theme=transparent&show_owner=true"
-              alt="Denoising repo card"
-              loading="lazy"
-            />
-          </div>
-        </a>
+        {% include repo-card.html repo="MahanVeisi8/From-Chaos-to-Clarity-Denoising-Images-with-UNet-and-GANs" %}
 
         <a class="repo-embed__btn"
            href="https://github.com/MahanVeisi8/From-Chaos-to-Clarity-Denoising-Images-with-UNet-and-GANs">
@@ -261,16 +203,7 @@ published: true
     <aside class="project-meta">
       <div class="repo-embed">
 
-        <a class="repo-embed__cardlink"
-           href="https://github.com/MahanVeisi8/RL_practices">
-          <div class="repo-embed__cardimg">
-            <img
-              src="https://github-readme-stats.vercel.app/api/pin/?username=MahanVeisi8&repo=RL_practices&theme=transparent&show_owner=true"
-              alt="RL Practices repo card"
-              loading="lazy"
-            />
-          </div>
-        </a>
+        {% include repo-card.html repo="MahanVeisi8/RL_practices" %}
 
         <a class="repo-embed__btn"
            href="https://github.com/MahanVeisi8/RL_practices">
@@ -307,16 +240,7 @@ published: true
     <aside class="project-meta">
       <div class="repo-embed">
 
-        <a class="repo-embed__cardlink"
-           href="https://github.com/MahanVeisi8/FashionTagger">
-          <div class="repo-embed__cardimg">
-            <img
-              src="https://github-readme-stats.vercel.app/api/pin/?username=MahanVeisi8&repo=FashionTagger&theme=transparent&show_owner=true"
-              alt="FashionTagger repo card"
-              loading="lazy"
-            />
-          </div>
-        </a>
+        {% include repo-card.html repo="MahanVeisi8/FashionTagger" %}
 
         <a class="repo-embed__btn"
            href="https://github.com/MahanVeisi8/FashionTagger">
@@ -353,16 +277,7 @@ published: true
     <aside class="project-meta">
       <div class="repo-embed">
 
-        <a class="repo-embed__cardlink"
-           href="https://github.com/MahanVeisi8/Face_recognition">
-          <div class="repo-embed__cardimg">
-            <img
-              src="https://github-readme-stats.vercel.app/api/pin/?username=MahanVeisi8&repo=Face_recognition&theme=transparent&show_owner=true"
-              alt="Face Recognition repo card"
-              loading="lazy"
-            />
-          </div>
-        </a>
+        {% include repo-card.html repo="MahanVeisi8/Face_recognition" %}
 
         <a class="repo-embed__btn"
            href="https://github.com/MahanVeisi8/Face_recognition">
@@ -399,16 +314,7 @@ published: true
     <aside class="project-meta">
       <div class="repo-embed">
 
-        <a class="repo-embed__cardlink"
-           href="https://github.com/MahanVeisi8/Automated-readme-generator-with-Multi-Agent-CrewAI">
-          <div class="repo-embed__cardimg">
-            <img
-              src="https://github-readme-stats.vercel.app/api/pin/?username=MahanVeisi8&repo=Automated-readme-generator-with-Multi-Agent-CrewAI&theme=transparent&show_owner=true"
-              alt="README Generator repo card"
-              loading="lazy"
-            />
-          </div>
-        </a>
+        {% include repo-card.html repo="MahanVeisi8/Automated-readme-generator-with-Multi-Agent-CrewAI" %}
 
         <a class="repo-embed__btn"
            href="https://github.com/MahanVeisi8/Automated-readme-generator-with-Multi-Agent-CrewAI">
@@ -448,16 +354,7 @@ published: true
     <aside class="project-meta">
       <div class="repo-embed">
 
-        <a class="repo-embed__cardlink"
-           href="https://github.com/MahanVeisi8/MLPractices">
-          <div class="repo-embed__cardimg">
-            <img
-              src="https://github-readme-stats.vercel.app/api/pin/?username=MahanVeisi8&repo=MLPractices&theme=transparent&show_owner=true"
-              alt="MLPractices repo card"
-              loading="lazy"
-            />
-          </div>
-        </a>
+        {% include repo-card.html repo="MahanVeisi8/MLPractices" %}
 
         <a class="repo-embed__btn"
            href="https://github.com/MahanVeisi8/MLPractices">

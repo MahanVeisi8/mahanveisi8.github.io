@@ -1,0 +1,41 @@
+{%- comment -%}
+  Native GitHub repo card. No external image service.
+  Usage: {% include repo-card.html repo="owner/name" %}
+  Live stars/forks come from _data/github_stats.json (refreshed by a GitHub Action);
+  falls back to _data/github_repos.yml when that file is absent.
+{%- endcomment -%}
+{%- assign _fallback = site.data.github_repos.repos | where: "full_name", include.repo | first -%}
+{%- assign _live = nil -%}
+{%- if site.data.github_stats and site.data.github_stats.repos -%}
+  {%- assign _live = site.data.github_stats.repos | where: "full_name", include.repo | first -%}
+{%- endif -%}
+{%- assign _owner = include.repo | split: "/" | first -%}
+{%- assign _name  = include.repo | split: "/" | last -%}
+{%- assign _desc = _live.description | default: _fallback.description -%}
+{%- assign _lang = _live.language | default: _fallback.language -%}
+
+<a class="gh-card" href="https://github.com/{{ include.repo }}" target="_blank" rel="noopener"
+   aria-label="{{ include.repo }} on GitHub">
+  <div class="gh-card__head">
+    <i class="far fa-bookmark gh-card__pin" aria-hidden="true"></i>
+    <span class="gh-card__repo">
+      <span class="gh-card__owner">{{ _owner }}/</span><span class="gh-card__name">{{ _name }}</span>
+    </span>
+  </div>
+
+  {%- if _desc %}
+  <p class="gh-card__desc">{{ _desc }}</p>
+  {%- endif %}
+
+  <div class="gh-card__meta">
+    {%- if _lang %}
+    <span class="gh-card__lang">
+      <span class="gh-card__dot gh-card__dot--{{ _lang | slugify }}"></span>{{ _lang }}
+    </span>
+    {%- endif %}
+    {%- if _live %}
+    <span class="gh-card__stat"><i class="far fa-star" aria-hidden="true"></i> {{ _live.stargazers_count }}</span>
+    <span class="gh-card__stat"><i class="fas fa-code-branch" aria-hidden="true"></i> {{ _live.forks_count }}</span>
+    {%- endif %}
+  </div>
+</a>
