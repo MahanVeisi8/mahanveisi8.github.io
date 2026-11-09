@@ -3,7 +3,7 @@ locale: "en-US"
 title: "Mahan Veisi"
 title_separator: "-"
 name: &name "Mahan Veisi"
-description: &description "Computer Engineering Student and AI Researcher with Interests in Medical AI, Visual Modeling, and Reinforcement Learning"
+description: &description "PhD Student in Computer Science at The University of Manchester — foundation models for spatial omics, AI for cancer research, and medical imaging"
 url: https://mahanveisi8.github.io
 baseurl: ""
 repository: "MahanVeisi8/MahanVeisi8.github.io"
@@ -49,8 +49,8 @@ analytics:
 author:
   name: "Mahan Veisi"
   avatar: "profile.jpg" 
-  bio: "Computer Engineering B.S. Student at Shahid Beheshti University, passionate about Visual Reconstruction."
-  location: "Tehran, Iran"
+  bio: "PhD Student in Computer Science @ The University of Manchester. Foundation models for spatial omics, AI for cancer research."
+  location: "Manchester, UK"
   googlescholar: "https://scholar.google.com/citations?user=LQL2vyQAAAAJ&hl=en"
   email: "mahan8292@gmail.com"
   github: "MahanVeisi8"
@@ -171,7 +171,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: Asia/Tehran
+timezone: Europe/London
 
 # Plugins
 plugins:
@@ -197,7 +197,7 @@ compress_html:
 
 footer:
   links:
-    - label: "© 2025 Mahan Veisi"
+    - label: "© 2026 Mahan Veisi"
       url: "/"
     - label: "Code: MIT"
       url: "/LICENSE"

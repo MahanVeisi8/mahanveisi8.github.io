@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="The University of Manchester">
+  <rect width="200" height="200" fill="#660099"/>
+  <g fill="#ffffff">
+    <text x="100" y="92" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" text-anchor="middle" letter-spacing="1">UoM</text>
+    <rect x="52" y="108" width="96" height="3" rx="1.5"/>
+    <text x="100" y="138" font-family="Georgia, 'Times New Roman', serif" font-size="19" text-anchor="middle" letter-spacing="2">MANCHESTER</text>
+  </g>
+</svg>

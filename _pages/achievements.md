@@ -10,6 +10,19 @@ author_profile: true
 <section class="honor-grid">
 
   <article class="honor-card">
+    <img class="honor-card__logo" src="/assets/img/logos/manchester.png" alt="The University of Manchester">
+    <div class="honor-card__body">
+      <h3 class="honor-card__title">FSE Bicentenary PhD Scholarship</h3>
+      <div class="honor-card__org">The University of Manchester · Manchester, UK · Oct 2026</div>
+
+      <p class="honor-card__summary">
+        Fully funded PhD scholarship from the <strong>Faculty of Science and Engineering</strong>, awarded competitively
+        and covering tuition fees, the UKRI stipend, and a research training support grant for four years.
+      </p>
+    </div>
+  </article>
+
+  <article class="honor-card">
     <img class="honor-card__logo" src="/assets/img/logos/miccai2025.jpg" alt="MICCAI/CMRxRecon">
     <div class="honor-card__body">
       <h3 class="honor-card__title">3rd Place — CMRxRecon 2025 (Task&nbsp;1)</h3>

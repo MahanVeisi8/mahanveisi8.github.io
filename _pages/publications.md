@@ -45,6 +45,39 @@ classes: wide
     </div>
   </article>
 
+  <!-- DIFFUSION POLICY TRADING -->
+  <article class="pub-card">
+    <div class="pub-hero">
+      <img src="/assets/img/publications/deep-rl-stock-trading-arch.png" alt="Enhanced Diffusion Policy for Stock Trading">
+      <span class="pub-ribbon-strap is-published">IICAI 2026</span>
+    </div>
+
+    <div class="pub-body">
+      <header class="pub-head">
+        <h3 class="pub-title">Enhanced Diffusion Policy for Robust Multimodal Stock Trading</h3>
+        <div class="pub-actions">
+          <a class="icon-btn" href="https://iai.sbu.ac.ir/fa/Home/Article/46c86dfe-24c6-4e9e-8b04-afc9fcf2a02d" title="Paper" aria-label="Paper"><i class="far fa-file-pdf"></i></a>
+        </div>
+      </header>
+
+      <div class="pub-authors">
+        Amirali Vakili,
+        <a href="https://scholar.google.com/citations?user=QufpdNgAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Mahdi Shahbazi Khojasteh</a>,
+        <strong>Mahan Veisi</strong>,
+        <a href="https://scholar.google.com/citations?user=akmKmMQAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Armin Salimi-Badr</a>
+      </div>
+
+      <details class="pub-more">
+        <summary>Read more</summary>
+        <div class="pub-extra">
+          <p class="pub-blurb">
+            Conventional deep RL trading agents rely on restrictive policy representations that cannot capture the multimodal nature of good trading decisions. This work applies the <strong>Enhanced Diffusion-QL</strong> framework to U.S. equity markets, pairing a diffusion-based policy and twin Q-learning critics with a <strong>Bi-LSTM</strong> state encoder that reads both technical indicators and financial-news embeddings.
+          </p>
+        </div>
+      </details>
+    </div>
+  </article>
+
   <!-- DRL TRADING -->
   <article class="pub-card">
     <div class="pub-hero">
@@ -83,14 +116,15 @@ classes: wide
   <article class="pub-card">
     <div class="pub-hero">
       <img src="/assets/img/publications/SincNet.jpg" alt="SincNet for Parkinson’s Gait">
-      <span class="pub-ribbon-strap is-underreview">Under Review — Journal of Ambient Intelligence and Humanized Computing</span>
+      <span class="pub-ribbon-strap is-published">Discover Artificial Intelligence (Springer) 2026</span>
     </div>
 
     <div class="pub-body">
       <header class="pub-head">
-        <h3 class="pub-title">SincNet for Parkinson’s Disease Detection</h3>
+        <h3 class="pub-title">An Explainable Method Based on Sinc Filters to Diagnose Parkinson’s Disease Severity by Gait Cycle Analysis</h3>
         <div class="pub-actions">
-          <a class="icon-btn" href="https://www.arxiv.org/abs/2502.17463" title="Paper (PDF)" aria-label="PDF"><i class="far fa-file-pdf"></i></a>
+          <a class="icon-btn" href="https://doi.org/10.1007/s44163-026-01993-8" title="Published paper (Springer, open access)" aria-label="Journal article"><i class="fas fa-book-open"></i></a>
+          <a class="icon-btn" href="https://www.arxiv.org/abs/2502.17463" title="Preprint (arXiv)" aria-label="PDF"><i class="far fa-file-pdf"></i></a>
           <a class="icon-btn" href="https://github.com/MahanVeisi8/Explainable-PD-Diagnosis-using-SincNet-and-Gait-Analysis" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </header>
@@ -104,7 +138,7 @@ classes: wide
         <summary>Read more</summary>
         <div class="pub-extra">
           <p class="pub-blurb">
-            Applied SincNet layers to classify Parkinson’s Disease from gait data, achieving <strong>98.7% accuracy</strong>. Pruned filters after initial training using K-means clustering and silhouette scores to identify key frequency bands that explain the model's decisions.
+            <strong>SincPD</strong>, published open access in <em>Discover Artificial Intelligence</em> (Springer), 6(1), 2026. Adaptive Sinc-based bandpass filters learn informative frequency bands directly from raw vertical ground-reaction-force gait signals, reaching <strong>98.77% accuracy</strong> for diagnosis and <strong>97.22%</strong> for severity assessment. K-means clustering and silhouette scores prune the filter bank from 800 filters down to 30 with negligible loss, so the frequency bands driving each decision stay inspectable.
           </p>
         </div>
       </details>

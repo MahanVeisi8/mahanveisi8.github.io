@@ -494,3 +494,23 @@
   /* inner background for the quote text box */
   --rec-body-bg: var(--rec-bg);
 }
+/* ===== Current role: purple gradient edge + "Current" marker ===== */
+.exp-card--current{
+  background:
+    linear-gradient(var(--exp-bg), var(--exp-bg)) padding-box,
+    linear-gradient(135deg, #660099, #8e44c4 55%, #c08ae0) border-box;
+}
+.exp-card--current .exp-card__dates{
+  font-weight:600;
+}
+.exp-card--current .exp-card__dates::before{
+  content:"";
+  display:inline-block;
+  width:.5rem;
+  height:.5rem;
+  margin-right:.45rem;
+  border-radius:50%;
+  background:#22c55e;
+  box-shadow:0 0 0 3px rgba(34,197,94,.22);
+  vertical-align:middle;
+}

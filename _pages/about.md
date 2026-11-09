@@ -32,11 +32,11 @@ redirect_from:
 
 
 
-I’m a fifth‑year Computer Engineering undergrad (graduating May 2026) at Shahid Beheshti University, Iran, specializing in generative computing, medical imaging, and computational biology. 
+I’m a PhD student in Computer Science at **The University of Manchester**, supported by the **FSE Bicentenary Scholarship**.
 
-Currently I am actively seeking <span style="color:red">Master's or PhD</span> opportunities starting in 2026.
+**Research focus:** multiscale **foundation models for spatial omics**, with **breast cancer** as my main application. Spatial omics tells us which genes and proteins are active in each cell, and where that cell sits inside the tissue. I build self-supervised transformer models that learn from this data at several scales at once — from single cells to whole tissue sections — and that generalise across tissues and organs. In breast cancer, a tumour’s spatial structure shapes how it progresses and how it resists treatment.
 
-**Research focus:** Visual Computing — especially **diffusion models** in signal processing.
+I also remain very interested in **visual computing** — especially **diffusion models**, generative modelling, and **signal processing** — which is where most of my earlier work on MRI reconstruction and medical imaging sits.
 
 <!-- ## Research Experience
 Across my research internships and B.Sc. thesis, I’ve contributed to:
@@ -61,9 +61,30 @@ Across my research internships and B.Sc. thesis, I’ve contributed to:
 
 <div class="edu-card">
   <div class="edu-card__title">
+    <strong>Ph.D. in Computer Science</strong> — The University of Manchester, Manchester, UK
+  </div>
+  <div class="edu-card__meta">Oct 2026 – Dec 2030 · in progress</div>
+
+  <ul class="edu-stats">
+    <li class="stat"><span class="stat__label">Funding</span><span class="stat__value">FSE Bicentenary Scholarship</span></li>
+    <li class="stat"><span class="stat__label">Focus</span><span class="stat__value">Foundation models for spatial omics</span></li>
+  </ul>
+
+  <div class="course-chips">
+    <span class="chip">Foundation Models</span>
+    <span class="chip">Spatial Omics</span>
+    <span class="chip">Spatial Transcriptomics</span>
+    <span class="chip">Self-Supervised Learning</span>
+    <span class="chip">Computational Biology</span>
+    <span class="chip">Interpretability</span>
+  </div>
+</div>
+
+<div class="edu-card">
+  <div class="edu-card__title">
     <strong>B.Sc. in Computer Engineering</strong> — Shahid Beheshti University, Tehran, Iran
   </div>
-  <div class="edu-card__meta">Expected May 2026</div>
+  <div class="edu-card__meta">Sep 2021 – May 2026</div>
 
   <ul class="edu-stats">
     <li class="stat"><span class="stat__label">Cumulative</span><span class="stat__value">18.12/20 (3.81/4)</span></li>
@@ -87,6 +108,11 @@ I’ve summarized my internships and teaching work on a dedicated page:
 
 <!-- Institutes logo row -->
 <div class="exp-logos-strip" aria-label="Institutes">
+  <a class="logo-pill edge-purple" href="https://www.manchester.ac.uk/" target="_blank" rel="noopener"
+     title="The University of Manchester — Department of Computer Science">
+    <img src="/assets/img/logos/manchester.png" alt="The University of Manchester">
+  </a>
+
   <a class="logo-pill edge-blue" href="https://lotfollahi.com/Lab" target="_blank" rel="noopener"
      title="Lotfollahi Lab — Wellcome Sanger Institute">
     <img src="/assets/img/logos/sanger.jpg" alt="Wellcome Sanger Institute">

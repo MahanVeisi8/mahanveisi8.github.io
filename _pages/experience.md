@@ -7,6 +7,37 @@ author_profile: true
 
 <section class="experience-list">
 
+  <!-- UNIVERSITY OF MANCHESTER — current -->
+  <article class="exp-card exp-card--current">
+    <img class="exp-card__logo" src="/assets/img/logos/manchester.png" alt="The University of Manchester">
+
+    <div class="exp-card__body">
+      <header class="exp-card__header">
+        <h3 class="exp-card__role">
+          Doctoral Researcher · <a class="exp-card__lab" href="https://www.manchester.ac.uk/" target="_blank" rel="noopener">Department of Computer Science</a>
+        </h3>
+        <div class="exp-card__dates">Oct 2026 – Present · Manchester, UK</div>
+      </header>
+
+      <div class="exp-card__org">
+        The University of Manchester — <strong>FSE Bicentenary Scholarship</strong>
+      </div>
+
+      <p class="exp-card__summary">
+        Developing transformer-based foundation models for spatial omics that learn at multiple scales, from single cells
+        to whole tissue sections. The models use self-supervised pretraining and are designed to be interpretable and to
+        generalise across tissues and organs, with breast cancer as the main application.
+      </p>
+
+      <ul class="exp-card__badges">
+        <li class="badge"><i class="fas fa-cubes"></i> Foundation Models</li>
+        <li class="badge"><i class="fas fa-dna"></i> Spatial Transcriptomics</li>
+        <li class="badge"><i class="fas fa-ribbon"></i> Breast Cancer</li>
+        <li class="badge"><i class="fas fa-eye"></i> Interpretability</li>
+      </ul>
+    </div>
+  </article>
+
   <article class="exp-card exp-card--lab">
     <div class="exp-card__logos">
       <img src="/assets/img/logos/Cambridge.png" alt="University of Cambridge">
@@ -18,7 +49,7 @@ author_profile: true
         <h3 class="exp-card__role">
           Research Intern · <a class="exp-card__lab" href="https://lotfollahi.com/Lab" target="_blank" rel="noopener">Lotfollahi Lab</a>
         </h3>
-        <div class="exp-card__dates">Cambridge, UK</div>
+        <div class="exp-card__dates">Apr 2025 – Nov 2025 · Cambridge, UK (remote)</div>
       </header>
 
       <div class="exp-card__org">
@@ -48,7 +79,7 @@ author_profile: true
         <h3 class="exp-card__role">
           Undergraduate Research Intern · <a class="exp-card__lab" href="https://smartlab.cse.ust.hk/" target="_blank" rel="noopener">SMART Lab</a>
         </h3>
-        <div class="exp-card__dates">Hong Kong SAR</div>
+        <div class="exp-card__dates">Dec 2024 – Jun 2025 · Hong Kong SAR (remote)</div>
       </header>
 
       <div class="exp-card__org">
@@ -75,7 +106,7 @@ author_profile: true
         <h3 class="exp-card__role">
           Research Intern · <a class="exp-card__lab" href="https://aidam.mpi-inf.mpg.de/" target="_blank" rel="noopener">AIDAM Group</a>
         </h3>
-        <div class="exp-card__dates">Saarbrücken, Germany</div>
+        <div class="exp-card__dates">Sep 2024 – Feb 2025 · Saarbrücken, Germany (remote)</div>
       </header>
 
       <div class="exp-card__org">
@@ -150,7 +181,7 @@ author_profile: true
     <div class="exp-card__body">
       <header class="exp-card__header">
         <h3 class="exp-card__role">Undergraduate Researcher</h3>
-        <div class="exp-card__dates">Tehran, Iran</div>
+        <div class="exp-card__dates">Sep 2023 – Sep 2024 · Tehran, Iran</div>
       </header>
 
       <div class="exp-card__org">
@@ -375,7 +406,7 @@ author_profile: true
     <div class="exp-card__body">
       <header class="exp-card__header">
         <h3 class="exp-card__role">Undergraduate Teaching Assistant (Part-time)</h3>
-        <div class="exp-card__dates">Tehran, Iran</div>
+        <div class="exp-card__dates">Aug 2022 – Aug 2025 · Tehran, Iran</div>
       </header>
 
       <div class="exp-card__org">Shahid Beheshti University — Computer Science Faculty</div>
