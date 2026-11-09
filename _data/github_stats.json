@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-11-09 02:24:31 +0000",
+  "user": {
+    "login": "MahanVeisi8",
+    "public_repos": 25,
+    "followers": 105,
+    "total_stars": 192,
+    "total_forks": 11
+  },
+  "repos": [
+    {
+      "full_name": "MahanVeisi8/Latent-Diffusion-MNIST-DDPM-using-Autoencoder",
+      "description": "Unlock the potential of latent diffusion models with MNIST! 🚀 Dive into reconstructing and generating digits using cutting-edge techniques like Autoencoders with Channel Attention Blocks and DDPMs. Perfect for enthusiasts of computer vision, deep learning, and generative modeling! 🌌✨",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 17,
+      "forks_count": 0,
+      "html_url": "https://github.com/MahanVeisi8/Latent-Diffusion-MNIST-DDPM-using-Autoencoder"
+    },
+    {
+      "full_name": "SBUformers/Rock-Paper-Scissors-Simulator",
+      "description": "Real-time Rock–Paper–Scissors game powered by YOLOv11—featuring hand gesture detection, cheat prevention, and celebratory winner overlays",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 6,
+      "forks_count": 2,
+      "html_url": "https://github.com/SBUformers/Rock-Paper-Scissors-Simulator"
+    },
+    {
+      "full_name": "MahanVeisi8/VAE-MNIST-Variable-Latent-Size-Reconstruction-and-Visualization",
+      "description": "Dive into the world of Variational Autoencoders (VAEs) with MNIST! 🎨✨ Explore variable latent sizes (2, 4, 16) to see how they affect reconstruction, latent space visualizations, and performance metrics 📊 (MSE, SSIM, PSNR).",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 10,
+      "forks_count": 0,
+      "html_url": "https://github.com/MahanVeisi8/VAE-MNIST-Variable-Latent-Size-Reconstruction-and-Visualization"
+    },
+    {
+      "full_name": "MahanVeisi8/From-Chaos-to-Clarity-Denoising-Images-with-UNet-and-GANs",
+      "description": "✨ Dive into image denoising magic! This project uses Attention U-Net and PatchGAN to tackle noise types like low Gaussian and salt-and-pepper noise. Perfect for computer vision, deep learning, and generative modeling enthusiasts. Restore clarity to noisy images with cutting-edge AI! 🚀🎨",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 11,
+      "forks_count": 0,
+      "html_url": "https://github.com/MahanVeisi8/From-Chaos-to-Clarity-Denoising-Images-with-UNet-and-GANs"
+    },
+    {
+      "full_name": "MahanVeisi8/RL_practices",
+      "description": "Collection of my Reinforcement Learning (RL) practices including DQN, D3QN, and Adaptive Gamma, applied to the Lunar Lander and CartPole environments. 🚀🕹️",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 17,
+      "forks_count": 0,
+      "html_url": "https://github.com/MahanVeisi8/RL_practices"
+    },
+    {
+      "full_name": "MahanVeisi8/FashionTagger",
+      "description": "Upload your fashion images and get detailed labels, such as category, color, and season, predicted by my AI model using an ensemble of CNN architectures.",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 15,
+      "forks_count": 0,
+      "html_url": "https://github.com/MahanVeisi8/FashionTagger"
+    },
+    {
+      "full_name": "MahanVeisi8/Face_recognition",
+      "description": "A Flask-based celebrity face recognition system using an ensemble model built with TensorFlow to classify images of Iranian celebrities",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 11,
+      "forks_count": 0,
+      "html_url": "https://github.com/MahanVeisi8/Face_recognition"
+    },
+    {
+      "full_name": "MahanVeisi8/Automated-readme-generator-with-Multi-Agent-CrewAI",
+      "description": "Fully automated README.md generator powered by multi-agent CREW AI 🤖 and Llama3-70B 🧠—analyzing project structure 📂 and creating custom README styles ✨!",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 15,
+      "forks_count": 0,
+      "html_url": "https://github.com/MahanVeisi8/Automated-readme-generator-with-Multi-Agent-CrewAI"
+    },
+    {
+      "full_name": "MahanVeisi8/MLPractices",
+      "description": "A collection of machine learning practices covering decision trees, KNN, stroke prediction, neural networks, DBSCAN clustering, and more",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 8,
+      "forks_count": 0,
+      "html_url": "https://github.com/MahanVeisi8/MLPractices"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Jupyter Notebook",
+      "bytes": 151245086,
+      "percent": 99.7
+    },
+    {
+      "name": "Python",
+      "bytes": 408831,
+      "percent": 0.3
+    },
+    {
+      "name": "HTML",
+      "bytes": 16302,
+      "percent": 0.0
+    },
+    {
+      "name": "CSS",
+      "bytes": 2260,
+      "percent": 0.0
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 349,
+      "percent": 0.0
+    }
+  ]
+}
