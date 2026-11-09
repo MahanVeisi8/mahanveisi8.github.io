@@ -524,3 +524,8 @@
 @media (max-width:480px){
   .gh-stats, .gh-langlist{ grid-template-columns:1fr; }
 }
+.gh-langnote{
+  font-size:.68rem;
+  color:#7a8794;
+  margin:0;
+}

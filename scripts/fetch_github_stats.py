@@ -43,7 +43,6 @@ def main():
 
     username = cfg["username"]
     out_repos = []
-    lang_bytes = {}
 
     for entry in cfg["repos"]:
         full = entry["full_name"]
@@ -59,13 +58,11 @@ def main():
             "forks_count": data.get("forks_count", 0),
             "html_url": data["html_url"],
         })
-        langs = get(f"/repos/{full}/languages") or {}
-        for name, count in langs.items():
-            lang_bytes[name] = lang_bytes.get(name, 0) + count
 
-    # Overall user stats: count stars/forks across the account's public repos.
+    # Overall user stats across the account's own public repos.
     user = get(f"/users/{username}") or {}
     total_stars = total_forks = 0
+    owned = []
     page = 1
     while page <= 10:
         batch = get(f"/users/{username}/repos?per_page=100&type=owner&page={page}")
@@ -74,17 +71,38 @@ def main():
         for r in batch:
             if r.get("fork"):
                 continue
+            owned.append(r["full_name"])
             total_stars += r.get("stargazers_count", 0)
             total_forks += r.get("forks_count", 0)
         if len(batch) < 100:
             break
         page += 1
 
-    total_bytes = sum(lang_bytes.values()) or 1
-    languages = [
-        {"name": n, "bytes": b, "percent": round(b * 100.0 / total_bytes, 1)}
-        for n, b in sorted(lang_bytes.items(), key=lambda kv: kv[1], reverse=True)
-    ]
+    # Language mix across every owned repo, normalised PER REPO.
+    #
+    # Summing raw byte counts is misleading here: a .ipynb file stores its
+    # output images as base64 inside the notebook, so a handful of notebook
+    # repos drown out everything else (it produced "Jupyter Notebook 99.7%,
+    # Python 0.3%"). Instead each repo contributes one unit, split by its own
+    # internal language shares, so the result reflects what is actually
+    # worked in rather than which file format is bulkiest on disk.
+    lang_share = {}
+    counted = 0
+    for full in owned:
+        langs = get(f"/repos/{full}/languages") or {}
+        repo_total = sum(langs.values())
+        if not repo_total:
+            continue
+        counted += 1
+        for name, count in langs.items():
+            lang_share[name] = lang_share.get(name, 0.0) + count / repo_total
+
+    languages = []
+    if counted:
+        for name, share in sorted(lang_share.items(), key=lambda kv: kv[1], reverse=True):
+            pct = round(share * 100.0 / counted, 1)
+            if pct >= 1.0:                      # drop 0.0% noise
+                languages.append({"name": name, "percent": pct, "repos": round(share, 2)})
 
     payload = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S +0000"),
@@ -97,6 +115,7 @@ def main():
         },
         "repos": out_repos,
         "languages": languages,
+        "languages_basis": counted,
     }
 
     if not out_repos:
@@ -107,7 +126,7 @@ def main():
     with open(out_path, "w", encoding="utf-8") as fh:
         json.dump(payload, fh, indent=2, ensure_ascii=False)
         fh.write("\n")
-    print(f"Wrote {out_path}: {len(out_repos)} repos, {len(languages)} languages, {total_stars} stars")
+    print(f"Wrote {out_path}: {len(out_repos)} cards, {len(languages)} languages over {counted} repos, {total_stars} stars")
     return 0
 
 

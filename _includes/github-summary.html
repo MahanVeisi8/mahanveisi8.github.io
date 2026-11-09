@@ -58,6 +58,9 @@
       </li>
       {%- endfor %}
     </ul>
+    {%- if gh.languages_basis %}
+    <p class="gh-langnote">Averaged per repository across {{ gh.languages_basis }} public repos.</p>
+    {%- endif %}
     {%- else %}
     <p class="gh-empty">Language breakdown refreshes automatically once the GitHub Action has run.</p>
     {%- endif %}
