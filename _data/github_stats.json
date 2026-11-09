@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09 02:24:31 +0000",
+  "generated_at": "2026-11-09 02:43:24 +0000",
   "user": {
     "login": "MahanVeisi8",
     "public_repos": 25,
@@ -84,28 +84,39 @@
   "languages": [
     {
       "name": "Jupyter Notebook",
-      "bytes": 151245086,
-      "percent": 99.7
+      "percent": 62.7,
+      "repos": 11.91
     },
     {
       "name": "Python",
-      "bytes": 408831,
-      "percent": 0.3
+      "percent": 14.5,
+      "repos": 2.75
+    },
+    {
+      "name": "Java",
+      "percent": 6.4,
+      "repos": 1.22
+    },
+    {
+      "name": "C++",
+      "percent": 6.2,
+      "repos": 1.17
+    },
+    {
+      "name": "Dart",
+      "percent": 4.5,
+      "repos": 0.85
     },
     {
       "name": "HTML",
-      "bytes": 16302,
-      "percent": 0.0
+      "percent": 2.5,
+      "repos": 0.47
     },
     {
       "name": "CSS",
-      "bytes": 2260,
-      "percent": 0.0
-    },
-    {
-      "name": "JavaScript",
-      "bytes": 349,
-      "percent": 0.0
+      "percent": 1.3,
+      "repos": 0.24
     }
-  ]
+  ],
+  "languages_basis": 19
 }
