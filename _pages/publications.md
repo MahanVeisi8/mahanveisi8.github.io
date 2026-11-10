@@ -54,7 +54,7 @@ classes: wide
       <header class="pub-head">
         <h3 class="pub-title">AdaptCMR: All-in-One MRI Reconstruction with Cascaded Transformers</h3>
         <div class="pub-actions">
-          <a class="icon-btn" href="https://echo.ismrm.org/program/ISMRM2026/at-a-glance/session/760" title="Paper (PDF)" aria-label="PDF"><i class="far fa-file-pdf"></i></a>
+          <a class="icon-btn" href="https://echo.ismrm.org/abstracts/view/6b41d73e-84c9-451a-bc7f-6b4d26b1e718" title="Paper (PDF)" aria-label="PDF"><i class="far fa-file-pdf"></i></a>
           <a class="icon-btn" href="https://github.com/MahanVeisi8/SpectraMR" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </header>
