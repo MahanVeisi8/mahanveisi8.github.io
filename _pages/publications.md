@@ -63,7 +63,6 @@ classes: wide
         <strong>Mahan Veisi</strong>
         <a href="https://scholar.google.com/citations?user=D_mPA6sAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Kian Anvari</a>
         <a href="https://scholar.google.com/citations?user=gHVVhW4AAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Shahabedin Nabavi</a>
-        <a href="https://scholar.google.com/citations?user=trWxrgcAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Mohsen Ebrahimi Moghaddam</a>
       </div>
 
       <details class="pub-more">
