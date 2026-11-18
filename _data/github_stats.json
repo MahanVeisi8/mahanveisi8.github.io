@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-17 13:17:28 +0000",
+  "generated_at": "2026-11-18 12:59:52 +0000",
   "user": {
     "login": "MahanVeisi8",
     "public_repos": 25,
-    "followers": 105,
-    "total_stars": 192,
+    "followers": 106,
+    "total_stars": 191,
     "total_forks": 11
   },
   "repos": [
@@ -52,7 +52,7 @@
       "full_name": "MahanVeisi8/FashionTagger",
       "description": "Upload your fashion images and get detailed labels, such as category, color, and season, predicted by my AI model using an ensemble of CNN architectures.",
       "language": "Jupyter Notebook",
-      "stargazers_count": 15,
+      "stargazers_count": 14,
       "forks_count": 0,
       "html_url": "https://github.com/MahanVeisi8/FashionTagger"
     },
